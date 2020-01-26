@@ -1,0 +1,326 @@
+
+
+var CHARROM = 0xD000;
+
+
+data InfoScript {
+	charset " ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,!'-?:/()acelnosxz&"
+
+//   --------------------
+	"PIXEL." 0xFE
+	"KULTURA GIER WIDEO" 0xFE 0xF0
+	0xFE
+//   --------------------
+	"     ... I ..." 0xFE 0xF0
+	0xFE
+	"PORTAL" 0xFE
+	"  SAVE THE FLOPPY" 0xFE 0xF0
+	0xFE
+	"ZAPRASZAJa NA sWIeTO" 0xFE
+	"MIlOsNIKoW KULTURY," 0xFE
+//   --------------------
+	"SZTUKI I TECHNIKI" 0xFE
+	"EPOKI 80/90 ZESZlEGO" 0xFE
+	"WIEKU (CZYLI TWoJ" 0xFE
+	"DZIEn DZIECKA!!!!!)" 0xFE 0xF0
+	0xFE
+//   --------------------
+	"POD NAZWa:" 0xFE
+	0xFE 0xF0
+	"POWRoT Z " 0xFE
+	"PRZYSZlOsCI II" 0xFE
+	0xFE 0xF0
+//   --------------------
+	"  04.11.2017" 0xFE 0xF0
+	"  W WARSZAWIE" 0xF0 0xFE
+	"KLUBIE RIVIERA-REMON" 0xF0 0xFE
+	0xFE
+//   --------------------
+	"WYSTaPI PRZED WAMI" 0xFE
+	"W PolTORAGODZINNYM" 0xFE
+//   --------------------
+	"KONCERCIE NA zYWO" 0xF0 "." 0xF0 "." 0xF0 "." 0xFE 0xF0
+	0xFE
+	0xFE
+	"!! MAREK BILInSKI !!" 0xFE
+	0xFE 0xF0 0xF0
+	0xFE
+	"PRZED KONCERTEM" 0xFE
+	"ODBeDZIE SIe WYWIAD" 0xFE
+//   --------------------
+	"Z ARTYSTa, KToRY" 0xFE
+	"POPROWADZI:" 0xFE
+	0xFE 0xF0
+//   --------------------
+	"DARIUSZ 'SIR HASZAK'" 0xFE 0xF0
+	0xFE
+	"MICHALSKI" 0xFE
+	0xFE 0xF0
+
+//   --------------------
+	0xFE
+	"TAKTYCZNA LEGENDA" 0xFE
+	"POLSKCIH PISM DLA" 0xFE
+	"GRACZY KOMPUTEROWYCH" 0xFE
+	0xFE
+//   --------------------
+	"PRZED KONCERTEM" 0xFE
+	" ODBeDZIE SIe" 0xFE
+	"INSCENIZACJA GIElDY" 0xFE
+	0xFE
+//   --------------------
+	" BAJTKA! " 0xFE
+	"A NA NIEJ SZEREG" 0xFE
+	"ATRAKCJI, TAKICH JAK" 0xFE 0xF0
+	0xFE
+//   --------------------
+	"SPOTKANIA Z EKIPAMI" 0xFE 0xF0
+	0xFE
+	"PORTALI:" 0xFE
+	"SPECCY.PL ORAZ" 0xFE
+	"ATARIONLINE.PL" 0xFE
+	"PRZESYMPATYCZNY TDC" 0xFE
+	"POKAZE 999 SLAJDoW" 0xFE
+//   --------------------
+	"NA GIElDZIE " 0xFE
+	"BeDZIECIE MOGLI"  0xFE
+	"KUPIc/SPRZEDAc" 0xFE
+	"TOWARY Z LAT 80/90" 0xFE
+	"TAKIE JAK:" 0xFE
+	"MIKROKOMPUTERY" 0xFE
+	"MAGNETOFONY, VIDEO" 0xFE
+	"GRAMOFONY, PlYTY" 0xFE
+//   --------------------
+	"KONSOLE ORAZ GRY" 0xFE 0xF0
+	0xFE
+	"ZEGARKI ELEKTRONICZ" 0xFE
+	"KSIazKI, KOMIKSY" 0xFE
+	"PLYTY WINYLOWE" 0xFE 0xF0
+	0xFE
+//   --------------------
+	"I SlUCHAJCIE, POWIEM" 0xFE
+	"WAM JEDNO -" 0xFE 0xF0
+	"   C64 RULES," 0xFE 0xF0
+	"RZECZ JASNA. " 0xFE 0xF0
+	0xFE
+//   --------------------
+	"OPRoCZ TEGO" 0xFE
+	"BeDZIECIE MOGLI" 0xFE
+	"ZJEsc ZAPIEKSe." 0xF0 0xFE
+	"PRZYJARANa," 0xFE 0xF0
+	"RZECZ JASNA." 0xFE 0xF0
+	0xFE
+//   --------------------
+	"GREETINGS TO:" 0xF0 0xFE
+	"  MAREK BILInSKI" 0xF0 0xFE
+	"  BOREK" 0xF0 0xFE
+	"  DRYGOL" 0xF0 0xFE
+	"  XTD" 0xF0 0xFE
+	"  KYA" 0xF0 0xFE
+	"  LAMERS" 0xF0 0xFE
+	"  MSB" 0xF0 0xFE
+	"  SOPOT - KAMIONKA" 0xF0 0xFE
+	"  RETROKOMP" 0xF0 0xFE
+	"  RETROLAB" 0xF0 0xFE
+	"  SKALMAR" 0xF0 0xFE
+	0xFE
+
+//   --------------------
+	"SPECIAL GREETINGS:" 0xF0 0xFE
+	" FROM BACHOO" 0xF0 0xFE
+	"   TO IZUNIA & ALA" 0xFE
+	"JULAS & " 0xF0 0xFE
+	"ERYK POLSKA POLNOCNA" 0xF0 0xFE
+	0xFE
+//   --------------------
+	" FROM KK" 0xF0 0xFE
+	"   TO MARTA & ARTUR" 0xF0 0xFE
+	0xFE
+
+//   --------------------
+	"FROM LAPUSZ" 0xFE
+	"        WITH LOVE" 0xF0 0xFE
+	" TO WIFE & CHILDREN" 0xF0 0xFE
+	" VOYAGER," 0xF0 0xFE
+	"MARLENA & RAFAL" 0xF0 0xFE
+	" TOP SECRET STAFF" 0xF0 0xFE
+	" KAJA, PIOTR DAMIAN" 0xF0 0xFE
+	" THE UKRAINIANS" 0xF0 0xFE
+	0xFE	
+	
+//   --------------------
+	"PAMIeTAJ" 0xFE
+	0xFE 0xF0
+	"  04.11.2017" 0xF0 0xFE
+	"WARSZAWA, RIVIERA" 0xF0 0xFE
+	"UL. WARYnSKIEGO 12A" 0xF0 0xF0 0xFE
+	0xFE
+	"WIDZIMY SIe???? " 0xF0 0xF0 0xFE
+	0xFE
+//   --------------------
+	"MSX: MAREK BILInSKI" 0xF0 0xFE
+	" (SID VERSION BY KK)" 0xF0 0xFE
+	"CODE: KK" 0xF0 0xFE
+	"IDEA: BACHOO" 0xF0 0xFE
+	0xFE 0xFE 0xFE 0xFE 0xFE 0xFE 0xFE 0xFE 0xFE 0xFE 0xFE 0xFE 0xFE
+	0xFF
+}
+
+[MAX_LINES=14]
+
+
+func info_position {
+	// Positions ptrA to target char cell
+	// Input:
+	//	X	- X coord
+	//	Y	- Y coord
+
+	// position X
+	a=x	a<< a<< a<<	c- a+&<Bitmap	iptrA  =a
+					a=&>Bitmap a+0	iptrA+1=a
+
+	// position Y
+	a=y a>> a>> iv0=a
+	a=y a<< a<< a<< a<< a<< a<<	c- a+iptrA		iptrA  =a
+	a=y		a+iv0				c- a+iptrA+1	iptrA+1=a
+}
+
+inline info_home {
+	x=id_xpos=a=0
+	y=id_ypos=a=0
+	info_position
+}
+
+func info_scroll_step {
+	x=0
+	y=id_scroll_frame
+	info_position
+
+	a=iptrA		c- a+[320]		iptrB  =a
+	a=iptrA+1	   a+[320/256]	iptrB+1=a
+
+	a=id_scroll_frame a?[MAX_LINES] <{
+		y=0
+		{
+			(iptrA),y=a=(iptrB),y	y++
+			(iptrA),y=a=(iptrB),y	y++
+			(iptrA),y=a=(iptrB),y	y++
+			(iptrA),y=a=(iptrB),y	y++
+			(iptrA),y=a=(iptrB),y	y++
+			(iptrA),y=a=(iptrB),y	y++
+			(iptrA),y=a=(iptrB),y	y++
+			(iptrA),y=a=(iptrB),y	y++
+			y?[20*8]
+		}!=
+
+		id_scroll_frame++
+		return	
+	}
+
+	a=0
+	y=0
+	{
+		(iptrA),y=a		y++
+		(iptrA),y=a		y++
+		(iptrA),y=a		y++
+		(iptrA),y=a		y++
+		(iptrA),y=a		y++
+		(iptrA),y=a		y++
+		(iptrA),y=a		y++
+		(iptrA),y=a		y++
+		y?[20*8]
+	}!=
+
+	id_scroll_frame=a=0
+	x=id_xpos
+	y=id_ypos
+	info_position
+}
+
+func info_crlf {
+	id_xpos=a=0
+	id_ypos++
+
+	a=id_ypos a?[MAX_LINES] >={
+		id_ypos--
+		id_scroll_frame=a=0
+		info_scroll_step
+		return
+	}
+
+	x=id_xpos
+	y=id_ypos
+	info_position
+}
+
+func info_print {
+	a?0xFF == {
+		id_textp  =a=&<InfoScript
+		id_textp+1=a=&>InfoScript
+		return
+	}
+
+	a?0xFE =={
+		info_crlf
+		return
+	}
+
+	a?0xF0 =={
+		id_delay=a=35
+		return
+	}
+
+	x=a
+	a>> a>> a>> a>> a>> iptrB+1=a
+
+	a=x		a<< a<< a<< c- a+&<InfoFont		iptrB  =a
+	a=iptrB+1			   a+&>InfoFont		iptrB+1=a
+
+	y=7 { (iptrA),y=a=(iptrB),y y-- }>=0
+	
+	id_xpos++
+	//a=id_xpos a?20 >= {
+	//	info_crlf
+	//}
+	//else
+	//{
+		a=iptrA		c- a+8		iptrA  =a
+		a=iptrA+1	   a+0		iptrA+1=a
+	//}
+}
+
+func infodisplay_frame {
+
+	a=id_delay !={
+		id_delay--
+		return
+	}
+
+	a=id_scroll_frame !={
+		info_scroll_step
+		return
+	}
+
+	id_frame++
+	a=id_frame a?0 >={
+		id_frame=a=0
+
+		y=0 a=(id_textp),y x=a
+		a=id_textp		c- a+1	id_textp  =a
+		a=id_textp+1	   a+0	id_textp+1=a
+		a=x
+		info_print
+	}
+}
+
+
+inline infodisplay_init {
+	id_counter=a=0
+	id_frame=a=0
+	id_delay=a=0
+	id_scroll_frame=a=0
+	id_textp  =a=&<InfoScript
+	id_textp+1=a=&>InfoScript
+
+	info_home
+}

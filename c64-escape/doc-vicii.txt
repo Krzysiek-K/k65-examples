@@ -1,0 +1,73 @@
+
+VIC-II screen modes
+
+
+
+	A15 & A14	- inverted values of bit 1 & 0 of PRA (CIA 1, Port A)
+
+	D800-DBFF	- color RAM
+
+				7		6		5		4		3		2		1		0
+	VICCR1:		RST8	ECM		BMM		DEN		RSEL	[	YSCROLL	    ]
+	VICCR2:		-		-		RES		MCM		CSEL	[	XSCROLL		]
+
+	Id	ECM BMM MCM Mode
+	0 	0 	0 	0 	SCM		Standard Character Mode
+	1 	0 	0 	1 	MCM		Multicolor Character Mode
+	2 	0 	1 	0 	SBM		Standard Bitmap Mode
+	3 	0 	1 	1 	MBM		Multicolor Bitmap Mode
+	4 	1 	0 	0 	EBCM	Extended Background Color Mode
+	5 	1 	0 	1 	-		(invalid)
+	6 	1 	1 	0 	-		(invalid)
+	7 	1 	1 	1 	-		(invalid)
+
+
+	* Standard Character Mode
+
+		- video matrix at screen pointer (size 0x400)
+		- character generator at character pointer (size 0x800)
+		- 0 pixel: background color
+		- 1 pixel: color RAM
+
+	* Multicolor Character Mode
+
+		- pointers as in standard character mode
+		- Color RAM data:	mccc	- m: MC flag,	ccc: color of 11 pixels
+		- MC bit 0: 1x1 pixel resolution
+							0 - background
+							1 - color RAM
+		- MC bit 1: 2x1 pixel resolution
+							00 - background
+							01 - background 1
+							10 - background 2
+							11 - color RAM
+
+	* Standard Bitmap Mode
+
+		- screen pointer used as attribute data (size 0x400)
+		- bitmap data at bitmap pointer, only MSB used (size 0x2000)
+		- color RAM unused
+		- 0 pixel: low nibble from attribute buffer
+		- 1 pixel: high nibble from attribute buffer
+
+	* Multicolor Bitmap Mode
+
+		- pointers as in standard bitmap mode
+		- 00 pixel: background color
+		- 01 pixel: high nibble from attribute buffer
+		- 10 pixel: low nibble from attribute buffer
+		- 11 pixel: color RAM
+
+	* Extended Background Color Mode
+
+		- same as standard text mode
+		- 64 characters
+		- 2 high bits select one of 4 background colors from registers
+
+
+// color test
+//VideoMatrix+993=a=0x00	// black
+//VideoMatrix+994=a=0xBB	// dark grey
+//VideoMatrix+995=a=0xCC	// grey
+//VideoMatrix+996=a=0xFF	// light grey
+//VideoMatrix+997=a=0x11	// white

@@ -1,0 +1,75 @@
+//		[B=320*1-64-8]
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//		[B=320*2-64-8]
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//		[B=320*3-64-8]
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//		[B=320*4-64-8]
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//		[B=320*5-64-8]
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//		[B=320*6-64-8]
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//		[B=320*7-64-8]
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//		[B=320*8-64-8]
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//		[B=320*9-64-8]
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//		[B=320*10-64-8]
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//		[B=320*11-64-8]
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//		[B=320*12-64-8]
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//		[B=320*13-64-8]
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//		[B=320*14-64-8]
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//		[B=320*15-64-8]
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//		[B=320*16-64-8]
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//		[B=320*17-64-8]
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//		[B=320*18-64-8]
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//		[B=320*19-64-8]
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//		[B=320*20-64-8]
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//		[B=320*21-64-8]
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//		[B=320*22-64-8]
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//		[B=320*23-64-8]
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//		[B=320*24-64-8]
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//		[B=320*25-64-8]
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 
+//			c- Bitmap+[B+64],x<<< Bitmap+[B+56],x<<< Bitmap+[B+48],x<<< Bitmap+[B+40],x<<< Bitmap+[B+32],x<<< Bitmap+[B+24],x<<< Bitmap+[B+16],x<<< Bitmap+[B+8],x<<< Bitmap+[B],x<<< 

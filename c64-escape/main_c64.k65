@@ -1,0 +1,255 @@
+
+// -------------------------------- Memory regions --------------------------------
+
+
+									// $0801..$8FFF		code/data (PRG file)
+
+var GenShifter		= 0x4000;		// $4000..$9FFF		generated code
+
+									// $A000..$B1FF		tables
+
+var VideoMatrix		= 0xC000;		// $C000
+var SpriteBuffer	= 0xC400;
+var Bitmap			= 0xE000;
+
+// tables
+var RorMC0			= 0xA000;
+var RorM03			= 0xA100;
+var RorM3C			= 0xA200;
+var RorM30			= 0xA300;
+var RorM3F			= 0xA400;
+var RorM0F			= 0xA500;
+var SwapMF0			= 0xA600;
+var SwapM0F			= 0xA700;
+var SwapM03			= 0xA800;
+var SwapM0C			= 0xA900;
+var SwapM30			= 0xAA00;
+var SwapMC0			= 0xAB00;
+var RolMC0			= 0xAC00;
+var RolMF0			= 0xAD00;
+var RolM03			= 0xAE00;
+var RolM0C			= 0xAF00;
+var RolM3C			= 0xB000;
+var RolMFC			= 0xB100;
+
+var ColorRam		= 0xD800;
+
+
+// -------------------------------- Zero page registers --------------------------------
+
+// 0x00 & 0x01 are special purpose on 6510 CPU
+
+var _frame	= 0x02;
+var frame;
+var ptrA[2];
+var ptrB[2];
+var ptrC[2];
+var iptrA[2];		// used in IRQ
+var iptrB[2];		// used in IRQ
+var rand;
+var v0;
+var v1;
+var v2;
+var iv0;			// used in IRQ
+var spranim;
+var texcolptr[2];
+var id_counter;
+var id_frame;
+var id_xpos;
+var id_ypos;
+var id_textp[2];
+var id_delay;
+var id_scroll_frame;
+var irq_ram_mode_backup;
+
+var cg_n1;
+var cg_n2;
+var cg_n3;
+var cg_n4;
+var cg_mask[8];
+var cg_op;				// opcode for "LDA Addr,X" or "ORA Addr,X"
+var cg_codePtr[2];
+var cg_infoPtr[2];
+var cg_bitmapPtr[2];
+var cg_ycoord;
+
+
+// 0xF0..0xFF used by synth
+
+
+
+
+
+naked int_null {
+	return_i
+}
+
+naked int_raster {
+	c!! a!! a=x a!! a=y a!!
+
+	//irq_ram_mode_backup =a= R6510
+	//memmode_RAM_IO
+
+	a=VICIRQ a&1 !={
+		// RASTER interrupt
+		VICIRQ=a=1
+		_frame++
+		i-
+
+		ufo_animate_position
+		infodisplay_frame
+		a=id_scroll_frame !={
+			infodisplay_frame
+		}
+	}
+	else {
+		a=CIAICR a&1 !={
+			a=0 x=0 y=0
+			call SidPlayRoutine
+		}
+	}
+	
+	//R6510 =a= irq_ram_mode_backup
+	a?? y=a a?? x=a a?? c??
+	return_i
+}
+
+
+inline color_setup {
+
+	// fill video matrix
+	ptrA  =a=&<VideoMatrix
+	ptrA+1=a=&>VideoMatrix
+	a=0xBF		y=0 { (ptrA),y=a y++ }!=
+	ptrA+1++	y=0 { (ptrA),y=a y++ }!=
+	ptrA+1++	y=0 { (ptrA),y=a y++ }!=
+	ptrA+1++	y=0 { (ptrA),y=a y++ }!=
+
+	// fill color RAM
+	ptrA  =a=&<COLORRAM
+	ptrA+1=a=&>COLORRAM
+	a=0x11		y=0 { (ptrA),y=a y++ }!=
+	ptrA+1++	y=0 { (ptrA),y=a y++ }!=
+	ptrA+1++	y=0 { (ptrA),y=a y++ }!=
+	ptrA+1++	y=0 { (ptrA),y=a y++ }!=
+	
+	EXTCOL=a=0					// black frame
+	BGCOL0=a=0					// black background
+}
+
+inline clear_screen {
+	ptrA  =a=&<Bitmap
+	ptrA+1=a=&>Bitmap
+	a=0
+	x=31 {
+		y=0 {
+			(ptrA),y=a y++
+		}!=
+		ptrA+1++
+		x--
+	}!=
+}
+
+inline run_shifter {
+	ptrB  =a=texcolptr
+	ptrB+1=a=texcolptr+1
+	//fn_big_shift
+	call GenShifter
+
+	// move pointer
+	a=texcolptr		c- a+100	texcolptr  =a
+	a=texcolptr+1	   a+0		texcolptr+1=a
+
+
+	// compare to end
+	a=texcolptr+1 a?&>TextureData+TEXTURE_DATA_SIZE
+	== {
+		// equal -> consider lower byte instead
+		a=texcolptr a?&<TextureData+TEXTURE_DATA_SIZE
+	}
+	>= {
+		// pointer past the data end -> reset
+		texcolptr  =a=&<TextureData
+		texcolptr+1=a=&>TextureData
+	}
+}
+
+
+main {
+	i+
+	a=0x7F CIAICR=a CI2ICR=a=0x7F	// disable CIA interrupts
+	a=CIAICR a=CI2ICR				// ACK any outstanding interrupts
+
+	memmode_RAM_IO					// all RAM, except for I/O at D000..DFFF
+	NMIADL=a=&<int_null				// setup NMI vector
+	NMIADH=a=&>int_null
+	IRQADL=a=&<int_raster			// setup IRQ vector
+	IRQADH=a=&>int_raster
+
+
+	tables_init
+
+	code_generator
+
+
+	// init gfx mode
+	a=PRA2 a&0xFC PRA2=a			// VIC at C000..FFFF
+	VMCSB=a=0b00001000				// attributes at C000, bitmap at E000
+
+
+
+
+	// init SID player
+	a=&<SidPlay				// for reference, so the linker does not drop the section
+	a=0 x=0 y=0
+	call SidInitRoutine
+
+
+	// setup CIA interrupts
+	TIMALO=a=0x89				// 0.985248 MHz
+	TIMAHI=a=0x49
+	CIACRA=a=0b10010000
+	CIAICR=a=0b10000001
+	CIACRA=a=0b10010001
+
+	// setup RASTER interrupts
+	IRQMASK=a=1				// enable raster IRQ
+	RASTER=a=255			// interrupt raster pos
+
+
+	// init demo playback
+	frame=_frame=a=0
+	texcolptr  =a=&<TextureData
+	texcolptr+1=a=&>TextureData
+	infodisplay_init
+
+	clear_screen
+	color_setup
+
+	v2=a=25
+	{
+		run_shifter
+		v2--
+	}!=
+
+	ufo_setup
+	altair_wings
+
+	VICCR1=a=0b00111011				// mode setup & high raster IRQ bit
+	VICCR2=a=0b11011000
+
+	i-
+	{
+		// wait for new frame
+		x=1
+		{
+			a=frame { a?_frame }==
+			frame=a=_frame
+			x--
+		}!=
+
+
+		run_shifter
+
+	} always
+}

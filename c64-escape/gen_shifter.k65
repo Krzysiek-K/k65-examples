@@ -1,0 +1,2122 @@
+func fn_big_shift {
+// line 0  -  [5 13 23 19]
+	x=Bitmap+312
+	/*byte 38*/ a=x x=Bitmap+304 Bitmap+304=a Bitmap+305=a
+	/*byte 37*/ a=x x=Bitmap+296 Bitmap+296=a Bitmap+297=a
+	/*byte 36*/ a=x x=Bitmap+288 Bitmap+288=a Bitmap+289=a
+	/*byte 35*/ a=x x=Bitmap+280 Bitmap+280=a Bitmap+281=a
+	/*byte 34*/ a=x a&0x3F x=Bitmap+272 a|RorMC0,x Bitmap+272=a Bitmap+273=a
+	/*byte 33*/ a=RorM3F,x x=Bitmap+264 a|RorMC0,x Bitmap+264=a Bitmap+265=a
+	/*byte 32*/ a=RorM3F,x x=Bitmap+256 a|RorMC0,x Bitmap+256=a Bitmap+257=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+248 a|RorMC0,x Bitmap+248=a Bitmap+249=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+240 a|RorMC0,x Bitmap+240=a Bitmap+241=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+232 a|RorMC0,x Bitmap+232=a Bitmap+233=a
+	/*byte 28*/ a=RorM0F,x x=Bitmap+224 a|SwapMF0,x Bitmap+224=a Bitmap+225=a
+	/*byte 27*/ a=SwapM0F,x x=Bitmap+216 a|SwapMF0,x Bitmap+216=a Bitmap+217=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+208 a|SwapMF0,x Bitmap+208=a Bitmap+209=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+200 a|RolMC0,x a|SwapM30,x Bitmap+200=a Bitmap+201=a
+	/*byte 24*/ a=RolM03,x x=Bitmap+192 a|RolMFC,x Bitmap+192=a Bitmap+193=a
+	/*byte 39*/ y=0 a=(ptrB),y Bitmap+312=a Bitmap+313=a
+
+// line 1  -  [6 12 23 20]
+	x=Bitmap+314
+	/*byte 38*/ a=x x=Bitmap+306 Bitmap+306=a Bitmap+307=a
+	/*byte 37*/ a=x x=Bitmap+298 Bitmap+298=a Bitmap+299=a
+	/*byte 36*/ a=x x=Bitmap+290 Bitmap+290=a Bitmap+291=a
+	/*byte 35*/ a=x x=Bitmap+282 Bitmap+282=a Bitmap+283=a
+	/*byte 34*/ a=x x=Bitmap+274 Bitmap+274=a Bitmap+275=a
+	/*byte 33*/ a=RorM3F,x x=Bitmap+266 a|RorMC0,x Bitmap+266=a Bitmap+267=a
+	/*byte 32*/ a=RorM3F,x x=Bitmap+258 a|RorMC0,x Bitmap+258=a Bitmap+259=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+250 a|RorMC0,x Bitmap+250=a Bitmap+251=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+242 a|RorMC0,x Bitmap+242=a Bitmap+243=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+234 a|RorMC0,x Bitmap+234=a Bitmap+235=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+226 a|SwapMC0,x Bitmap+226=a Bitmap+227=a
+	/*byte 27*/ a=SwapM0F,x x=Bitmap+218 a|SwapMF0,x Bitmap+218=a Bitmap+219=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+210 a|SwapMF0,x Bitmap+210=a Bitmap+211=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+202 a|RolMC0,x a|SwapM30,x Bitmap+202=a Bitmap+203=a
+	/*byte 24*/ a=RolM03,x x=Bitmap+194 a|RolMFC,x Bitmap+194=a Bitmap+195=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+186 Bitmap+186=a Bitmap+187=a
+	/*byte 39*/ y=1 a=(ptrB),y Bitmap+314=a Bitmap+315=a
+
+// line 2  -  [5 13 23 20]
+	x=Bitmap+316
+	/*byte 38*/ a=x x=Bitmap+308 Bitmap+308=a Bitmap+309=a
+	/*byte 37*/ a=x x=Bitmap+300 Bitmap+300=a Bitmap+301=a
+	/*byte 36*/ a=x x=Bitmap+292 Bitmap+292=a Bitmap+293=a
+	/*byte 35*/ a=x x=Bitmap+284 Bitmap+284=a Bitmap+285=a
+	/*byte 34*/ a=x x=Bitmap+276 Bitmap+276=a Bitmap+277=a
+	/*byte 33*/ a=RorM3F,x x=Bitmap+268 a|RorMC0,x Bitmap+268=a Bitmap+269=a
+	/*byte 32*/ a=RorM3F,x x=Bitmap+260 a|RorMC0,x Bitmap+260=a Bitmap+261=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+252 a|RorMC0,x Bitmap+252=a Bitmap+253=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+244 a|RorMC0,x Bitmap+244=a Bitmap+245=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+236 a|RorMC0,x Bitmap+236=a Bitmap+237=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+228 a|SwapMC0,x Bitmap+228=a Bitmap+229=a
+	/*byte 27*/ a=SwapM0F,x x=Bitmap+220 a|SwapMF0,x Bitmap+220=a Bitmap+221=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+212 a|SwapMF0,x Bitmap+212=a Bitmap+213=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+204 a|SwapMF0,x Bitmap+204=a Bitmap+205=a
+	/*byte 24*/ a=RolM03,x x=Bitmap+196 a|RolMFC,x Bitmap+196=a Bitmap+197=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+188 Bitmap+188=a Bitmap+189=a
+	/*byte 39*/ y=2 a=(ptrB),y Bitmap+316=a Bitmap+317=a
+
+// line 3  -  [6 12 23 21]
+	x=Bitmap+318
+	/*byte 38*/ a=x x=Bitmap+310 Bitmap+310=a Bitmap+311=a
+	/*byte 37*/ a=x x=Bitmap+302 Bitmap+302=a Bitmap+303=a
+	/*byte 36*/ a=x x=Bitmap+294 Bitmap+294=a Bitmap+295=a
+	/*byte 35*/ a=x x=Bitmap+286 Bitmap+286=a Bitmap+287=a
+	/*byte 34*/ a=x x=Bitmap+278 Bitmap+278=a Bitmap+279=a
+	/*byte 33*/ a=x a&0x03 a|RorM3C,x x=Bitmap+270 a|RorMC0,x Bitmap+270=a Bitmap+271=a
+	/*byte 32*/ a=RorM3F,x x=Bitmap+262 a|RorMC0,x Bitmap+262=a Bitmap+263=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+254 a|RorMC0,x Bitmap+254=a Bitmap+255=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+246 a|RorMC0,x Bitmap+246=a Bitmap+247=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+238 a|RorMC0,x Bitmap+238=a Bitmap+239=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+230 a|RorMC0,x Bitmap+230=a Bitmap+231=a
+	/*byte 27*/ a=SwapM0F,x x=Bitmap+222 a|SwapMF0,x Bitmap+222=a Bitmap+223=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+214 a|SwapMF0,x Bitmap+214=a Bitmap+215=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+206 a|SwapMF0,x Bitmap+206=a Bitmap+207=a
+	/*byte 24*/ a=RolM03,x x=Bitmap+198 a|RolMFC,x Bitmap+198=a Bitmap+199=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+190 a|RolM0C,x Bitmap+190=a Bitmap+191=a
+	/*byte 39*/ y=3 a=(ptrB),y Bitmap+318=a Bitmap+319=a
+
+// line 4  -  [5 13 22 22]
+	x=Bitmap+632
+	/*byte 38*/ a=x x=Bitmap+624 Bitmap+624=a Bitmap+625=a
+	/*byte 37*/ a=x x=Bitmap+616 Bitmap+616=a Bitmap+617=a
+	/*byte 36*/ a=x x=Bitmap+608 Bitmap+608=a Bitmap+609=a
+	/*byte 35*/ a=x x=Bitmap+600 Bitmap+600=a Bitmap+601=a
+	/*byte 34*/ a=x x=Bitmap+592 Bitmap+592=a Bitmap+593=a
+	/*byte 33*/ a=x a&0x0F a|RorM30,x x=Bitmap+584 a|RorMC0,x Bitmap+584=a Bitmap+585=a
+	/*byte 32*/ a=RorM3F,x x=Bitmap+576 a|RorMC0,x Bitmap+576=a Bitmap+577=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+568 a|RorMC0,x Bitmap+568=a Bitmap+569=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+560 a|RorMC0,x Bitmap+560=a Bitmap+561=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+552 a|RorMC0,x Bitmap+552=a Bitmap+553=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+544 a|RorMC0,x Bitmap+544=a Bitmap+545=a
+	/*byte 27*/ a=SwapM0F,x x=Bitmap+536 a|SwapMF0,x Bitmap+536=a Bitmap+537=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+528 a|SwapMF0,x Bitmap+528=a Bitmap+529=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+520 a|SwapMF0,x Bitmap+520=a Bitmap+521=a
+	/*byte 24*/ a=SwapM03,x x=Bitmap+512 a|RolMFC,x Bitmap+512=a Bitmap+513=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+504 a|RolM0C,x Bitmap+504=a Bitmap+505=a
+	/*byte 39*/ y=4 a=(ptrB),y Bitmap+632=a Bitmap+633=a
+
+// line 5  -  [5 12 23 22]
+	x=Bitmap+634
+	/*byte 38*/ a=x x=Bitmap+626 Bitmap+626=a Bitmap+627=a
+	/*byte 37*/ a=x x=Bitmap+618 Bitmap+618=a Bitmap+619=a
+	/*byte 36*/ a=x x=Bitmap+610 Bitmap+610=a Bitmap+611=a
+	/*byte 35*/ a=x x=Bitmap+602 Bitmap+602=a Bitmap+603=a
+	/*byte 34*/ a=x x=Bitmap+594 Bitmap+594=a Bitmap+595=a
+	/*byte 33*/ a=x a&0x0F a|RorM30,x x=Bitmap+586 a|RorMC0,x Bitmap+586=a Bitmap+587=a
+	/*byte 32*/ a=RorM3F,x x=Bitmap+578 a|RorMC0,x Bitmap+578=a Bitmap+579=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+570 a|RorMC0,x Bitmap+570=a Bitmap+571=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+562 a|RorMC0,x Bitmap+562=a Bitmap+563=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+554 a|RorMC0,x Bitmap+554=a Bitmap+555=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+546 a|RorMC0,x Bitmap+546=a Bitmap+547=a
+	/*byte 27*/ a=SwapM0C,x a|RorM03,x x=Bitmap+538 a|SwapMF0,x Bitmap+538=a Bitmap+539=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+530 a|SwapMF0,x Bitmap+530=a Bitmap+531=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+522 a|SwapMF0,x Bitmap+522=a Bitmap+523=a
+	/*byte 24*/ a=SwapM03,x x=Bitmap+514 a|RolMFC,x Bitmap+514=a Bitmap+515=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+506 a|RolM0C,x Bitmap+506=a Bitmap+507=a
+	/*byte 39*/ y=5 a=(ptrB),y Bitmap+634=a Bitmap+635=a
+
+// line 6  -  [6 12 22 23]
+	x=Bitmap+636
+	/*byte 38*/ a=x x=Bitmap+628 Bitmap+628=a Bitmap+629=a
+	/*byte 37*/ a=x x=Bitmap+620 Bitmap+620=a Bitmap+621=a
+	/*byte 36*/ a=x x=Bitmap+612 Bitmap+612=a Bitmap+613=a
+	/*byte 35*/ a=x x=Bitmap+604 Bitmap+604=a Bitmap+605=a
+	/*byte 34*/ a=x x=Bitmap+596 Bitmap+596=a Bitmap+597=a
+	/*byte 33*/ a=x a&0x3F x=Bitmap+588 a|RorMC0,x Bitmap+588=a Bitmap+589=a
+	/*byte 32*/ a=RorM3F,x x=Bitmap+580 a|RorMC0,x Bitmap+580=a Bitmap+581=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+572 a|RorMC0,x Bitmap+572=a Bitmap+573=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+564 a|RorMC0,x Bitmap+564=a Bitmap+565=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+556 a|RorMC0,x Bitmap+556=a Bitmap+557=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+548 a|RorMC0,x Bitmap+548=a Bitmap+549=a
+	/*byte 27*/ a=SwapM0C,x a|RorM03,x x=Bitmap+540 a|SwapMF0,x Bitmap+540=a Bitmap+541=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+532 a|SwapMF0,x Bitmap+532=a Bitmap+533=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+524 a|SwapMF0,x Bitmap+524=a Bitmap+525=a
+	/*byte 24*/ a=SwapM03,x x=Bitmap+516 a|RolMFC,x Bitmap+516=a Bitmap+517=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+508 a|RolM3C,x Bitmap+508=a Bitmap+509=a
+	/*byte 39*/ y=6 a=(ptrB),y Bitmap+636=a Bitmap+637=a
+
+// line 7  -  [5 12 23 23]
+	x=Bitmap+638
+	/*byte 38*/ a=x x=Bitmap+630 Bitmap+630=a Bitmap+631=a
+	/*byte 37*/ a=x x=Bitmap+622 Bitmap+622=a Bitmap+623=a
+	/*byte 36*/ a=x x=Bitmap+614 Bitmap+614=a Bitmap+615=a
+	/*byte 35*/ a=x x=Bitmap+606 Bitmap+606=a Bitmap+607=a
+	/*byte 34*/ a=x x=Bitmap+598 Bitmap+598=a Bitmap+599=a
+	/*byte 33*/ a=x a&0x3F x=Bitmap+590 a|RorMC0,x Bitmap+590=a Bitmap+591=a
+	/*byte 32*/ a=RorM3F,x x=Bitmap+582 a|RorMC0,x Bitmap+582=a Bitmap+583=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+574 a|RorMC0,x Bitmap+574=a Bitmap+575=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+566 a|RorMC0,x Bitmap+566=a Bitmap+567=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+558 a|RorMC0,x Bitmap+558=a Bitmap+559=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+550 a|RorMC0,x Bitmap+550=a Bitmap+551=a
+	/*byte 27*/ a=RorM0F,x x=Bitmap+542 a|SwapMF0,x Bitmap+542=a Bitmap+543=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+534 a|SwapMF0,x Bitmap+534=a Bitmap+535=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+526 a|SwapMF0,x Bitmap+526=a Bitmap+527=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+518 a|RolMF0,x Bitmap+518=a Bitmap+519=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+510 a|RolM3C,x Bitmap+510=a Bitmap+511=a
+	/*byte 39*/ y=7 a=(ptrB),y Bitmap+638=a Bitmap+639=a
+
+// line 8  -  [5 12 22 24]
+	x=Bitmap+952
+	/*byte 38*/ a=x x=Bitmap+944 Bitmap+944=a Bitmap+945=a
+	/*byte 37*/ a=x x=Bitmap+936 Bitmap+936=a Bitmap+937=a
+	/*byte 36*/ a=x x=Bitmap+928 Bitmap+928=a Bitmap+929=a
+	/*byte 35*/ a=x x=Bitmap+920 Bitmap+920=a Bitmap+921=a
+	/*byte 34*/ a=x x=Bitmap+912 Bitmap+912=a Bitmap+913=a
+	/*byte 33*/ a=x x=Bitmap+904 Bitmap+904=a Bitmap+905=a
+	/*byte 32*/ a=RorM3F,x x=Bitmap+896 a|RorMC0,x Bitmap+896=a Bitmap+897=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+888 a|RorMC0,x Bitmap+888=a Bitmap+889=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+880 a|RorMC0,x Bitmap+880=a Bitmap+881=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+872 a|RorMC0,x Bitmap+872=a Bitmap+873=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+864 a|RorMC0,x Bitmap+864=a Bitmap+865=a
+	/*byte 27*/ a=RorM0F,x x=Bitmap+856 a|SwapMF0,x Bitmap+856=a Bitmap+857=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+848 a|SwapMF0,x Bitmap+848=a Bitmap+849=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+840 a|SwapMF0,x Bitmap+840=a Bitmap+841=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+832 a|RolMF0,x Bitmap+832=a Bitmap+833=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+824 a|RolM3C,x Bitmap+824=a Bitmap+825=a
+	/*byte 39*/ y=8 a=(ptrB),y Bitmap+952=a Bitmap+953=a
+
+// line 9  -  [5 13 22 24]
+	x=Bitmap+954
+	/*byte 38*/ a=x x=Bitmap+946 Bitmap+946=a Bitmap+947=a
+	/*byte 37*/ a=x x=Bitmap+938 Bitmap+938=a Bitmap+939=a
+	/*byte 36*/ a=x x=Bitmap+930 Bitmap+930=a Bitmap+931=a
+	/*byte 35*/ a=x x=Bitmap+922 Bitmap+922=a Bitmap+923=a
+	/*byte 34*/ a=x x=Bitmap+914 Bitmap+914=a Bitmap+915=a
+	/*byte 33*/ a=x x=Bitmap+906 Bitmap+906=a Bitmap+907=a
+	/*byte 32*/ a=RorM3F,x x=Bitmap+898 a|RorMC0,x Bitmap+898=a Bitmap+899=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+890 a|RorMC0,x Bitmap+890=a Bitmap+891=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+882 a|RorMC0,x Bitmap+882=a Bitmap+883=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+874 a|RorMC0,x Bitmap+874=a Bitmap+875=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+866 a|RorMC0,x Bitmap+866=a Bitmap+867=a
+	/*byte 27*/ a=RorM0F,x x=Bitmap+858 a|SwapMF0,x Bitmap+858=a Bitmap+859=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+850 a|SwapMF0,x Bitmap+850=a Bitmap+851=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+842 a|SwapMF0,x Bitmap+842=a Bitmap+843=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+834 a|RolMC0,x a|SwapM30,x Bitmap+834=a Bitmap+835=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+826 a|RolMFC,x Bitmap+826=a Bitmap+827=a
+	/*byte 39*/ y=9 a=(ptrB),y Bitmap+954=a Bitmap+955=a
+
+// line 10  -  [5 12 22 25]
+	x=Bitmap+956
+	/*byte 38*/ a=x x=Bitmap+948 Bitmap+948=a Bitmap+949=a
+	/*byte 37*/ a=x x=Bitmap+940 Bitmap+940=a Bitmap+941=a
+	/*byte 36*/ a=x x=Bitmap+932 Bitmap+932=a Bitmap+933=a
+	/*byte 35*/ a=x x=Bitmap+924 Bitmap+924=a Bitmap+925=a
+	/*byte 34*/ a=x x=Bitmap+916 Bitmap+916=a Bitmap+917=a
+	/*byte 33*/ a=x x=Bitmap+908 Bitmap+908=a Bitmap+909=a
+	/*byte 32*/ a=x a&0x03 a|RorM3C,x x=Bitmap+900 a|RorMC0,x Bitmap+900=a Bitmap+901=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+892 a|RorMC0,x Bitmap+892=a Bitmap+893=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+884 a|RorMC0,x Bitmap+884=a Bitmap+885=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+876 a|RorMC0,x Bitmap+876=a Bitmap+877=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+868 a|RorMC0,x Bitmap+868=a Bitmap+869=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+860 a|SwapMC0,x Bitmap+860=a Bitmap+861=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+852 a|SwapMF0,x Bitmap+852=a Bitmap+853=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+844 a|SwapMF0,x Bitmap+844=a Bitmap+845=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+836 a|RolMC0,x a|SwapM30,x Bitmap+836=a Bitmap+837=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+828 a|RolMFC,x Bitmap+828=a Bitmap+829=a
+	/*byte 39*/ y=10 a=(ptrB),y Bitmap+956=a Bitmap+957=a
+
+// line 11  -  [5 12 22 25]
+	x=Bitmap+958
+	/*byte 38*/ a=x x=Bitmap+950 Bitmap+950=a Bitmap+951=a
+	/*byte 37*/ a=x x=Bitmap+942 Bitmap+942=a Bitmap+943=a
+	/*byte 36*/ a=x x=Bitmap+934 Bitmap+934=a Bitmap+935=a
+	/*byte 35*/ a=x x=Bitmap+926 Bitmap+926=a Bitmap+927=a
+	/*byte 34*/ a=x x=Bitmap+918 Bitmap+918=a Bitmap+919=a
+	/*byte 33*/ a=x x=Bitmap+910 Bitmap+910=a Bitmap+911=a
+	/*byte 32*/ a=x a&0x03 a|RorM3C,x x=Bitmap+902 a|RorMC0,x Bitmap+902=a Bitmap+903=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+894 a|RorMC0,x Bitmap+894=a Bitmap+895=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+886 a|RorMC0,x Bitmap+886=a Bitmap+887=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+878 a|RorMC0,x Bitmap+878=a Bitmap+879=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+870 a|RorMC0,x Bitmap+870=a Bitmap+871=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+862 a|SwapMC0,x Bitmap+862=a Bitmap+863=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+854 a|SwapMF0,x Bitmap+854=a Bitmap+855=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+846 a|SwapMF0,x Bitmap+846=a Bitmap+847=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+838 a|RolMC0,x a|SwapM30,x Bitmap+838=a Bitmap+839=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+830 a|RolMFC,x Bitmap+830=a Bitmap+831=a
+	/*byte 39*/ y=11 a=(ptrB),y Bitmap+958=a Bitmap+959=a
+
+// line 12  -  [5 12 22 26]
+	x=Bitmap+1272
+	/*byte 38*/ a=x x=Bitmap+1264 Bitmap+1264=a Bitmap+1265=a
+	/*byte 37*/ a=x x=Bitmap+1256 Bitmap+1256=a Bitmap+1257=a
+	/*byte 36*/ a=x x=Bitmap+1248 Bitmap+1248=a Bitmap+1249=a
+	/*byte 35*/ a=x x=Bitmap+1240 Bitmap+1240=a Bitmap+1241=a
+	/*byte 34*/ a=x x=Bitmap+1232 Bitmap+1232=a Bitmap+1233=a
+	/*byte 33*/ a=x x=Bitmap+1224 Bitmap+1224=a Bitmap+1225=a
+	/*byte 32*/ a=x a&0x0F a|RorM30,x x=Bitmap+1216 a|RorMC0,x Bitmap+1216=a Bitmap+1217=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+1208 a|RorMC0,x Bitmap+1208=a Bitmap+1209=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+1200 a|RorMC0,x Bitmap+1200=a Bitmap+1201=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+1192 a|RorMC0,x Bitmap+1192=a Bitmap+1193=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+1184 a|RorMC0,x Bitmap+1184=a Bitmap+1185=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+1176 a|RorMC0,x Bitmap+1176=a Bitmap+1177=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+1168 a|SwapMF0,x Bitmap+1168=a Bitmap+1169=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+1160 a|SwapMF0,x Bitmap+1160=a Bitmap+1161=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+1152 a|SwapMF0,x Bitmap+1152=a Bitmap+1153=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+1144 a|RolMFC,x Bitmap+1144=a Bitmap+1145=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+1136 Bitmap+1136=a Bitmap+1137=a
+	/*byte 39*/ y=12 a=(ptrB),y Bitmap+1272=a Bitmap+1273=a
+
+// line 13  -  [5 12 22 26]
+	x=Bitmap+1274
+	/*byte 38*/ a=x x=Bitmap+1266 Bitmap+1266=a Bitmap+1267=a
+	/*byte 37*/ a=x x=Bitmap+1258 Bitmap+1258=a Bitmap+1259=a
+	/*byte 36*/ a=x x=Bitmap+1250 Bitmap+1250=a Bitmap+1251=a
+	/*byte 35*/ a=x x=Bitmap+1242 Bitmap+1242=a Bitmap+1243=a
+	/*byte 34*/ a=x x=Bitmap+1234 Bitmap+1234=a Bitmap+1235=a
+	/*byte 33*/ a=x x=Bitmap+1226 Bitmap+1226=a Bitmap+1227=a
+	/*byte 32*/ a=x a&0x0F a|RorM30,x x=Bitmap+1218 a|RorMC0,x Bitmap+1218=a Bitmap+1219=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+1210 a|RorMC0,x Bitmap+1210=a Bitmap+1211=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+1202 a|RorMC0,x Bitmap+1202=a Bitmap+1203=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+1194 a|RorMC0,x Bitmap+1194=a Bitmap+1195=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+1186 a|RorMC0,x Bitmap+1186=a Bitmap+1187=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+1178 a|RorMC0,x Bitmap+1178=a Bitmap+1179=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+1170 a|SwapMF0,x Bitmap+1170=a Bitmap+1171=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+1162 a|SwapMF0,x Bitmap+1162=a Bitmap+1163=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+1154 a|SwapMF0,x Bitmap+1154=a Bitmap+1155=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+1146 a|RolMFC,x Bitmap+1146=a Bitmap+1147=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+1138 Bitmap+1138=a Bitmap+1139=a
+	/*byte 39*/ y=13 a=(ptrB),y Bitmap+1274=a Bitmap+1275=a
+
+// line 14  -  [5 12 21 27]
+	x=Bitmap+1276
+	/*byte 38*/ a=x x=Bitmap+1268 Bitmap+1268=a Bitmap+1269=a
+	/*byte 37*/ a=x x=Bitmap+1260 Bitmap+1260=a Bitmap+1261=a
+	/*byte 36*/ a=x x=Bitmap+1252 Bitmap+1252=a Bitmap+1253=a
+	/*byte 35*/ a=x x=Bitmap+1244 Bitmap+1244=a Bitmap+1245=a
+	/*byte 34*/ a=x x=Bitmap+1236 Bitmap+1236=a Bitmap+1237=a
+	/*byte 33*/ a=x x=Bitmap+1228 Bitmap+1228=a Bitmap+1229=a
+	/*byte 32*/ a=x a&0x3F x=Bitmap+1220 a|RorMC0,x Bitmap+1220=a Bitmap+1221=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+1212 a|RorMC0,x Bitmap+1212=a Bitmap+1213=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+1204 a|RorMC0,x Bitmap+1204=a Bitmap+1205=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+1196 a|RorMC0,x Bitmap+1196=a Bitmap+1197=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+1188 a|RorMC0,x Bitmap+1188=a Bitmap+1189=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+1180 a|RorMC0,x Bitmap+1180=a Bitmap+1181=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+1172 a|SwapMF0,x Bitmap+1172=a Bitmap+1173=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+1164 a|SwapMF0,x Bitmap+1164=a Bitmap+1165=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+1156 a|SwapMF0,x Bitmap+1156=a Bitmap+1157=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+1148 a|RolMFC,x Bitmap+1148=a Bitmap+1149=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+1140 Bitmap+1140=a Bitmap+1141=a
+	/*byte 39*/ y=14 a=(ptrB),y Bitmap+1276=a Bitmap+1277=a
+
+// line 15  -  [5 12 22 27]
+	x=Bitmap+1278
+	/*byte 38*/ a=x x=Bitmap+1270 Bitmap+1270=a Bitmap+1271=a
+	/*byte 37*/ a=x x=Bitmap+1262 Bitmap+1262=a Bitmap+1263=a
+	/*byte 36*/ a=x x=Bitmap+1254 Bitmap+1254=a Bitmap+1255=a
+	/*byte 35*/ a=x x=Bitmap+1246 Bitmap+1246=a Bitmap+1247=a
+	/*byte 34*/ a=x x=Bitmap+1238 Bitmap+1238=a Bitmap+1239=a
+	/*byte 33*/ a=x x=Bitmap+1230 Bitmap+1230=a Bitmap+1231=a
+	/*byte 32*/ a=x a&0x3F x=Bitmap+1222 a|RorMC0,x Bitmap+1222=a Bitmap+1223=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+1214 a|RorMC0,x Bitmap+1214=a Bitmap+1215=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+1206 a|RorMC0,x Bitmap+1206=a Bitmap+1207=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+1198 a|RorMC0,x Bitmap+1198=a Bitmap+1199=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+1190 a|RorMC0,x Bitmap+1190=a Bitmap+1191=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+1182 a|RorMC0,x Bitmap+1182=a Bitmap+1183=a
+	/*byte 26*/ a=SwapM0C,x a|RorM03,x x=Bitmap+1174 a|SwapMF0,x Bitmap+1174=a Bitmap+1175=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+1166 a|SwapMF0,x Bitmap+1166=a Bitmap+1167=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+1158 a|SwapMF0,x Bitmap+1158=a Bitmap+1159=a
+	/*byte 23*/ a=SwapM03,x x=Bitmap+1150 a|RolMFC,x Bitmap+1150=a Bitmap+1151=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+1142 a|RolM0C,x Bitmap+1142=a Bitmap+1143=a
+	/*byte 39*/ y=15 a=(ptrB),y Bitmap+1278=a Bitmap+1279=a
+
+// line 16  -  [5 12 21 28]
+	x=Bitmap+1592
+	/*byte 38*/ a=x x=Bitmap+1584 Bitmap+1584=a Bitmap+1585=a
+	/*byte 37*/ a=x x=Bitmap+1576 Bitmap+1576=a Bitmap+1577=a
+	/*byte 36*/ a=x x=Bitmap+1568 Bitmap+1568=a Bitmap+1569=a
+	/*byte 35*/ a=x x=Bitmap+1560 Bitmap+1560=a Bitmap+1561=a
+	/*byte 34*/ a=x x=Bitmap+1552 Bitmap+1552=a Bitmap+1553=a
+	/*byte 33*/ a=x x=Bitmap+1544 Bitmap+1544=a Bitmap+1545=a
+	/*byte 32*/ a=x x=Bitmap+1536 Bitmap+1536=a Bitmap+1537=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+1528 a|RorMC0,x Bitmap+1528=a Bitmap+1529=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+1520 a|RorMC0,x Bitmap+1520=a Bitmap+1521=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+1512 a|RorMC0,x Bitmap+1512=a Bitmap+1513=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+1504 a|RorMC0,x Bitmap+1504=a Bitmap+1505=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+1496 a|RorMC0,x Bitmap+1496=a Bitmap+1497=a
+	/*byte 26*/ a=SwapM0C,x a|RorM03,x x=Bitmap+1488 a|SwapMF0,x Bitmap+1488=a Bitmap+1489=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+1480 a|SwapMF0,x Bitmap+1480=a Bitmap+1481=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+1472 a|SwapMF0,x Bitmap+1472=a Bitmap+1473=a
+	/*byte 23*/ a=SwapM03,x x=Bitmap+1464 a|RolMFC,x Bitmap+1464=a Bitmap+1465=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+1456 a|RolM0C,x Bitmap+1456=a Bitmap+1457=a
+	/*byte 39*/ y=16 a=(ptrB),y Bitmap+1592=a Bitmap+1593=a
+
+// line 17  -  [5 12 21 28]
+	x=Bitmap+1594
+	/*byte 38*/ a=x x=Bitmap+1586 Bitmap+1586=a Bitmap+1587=a
+	/*byte 37*/ a=x x=Bitmap+1578 Bitmap+1578=a Bitmap+1579=a
+	/*byte 36*/ a=x x=Bitmap+1570 Bitmap+1570=a Bitmap+1571=a
+	/*byte 35*/ a=x x=Bitmap+1562 Bitmap+1562=a Bitmap+1563=a
+	/*byte 34*/ a=x x=Bitmap+1554 Bitmap+1554=a Bitmap+1555=a
+	/*byte 33*/ a=x x=Bitmap+1546 Bitmap+1546=a Bitmap+1547=a
+	/*byte 32*/ a=x x=Bitmap+1538 Bitmap+1538=a Bitmap+1539=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+1530 a|RorMC0,x Bitmap+1530=a Bitmap+1531=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+1522 a|RorMC0,x Bitmap+1522=a Bitmap+1523=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+1514 a|RorMC0,x Bitmap+1514=a Bitmap+1515=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+1506 a|RorMC0,x Bitmap+1506=a Bitmap+1507=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+1498 a|RorMC0,x Bitmap+1498=a Bitmap+1499=a
+	/*byte 26*/ a=SwapM0C,x a|RorM03,x x=Bitmap+1490 a|SwapMF0,x Bitmap+1490=a Bitmap+1491=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+1482 a|SwapMF0,x Bitmap+1482=a Bitmap+1483=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+1474 a|SwapMF0,x Bitmap+1474=a Bitmap+1475=a
+	/*byte 23*/ a=SwapM03,x x=Bitmap+1466 a|RolMFC,x Bitmap+1466=a Bitmap+1467=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+1458 a|RolM0C,x Bitmap+1458=a Bitmap+1459=a
+	/*byte 39*/ y=17 a=(ptrB),y Bitmap+1594=a Bitmap+1595=a
+
+// line 18  -  [6 11 21 29]
+	x=Bitmap+1596
+	/*byte 38*/ a=x x=Bitmap+1588 Bitmap+1588=a Bitmap+1589=a
+	/*byte 37*/ a=x x=Bitmap+1580 Bitmap+1580=a Bitmap+1581=a
+	/*byte 36*/ a=x x=Bitmap+1572 Bitmap+1572=a Bitmap+1573=a
+	/*byte 35*/ a=x x=Bitmap+1564 Bitmap+1564=a Bitmap+1565=a
+	/*byte 34*/ a=x x=Bitmap+1556 Bitmap+1556=a Bitmap+1557=a
+	/*byte 33*/ a=x x=Bitmap+1548 Bitmap+1548=a Bitmap+1549=a
+	/*byte 32*/ a=x x=Bitmap+1540 Bitmap+1540=a Bitmap+1541=a
+	/*byte 31*/ a=x a&0x03 a|RorM3C,x x=Bitmap+1532 a|RorMC0,x Bitmap+1532=a Bitmap+1533=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+1524 a|RorMC0,x Bitmap+1524=a Bitmap+1525=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+1516 a|RorMC0,x Bitmap+1516=a Bitmap+1517=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+1508 a|RorMC0,x Bitmap+1508=a Bitmap+1509=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+1500 a|RorMC0,x Bitmap+1500=a Bitmap+1501=a
+	/*byte 26*/ a=RorM0F,x x=Bitmap+1492 a|SwapMF0,x Bitmap+1492=a Bitmap+1493=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+1484 a|SwapMF0,x Bitmap+1484=a Bitmap+1485=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+1476 a|SwapMF0,x Bitmap+1476=a Bitmap+1477=a
+	/*byte 23*/ a=SwapM03,x x=Bitmap+1468 a|RolMFC,x Bitmap+1468=a Bitmap+1469=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+1460 a|RolM3C,x Bitmap+1460=a Bitmap+1461=a
+	/*byte 39*/ y=18 a=(ptrB),y Bitmap+1596=a Bitmap+1597=a
+
+// line 19  -  [5 12 21 29]
+	x=Bitmap+1598
+	/*byte 38*/ a=x x=Bitmap+1590 Bitmap+1590=a Bitmap+1591=a
+	/*byte 37*/ a=x x=Bitmap+1582 Bitmap+1582=a Bitmap+1583=a
+	/*byte 36*/ a=x x=Bitmap+1574 Bitmap+1574=a Bitmap+1575=a
+	/*byte 35*/ a=x x=Bitmap+1566 Bitmap+1566=a Bitmap+1567=a
+	/*byte 34*/ a=x x=Bitmap+1558 Bitmap+1558=a Bitmap+1559=a
+	/*byte 33*/ a=x x=Bitmap+1550 Bitmap+1550=a Bitmap+1551=a
+	/*byte 32*/ a=x x=Bitmap+1542 Bitmap+1542=a Bitmap+1543=a
+	/*byte 31*/ a=x a&0x03 a|RorM3C,x x=Bitmap+1534 a|RorMC0,x Bitmap+1534=a Bitmap+1535=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+1526 a|RorMC0,x Bitmap+1526=a Bitmap+1527=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+1518 a|RorMC0,x Bitmap+1518=a Bitmap+1519=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+1510 a|RorMC0,x Bitmap+1510=a Bitmap+1511=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+1502 a|RorMC0,x Bitmap+1502=a Bitmap+1503=a
+	/*byte 26*/ a=RorM0F,x x=Bitmap+1494 a|SwapMF0,x Bitmap+1494=a Bitmap+1495=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+1486 a|SwapMF0,x Bitmap+1486=a Bitmap+1487=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+1478 a|SwapMF0,x Bitmap+1478=a Bitmap+1479=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+1470 a|RolMF0,x Bitmap+1470=a Bitmap+1471=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+1462 a|RolM3C,x Bitmap+1462=a Bitmap+1463=a
+	/*byte 39*/ y=19 a=(ptrB),y Bitmap+1598=a Bitmap+1599=a
+
+// line 20  -  [5 12 21 29]
+	x=Bitmap+1912
+	/*byte 38*/ a=x x=Bitmap+1904 Bitmap+1904=a Bitmap+1905=a
+	/*byte 37*/ a=x x=Bitmap+1896 Bitmap+1896=a Bitmap+1897=a
+	/*byte 36*/ a=x x=Bitmap+1888 Bitmap+1888=a Bitmap+1889=a
+	/*byte 35*/ a=x x=Bitmap+1880 Bitmap+1880=a Bitmap+1881=a
+	/*byte 34*/ a=x x=Bitmap+1872 Bitmap+1872=a Bitmap+1873=a
+	/*byte 33*/ a=x x=Bitmap+1864 Bitmap+1864=a Bitmap+1865=a
+	/*byte 32*/ a=x x=Bitmap+1856 Bitmap+1856=a Bitmap+1857=a
+	/*byte 31*/ a=x a&0x03 a|RorM3C,x x=Bitmap+1848 a|RorMC0,x Bitmap+1848=a Bitmap+1849=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+1840 a|RorMC0,x Bitmap+1840=a Bitmap+1841=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+1832 a|RorMC0,x Bitmap+1832=a Bitmap+1833=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+1824 a|RorMC0,x Bitmap+1824=a Bitmap+1825=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+1816 a|RorMC0,x Bitmap+1816=a Bitmap+1817=a
+	/*byte 26*/ a=RorM0F,x x=Bitmap+1808 a|SwapMF0,x Bitmap+1808=a Bitmap+1809=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+1800 a|SwapMF0,x Bitmap+1800=a Bitmap+1801=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+1792 a|SwapMF0,x Bitmap+1792=a Bitmap+1793=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+1784 a|RolMF0,x Bitmap+1784=a Bitmap+1785=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+1776 a|RolM3C,x Bitmap+1776=a Bitmap+1777=a
+	/*byte 39*/ y=20 a=(ptrB),y Bitmap+1912=a Bitmap+1913=a
+
+// line 21  -  [5 11 21 30]
+	x=Bitmap+1914
+	/*byte 38*/ a=x x=Bitmap+1906 Bitmap+1906=a Bitmap+1907=a
+	/*byte 37*/ a=x x=Bitmap+1898 Bitmap+1898=a Bitmap+1899=a
+	/*byte 36*/ a=x x=Bitmap+1890 Bitmap+1890=a Bitmap+1891=a
+	/*byte 35*/ a=x x=Bitmap+1882 Bitmap+1882=a Bitmap+1883=a
+	/*byte 34*/ a=x x=Bitmap+1874 Bitmap+1874=a Bitmap+1875=a
+	/*byte 33*/ a=x x=Bitmap+1866 Bitmap+1866=a Bitmap+1867=a
+	/*byte 32*/ a=x x=Bitmap+1858 Bitmap+1858=a Bitmap+1859=a
+	/*byte 31*/ a=x a&0x0F a|RorM30,x x=Bitmap+1850 a|RorMC0,x Bitmap+1850=a Bitmap+1851=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+1842 a|RorMC0,x Bitmap+1842=a Bitmap+1843=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+1834 a|RorMC0,x Bitmap+1834=a Bitmap+1835=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+1826 a|RorMC0,x Bitmap+1826=a Bitmap+1827=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+1818 a|RorMC0,x Bitmap+1818=a Bitmap+1819=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+1810 a|SwapMC0,x Bitmap+1810=a Bitmap+1811=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+1802 a|SwapMF0,x Bitmap+1802=a Bitmap+1803=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+1794 a|SwapMF0,x Bitmap+1794=a Bitmap+1795=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+1786 a|RolMF0,x Bitmap+1786=a Bitmap+1787=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+1778 a|RolM3C,x Bitmap+1778=a Bitmap+1779=a
+	/*byte 39*/ y=21 a=(ptrB),y Bitmap+1914=a Bitmap+1915=a
+
+// line 22  -  [5 11 21 30]
+	x=Bitmap+1916
+	/*byte 38*/ a=x x=Bitmap+1908 Bitmap+1908=a Bitmap+1909=a
+	/*byte 37*/ a=x x=Bitmap+1900 Bitmap+1900=a Bitmap+1901=a
+	/*byte 36*/ a=x x=Bitmap+1892 Bitmap+1892=a Bitmap+1893=a
+	/*byte 35*/ a=x x=Bitmap+1884 Bitmap+1884=a Bitmap+1885=a
+	/*byte 34*/ a=x x=Bitmap+1876 Bitmap+1876=a Bitmap+1877=a
+	/*byte 33*/ a=x x=Bitmap+1868 Bitmap+1868=a Bitmap+1869=a
+	/*byte 32*/ a=x x=Bitmap+1860 Bitmap+1860=a Bitmap+1861=a
+	/*byte 31*/ a=x a&0x0F a|RorM30,x x=Bitmap+1852 a|RorMC0,x Bitmap+1852=a Bitmap+1853=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+1844 a|RorMC0,x Bitmap+1844=a Bitmap+1845=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+1836 a|RorMC0,x Bitmap+1836=a Bitmap+1837=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+1828 a|RorMC0,x Bitmap+1828=a Bitmap+1829=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+1820 a|RorMC0,x Bitmap+1820=a Bitmap+1821=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+1812 a|SwapMC0,x Bitmap+1812=a Bitmap+1813=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+1804 a|SwapMF0,x Bitmap+1804=a Bitmap+1805=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+1796 a|SwapMF0,x Bitmap+1796=a Bitmap+1797=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+1788 a|RolMF0,x Bitmap+1788=a Bitmap+1789=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+1780 a|RolM3C,x Bitmap+1780=a Bitmap+1781=a
+	/*byte 39*/ y=22 a=(ptrB),y Bitmap+1916=a Bitmap+1917=a
+
+// line 23  -  [5 12 21 30]
+	x=Bitmap+1918
+	/*byte 38*/ a=x x=Bitmap+1910 Bitmap+1910=a Bitmap+1911=a
+	/*byte 37*/ a=x x=Bitmap+1902 Bitmap+1902=a Bitmap+1903=a
+	/*byte 36*/ a=x x=Bitmap+1894 Bitmap+1894=a Bitmap+1895=a
+	/*byte 35*/ a=x x=Bitmap+1886 Bitmap+1886=a Bitmap+1887=a
+	/*byte 34*/ a=x x=Bitmap+1878 Bitmap+1878=a Bitmap+1879=a
+	/*byte 33*/ a=x x=Bitmap+1870 Bitmap+1870=a Bitmap+1871=a
+	/*byte 32*/ a=x x=Bitmap+1862 Bitmap+1862=a Bitmap+1863=a
+	/*byte 31*/ a=x a&0x0F a|RorM30,x x=Bitmap+1854 a|RorMC0,x Bitmap+1854=a Bitmap+1855=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+1846 a|RorMC0,x Bitmap+1846=a Bitmap+1847=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+1838 a|RorMC0,x Bitmap+1838=a Bitmap+1839=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+1830 a|RorMC0,x Bitmap+1830=a Bitmap+1831=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+1822 a|RorMC0,x Bitmap+1822=a Bitmap+1823=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+1814 a|SwapMC0,x Bitmap+1814=a Bitmap+1815=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+1806 a|SwapMF0,x Bitmap+1806=a Bitmap+1807=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+1798 a|SwapMF0,x Bitmap+1798=a Bitmap+1799=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+1790 a|RolMC0,x a|SwapM30,x Bitmap+1790=a Bitmap+1791=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+1782 a|RolMFC,x Bitmap+1782=a Bitmap+1783=a
+	/*byte 39*/ y=23 a=(ptrB),y Bitmap+1918=a Bitmap+1919=a
+
+// line 24  -  [5 12 20 31]
+	x=Bitmap+2232
+	/*byte 38*/ a=x x=Bitmap+2224 Bitmap+2224=a Bitmap+2225=a
+	/*byte 37*/ a=x x=Bitmap+2216 Bitmap+2216=a Bitmap+2217=a
+	/*byte 36*/ a=x x=Bitmap+2208 Bitmap+2208=a Bitmap+2209=a
+	/*byte 35*/ a=x x=Bitmap+2200 Bitmap+2200=a Bitmap+2201=a
+	/*byte 34*/ a=x x=Bitmap+2192 Bitmap+2192=a Bitmap+2193=a
+	/*byte 33*/ a=x x=Bitmap+2184 Bitmap+2184=a Bitmap+2185=a
+	/*byte 32*/ a=x x=Bitmap+2176 Bitmap+2176=a Bitmap+2177=a
+	/*byte 31*/ a=x a&0x3F x=Bitmap+2168 a|RorMC0,x Bitmap+2168=a Bitmap+2169=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+2160 a|RorMC0,x Bitmap+2160=a Bitmap+2161=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+2152 a|RorMC0,x Bitmap+2152=a Bitmap+2153=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+2144 a|RorMC0,x Bitmap+2144=a Bitmap+2145=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+2136 a|RorMC0,x Bitmap+2136=a Bitmap+2137=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+2128 a|SwapMC0,x Bitmap+2128=a Bitmap+2129=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+2120 a|SwapMF0,x Bitmap+2120=a Bitmap+2121=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+2112 a|SwapMF0,x Bitmap+2112=a Bitmap+2113=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+2104 a|RolMC0,x a|SwapM30,x Bitmap+2104=a Bitmap+2105=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+2096 a|RolMFC,x Bitmap+2096=a Bitmap+2097=a
+	/*byte 39*/ y=24 a=(ptrB),y Bitmap+2232=a Bitmap+2233=a
+
+// line 25  -  [5 11 21 31]
+	x=Bitmap+2234
+	/*byte 38*/ a=x x=Bitmap+2226 Bitmap+2226=a Bitmap+2227=a
+	/*byte 37*/ a=x x=Bitmap+2218 Bitmap+2218=a Bitmap+2219=a
+	/*byte 36*/ a=x x=Bitmap+2210 Bitmap+2210=a Bitmap+2211=a
+	/*byte 35*/ a=x x=Bitmap+2202 Bitmap+2202=a Bitmap+2203=a
+	/*byte 34*/ a=x x=Bitmap+2194 Bitmap+2194=a Bitmap+2195=a
+	/*byte 33*/ a=x x=Bitmap+2186 Bitmap+2186=a Bitmap+2187=a
+	/*byte 32*/ a=x x=Bitmap+2178 Bitmap+2178=a Bitmap+2179=a
+	/*byte 31*/ a=x a&0x3F x=Bitmap+2170 a|RorMC0,x Bitmap+2170=a Bitmap+2171=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+2162 a|RorMC0,x Bitmap+2162=a Bitmap+2163=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+2154 a|RorMC0,x Bitmap+2154=a Bitmap+2155=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+2146 a|RorMC0,x Bitmap+2146=a Bitmap+2147=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+2138 a|RorMC0,x Bitmap+2138=a Bitmap+2139=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+2130 a|RorMC0,x Bitmap+2130=a Bitmap+2131=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+2122 a|SwapMF0,x Bitmap+2122=a Bitmap+2123=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+2114 a|SwapMF0,x Bitmap+2114=a Bitmap+2115=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+2106 a|RolMC0,x a|SwapM30,x Bitmap+2106=a Bitmap+2107=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+2098 a|RolMFC,x Bitmap+2098=a Bitmap+2099=a
+	/*byte 39*/ y=25 a=(ptrB),y Bitmap+2234=a Bitmap+2235=a
+
+// line 26  -  [5 11 21 31]
+	x=Bitmap+2236
+	/*byte 38*/ a=x x=Bitmap+2228 Bitmap+2228=a Bitmap+2229=a
+	/*byte 37*/ a=x x=Bitmap+2220 Bitmap+2220=a Bitmap+2221=a
+	/*byte 36*/ a=x x=Bitmap+2212 Bitmap+2212=a Bitmap+2213=a
+	/*byte 35*/ a=x x=Bitmap+2204 Bitmap+2204=a Bitmap+2205=a
+	/*byte 34*/ a=x x=Bitmap+2196 Bitmap+2196=a Bitmap+2197=a
+	/*byte 33*/ a=x x=Bitmap+2188 Bitmap+2188=a Bitmap+2189=a
+	/*byte 32*/ a=x x=Bitmap+2180 Bitmap+2180=a Bitmap+2181=a
+	/*byte 31*/ a=x a&0x3F x=Bitmap+2172 a|RorMC0,x Bitmap+2172=a Bitmap+2173=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+2164 a|RorMC0,x Bitmap+2164=a Bitmap+2165=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+2156 a|RorMC0,x Bitmap+2156=a Bitmap+2157=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+2148 a|RorMC0,x Bitmap+2148=a Bitmap+2149=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+2140 a|RorMC0,x Bitmap+2140=a Bitmap+2141=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+2132 a|RorMC0,x Bitmap+2132=a Bitmap+2133=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+2124 a|SwapMF0,x Bitmap+2124=a Bitmap+2125=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+2116 a|SwapMF0,x Bitmap+2116=a Bitmap+2117=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+2108 a|RolMC0,x a|SwapM30,x Bitmap+2108=a Bitmap+2109=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+2100 a|RolMFC,x Bitmap+2100=a Bitmap+2101=a
+	/*byte 39*/ y=26 a=(ptrB),y Bitmap+2236=a Bitmap+2237=a
+
+// line 27  -  [6 11 20 32]
+	x=Bitmap+2238
+	/*byte 38*/ a=x x=Bitmap+2230 Bitmap+2230=a Bitmap+2231=a
+	/*byte 37*/ a=x x=Bitmap+2222 Bitmap+2222=a Bitmap+2223=a
+	/*byte 36*/ a=x x=Bitmap+2214 Bitmap+2214=a Bitmap+2215=a
+	/*byte 35*/ a=x x=Bitmap+2206 Bitmap+2206=a Bitmap+2207=a
+	/*byte 34*/ a=x x=Bitmap+2198 Bitmap+2198=a Bitmap+2199=a
+	/*byte 33*/ a=x x=Bitmap+2190 Bitmap+2190=a Bitmap+2191=a
+	/*byte 32*/ a=x x=Bitmap+2182 Bitmap+2182=a Bitmap+2183=a
+	/*byte 31*/ a=x x=Bitmap+2174 Bitmap+2174=a Bitmap+2175=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+2166 a|RorMC0,x Bitmap+2166=a Bitmap+2167=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+2158 a|RorMC0,x Bitmap+2158=a Bitmap+2159=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+2150 a|RorMC0,x Bitmap+2150=a Bitmap+2151=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+2142 a|RorMC0,x Bitmap+2142=a Bitmap+2143=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+2134 a|RorMC0,x Bitmap+2134=a Bitmap+2135=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+2126 a|SwapMF0,x Bitmap+2126=a Bitmap+2127=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+2118 a|SwapMF0,x Bitmap+2118=a Bitmap+2119=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+2110 a|RolMC0,x a|SwapM30,x Bitmap+2110=a Bitmap+2111=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+2102 a|RolMFC,x Bitmap+2102=a Bitmap+2103=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+2094 Bitmap+2094=a Bitmap+2095=a
+	/*byte 39*/ y=27 a=(ptrB),y Bitmap+2238=a Bitmap+2239=a
+
+// line 28  -  [5 12 20 32]
+	x=Bitmap+2552
+	/*byte 38*/ a=x x=Bitmap+2544 Bitmap+2544=a Bitmap+2545=a
+	/*byte 37*/ a=x x=Bitmap+2536 Bitmap+2536=a Bitmap+2537=a
+	/*byte 36*/ a=x x=Bitmap+2528 Bitmap+2528=a Bitmap+2529=a
+	/*byte 35*/ a=x x=Bitmap+2520 Bitmap+2520=a Bitmap+2521=a
+	/*byte 34*/ a=x x=Bitmap+2512 Bitmap+2512=a Bitmap+2513=a
+	/*byte 33*/ a=x x=Bitmap+2504 Bitmap+2504=a Bitmap+2505=a
+	/*byte 32*/ a=x x=Bitmap+2496 Bitmap+2496=a Bitmap+2497=a
+	/*byte 31*/ a=x x=Bitmap+2488 Bitmap+2488=a Bitmap+2489=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+2480 a|RorMC0,x Bitmap+2480=a Bitmap+2481=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+2472 a|RorMC0,x Bitmap+2472=a Bitmap+2473=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+2464 a|RorMC0,x Bitmap+2464=a Bitmap+2465=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+2456 a|RorMC0,x Bitmap+2456=a Bitmap+2457=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+2448 a|RorMC0,x Bitmap+2448=a Bitmap+2449=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+2440 a|SwapMF0,x Bitmap+2440=a Bitmap+2441=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+2432 a|SwapMF0,x Bitmap+2432=a Bitmap+2433=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+2424 a|SwapMF0,x Bitmap+2424=a Bitmap+2425=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+2416 a|RolMFC,x Bitmap+2416=a Bitmap+2417=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+2408 Bitmap+2408=a Bitmap+2409=a
+	/*byte 39*/ y=28 a=(ptrB),y Bitmap+2552=a Bitmap+2553=a
+
+// line 29  -  [5 12 20 32]
+	x=Bitmap+2554
+	/*byte 38*/ a=x x=Bitmap+2546 Bitmap+2546=a Bitmap+2547=a
+	/*byte 37*/ a=x x=Bitmap+2538 Bitmap+2538=a Bitmap+2539=a
+	/*byte 36*/ a=x x=Bitmap+2530 Bitmap+2530=a Bitmap+2531=a
+	/*byte 35*/ a=x x=Bitmap+2522 Bitmap+2522=a Bitmap+2523=a
+	/*byte 34*/ a=x x=Bitmap+2514 Bitmap+2514=a Bitmap+2515=a
+	/*byte 33*/ a=x x=Bitmap+2506 Bitmap+2506=a Bitmap+2507=a
+	/*byte 32*/ a=x x=Bitmap+2498 Bitmap+2498=a Bitmap+2499=a
+	/*byte 31*/ a=x x=Bitmap+2490 Bitmap+2490=a Bitmap+2491=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+2482 a|RorMC0,x Bitmap+2482=a Bitmap+2483=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+2474 a|RorMC0,x Bitmap+2474=a Bitmap+2475=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+2466 a|RorMC0,x Bitmap+2466=a Bitmap+2467=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+2458 a|RorMC0,x Bitmap+2458=a Bitmap+2459=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+2450 a|RorMC0,x Bitmap+2450=a Bitmap+2451=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+2442 a|SwapMF0,x Bitmap+2442=a Bitmap+2443=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+2434 a|SwapMF0,x Bitmap+2434=a Bitmap+2435=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+2426 a|SwapMF0,x Bitmap+2426=a Bitmap+2427=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+2418 a|RolMFC,x Bitmap+2418=a Bitmap+2419=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+2410 Bitmap+2410=a Bitmap+2411=a
+	/*byte 39*/ y=29 a=(ptrB),y Bitmap+2554=a Bitmap+2555=a
+
+// line 30  -  [5 11 21 32]
+	x=Bitmap+2556
+	/*byte 38*/ a=x x=Bitmap+2548 Bitmap+2548=a Bitmap+2549=a
+	/*byte 37*/ a=x x=Bitmap+2540 Bitmap+2540=a Bitmap+2541=a
+	/*byte 36*/ a=x x=Bitmap+2532 Bitmap+2532=a Bitmap+2533=a
+	/*byte 35*/ a=x x=Bitmap+2524 Bitmap+2524=a Bitmap+2525=a
+	/*byte 34*/ a=x x=Bitmap+2516 Bitmap+2516=a Bitmap+2517=a
+	/*byte 33*/ a=x x=Bitmap+2508 Bitmap+2508=a Bitmap+2509=a
+	/*byte 32*/ a=x x=Bitmap+2500 Bitmap+2500=a Bitmap+2501=a
+	/*byte 31*/ a=x x=Bitmap+2492 Bitmap+2492=a Bitmap+2493=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+2484 a|RorMC0,x Bitmap+2484=a Bitmap+2485=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+2476 a|RorMC0,x Bitmap+2476=a Bitmap+2477=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+2468 a|RorMC0,x Bitmap+2468=a Bitmap+2469=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+2460 a|RorMC0,x Bitmap+2460=a Bitmap+2461=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+2452 a|RorMC0,x Bitmap+2452=a Bitmap+2453=a
+	/*byte 25*/ a=SwapM0C,x a|RorM03,x x=Bitmap+2444 a|SwapMF0,x Bitmap+2444=a Bitmap+2445=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+2436 a|SwapMF0,x Bitmap+2436=a Bitmap+2437=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+2428 a|SwapMF0,x Bitmap+2428=a Bitmap+2429=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+2420 a|RolMFC,x Bitmap+2420=a Bitmap+2421=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+2412 Bitmap+2412=a Bitmap+2413=a
+	/*byte 39*/ y=30 a=(ptrB),y Bitmap+2556=a Bitmap+2557=a
+
+// line 31  -  [5 11 21 32]
+	x=Bitmap+2558
+	/*byte 38*/ a=x x=Bitmap+2550 Bitmap+2550=a Bitmap+2551=a
+	/*byte 37*/ a=x x=Bitmap+2542 Bitmap+2542=a Bitmap+2543=a
+	/*byte 36*/ a=x x=Bitmap+2534 Bitmap+2534=a Bitmap+2535=a
+	/*byte 35*/ a=x x=Bitmap+2526 Bitmap+2526=a Bitmap+2527=a
+	/*byte 34*/ a=x x=Bitmap+2518 Bitmap+2518=a Bitmap+2519=a
+	/*byte 33*/ a=x x=Bitmap+2510 Bitmap+2510=a Bitmap+2511=a
+	/*byte 32*/ a=x x=Bitmap+2502 Bitmap+2502=a Bitmap+2503=a
+	/*byte 31*/ a=x x=Bitmap+2494 Bitmap+2494=a Bitmap+2495=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+2486 a|RorMC0,x Bitmap+2486=a Bitmap+2487=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+2478 a|RorMC0,x Bitmap+2478=a Bitmap+2479=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+2470 a|RorMC0,x Bitmap+2470=a Bitmap+2471=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+2462 a|RorMC0,x Bitmap+2462=a Bitmap+2463=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+2454 a|RorMC0,x Bitmap+2454=a Bitmap+2455=a
+	/*byte 25*/ a=SwapM0C,x a|RorM03,x x=Bitmap+2446 a|SwapMF0,x Bitmap+2446=a Bitmap+2447=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+2438 a|SwapMF0,x Bitmap+2438=a Bitmap+2439=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+2430 a|SwapMF0,x Bitmap+2430=a Bitmap+2431=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+2422 a|RolMFC,x Bitmap+2422=a Bitmap+2423=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+2414 Bitmap+2414=a Bitmap+2415=a
+	/*byte 39*/ y=31 a=(ptrB),y Bitmap+2558=a Bitmap+2559=a
+
+// line 32  -  [5 11 20 33]
+	x=Bitmap+2872
+	/*byte 38*/ a=x x=Bitmap+2864 Bitmap+2864=a Bitmap+2865=a
+	/*byte 37*/ a=x x=Bitmap+2856 Bitmap+2856=a Bitmap+2857=a
+	/*byte 36*/ a=x x=Bitmap+2848 Bitmap+2848=a Bitmap+2849=a
+	/*byte 35*/ a=x x=Bitmap+2840 Bitmap+2840=a Bitmap+2841=a
+	/*byte 34*/ a=x x=Bitmap+2832 Bitmap+2832=a Bitmap+2833=a
+	/*byte 33*/ a=x x=Bitmap+2824 Bitmap+2824=a Bitmap+2825=a
+	/*byte 32*/ a=x x=Bitmap+2816 Bitmap+2816=a Bitmap+2817=a
+	/*byte 31*/ a=x x=Bitmap+2808 Bitmap+2808=a Bitmap+2809=a
+	/*byte 30*/ a=x a&0x03 a|RorM3C,x x=Bitmap+2800 a|RorMC0,x Bitmap+2800=a Bitmap+2801=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+2792 a|RorMC0,x Bitmap+2792=a Bitmap+2793=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+2784 a|RorMC0,x Bitmap+2784=a Bitmap+2785=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+2776 a|RorMC0,x Bitmap+2776=a Bitmap+2777=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+2768 a|RorMC0,x Bitmap+2768=a Bitmap+2769=a
+	/*byte 25*/ a=SwapM0C,x a|RorM03,x x=Bitmap+2760 a|SwapMF0,x Bitmap+2760=a Bitmap+2761=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+2752 a|SwapMF0,x Bitmap+2752=a Bitmap+2753=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+2744 a|SwapMF0,x Bitmap+2744=a Bitmap+2745=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+2736 a|RolMFC,x Bitmap+2736=a Bitmap+2737=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+2728 Bitmap+2728=a Bitmap+2729=a
+	/*byte 39*/ y=32 a=(ptrB),y Bitmap+2872=a Bitmap+2873=a
+
+// line 33  -  [5 11 20 33]
+	x=Bitmap+2874
+	/*byte 38*/ a=x x=Bitmap+2866 Bitmap+2866=a Bitmap+2867=a
+	/*byte 37*/ a=x x=Bitmap+2858 Bitmap+2858=a Bitmap+2859=a
+	/*byte 36*/ a=x x=Bitmap+2850 Bitmap+2850=a Bitmap+2851=a
+	/*byte 35*/ a=x x=Bitmap+2842 Bitmap+2842=a Bitmap+2843=a
+	/*byte 34*/ a=x x=Bitmap+2834 Bitmap+2834=a Bitmap+2835=a
+	/*byte 33*/ a=x x=Bitmap+2826 Bitmap+2826=a Bitmap+2827=a
+	/*byte 32*/ a=x x=Bitmap+2818 Bitmap+2818=a Bitmap+2819=a
+	/*byte 31*/ a=x x=Bitmap+2810 Bitmap+2810=a Bitmap+2811=a
+	/*byte 30*/ a=x a&0x03 a|RorM3C,x x=Bitmap+2802 a|RorMC0,x Bitmap+2802=a Bitmap+2803=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+2794 a|RorMC0,x Bitmap+2794=a Bitmap+2795=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+2786 a|RorMC0,x Bitmap+2786=a Bitmap+2787=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+2778 a|RorMC0,x Bitmap+2778=a Bitmap+2779=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+2770 a|RorMC0,x Bitmap+2770=a Bitmap+2771=a
+	/*byte 25*/ a=SwapM0C,x a|RorM03,x x=Bitmap+2762 a|SwapMF0,x Bitmap+2762=a Bitmap+2763=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+2754 a|SwapMF0,x Bitmap+2754=a Bitmap+2755=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+2746 a|SwapMF0,x Bitmap+2746=a Bitmap+2747=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+2738 a|RolMFC,x Bitmap+2738=a Bitmap+2739=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+2730 Bitmap+2730=a Bitmap+2731=a
+	/*byte 39*/ y=33 a=(ptrB),y Bitmap+2874=a Bitmap+2875=a
+
+// line 34  -  [5 12 20 33]
+	x=Bitmap+2876
+	/*byte 38*/ a=x x=Bitmap+2868 Bitmap+2868=a Bitmap+2869=a
+	/*byte 37*/ a=x x=Bitmap+2860 Bitmap+2860=a Bitmap+2861=a
+	/*byte 36*/ a=x x=Bitmap+2852 Bitmap+2852=a Bitmap+2853=a
+	/*byte 35*/ a=x x=Bitmap+2844 Bitmap+2844=a Bitmap+2845=a
+	/*byte 34*/ a=x x=Bitmap+2836 Bitmap+2836=a Bitmap+2837=a
+	/*byte 33*/ a=x x=Bitmap+2828 Bitmap+2828=a Bitmap+2829=a
+	/*byte 32*/ a=x x=Bitmap+2820 Bitmap+2820=a Bitmap+2821=a
+	/*byte 31*/ a=x x=Bitmap+2812 Bitmap+2812=a Bitmap+2813=a
+	/*byte 30*/ a=x a&0x03 a|RorM3C,x x=Bitmap+2804 a|RorMC0,x Bitmap+2804=a Bitmap+2805=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+2796 a|RorMC0,x Bitmap+2796=a Bitmap+2797=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+2788 a|RorMC0,x Bitmap+2788=a Bitmap+2789=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+2780 a|RorMC0,x Bitmap+2780=a Bitmap+2781=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+2772 a|RorMC0,x Bitmap+2772=a Bitmap+2773=a
+	/*byte 25*/ a=SwapM0C,x a|RorM03,x x=Bitmap+2764 a|SwapMF0,x Bitmap+2764=a Bitmap+2765=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+2756 a|SwapMF0,x Bitmap+2756=a Bitmap+2757=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+2748 a|SwapMF0,x Bitmap+2748=a Bitmap+2749=a
+	/*byte 22*/ a=SwapM03,x x=Bitmap+2740 a|RolMFC,x Bitmap+2740=a Bitmap+2741=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+2732 a|RolM0C,x Bitmap+2732=a Bitmap+2733=a
+	/*byte 39*/ y=34 a=(ptrB),y Bitmap+2876=a Bitmap+2877=a
+
+// line 35  -  [5 12 20 33]
+	x=Bitmap+2878
+	/*byte 38*/ a=x x=Bitmap+2870 Bitmap+2870=a Bitmap+2871=a
+	/*byte 37*/ a=x x=Bitmap+2862 Bitmap+2862=a Bitmap+2863=a
+	/*byte 36*/ a=x x=Bitmap+2854 Bitmap+2854=a Bitmap+2855=a
+	/*byte 35*/ a=x x=Bitmap+2846 Bitmap+2846=a Bitmap+2847=a
+	/*byte 34*/ a=x x=Bitmap+2838 Bitmap+2838=a Bitmap+2839=a
+	/*byte 33*/ a=x x=Bitmap+2830 Bitmap+2830=a Bitmap+2831=a
+	/*byte 32*/ a=x x=Bitmap+2822 Bitmap+2822=a Bitmap+2823=a
+	/*byte 31*/ a=x x=Bitmap+2814 Bitmap+2814=a Bitmap+2815=a
+	/*byte 30*/ a=x a&0x03 a|RorM3C,x x=Bitmap+2806 a|RorMC0,x Bitmap+2806=a Bitmap+2807=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+2798 a|RorMC0,x Bitmap+2798=a Bitmap+2799=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+2790 a|RorMC0,x Bitmap+2790=a Bitmap+2791=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+2782 a|RorMC0,x Bitmap+2782=a Bitmap+2783=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+2774 a|RorMC0,x Bitmap+2774=a Bitmap+2775=a
+	/*byte 25*/ a=SwapM0C,x a|RorM03,x x=Bitmap+2766 a|SwapMF0,x Bitmap+2766=a Bitmap+2767=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+2758 a|SwapMF0,x Bitmap+2758=a Bitmap+2759=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+2750 a|SwapMF0,x Bitmap+2750=a Bitmap+2751=a
+	/*byte 22*/ a=SwapM03,x x=Bitmap+2742 a|RolMFC,x Bitmap+2742=a Bitmap+2743=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+2734 a|RolM0C,x Bitmap+2734=a Bitmap+2735=a
+	/*byte 39*/ y=35 a=(ptrB),y Bitmap+2878=a Bitmap+2879=a
+
+// line 36  -  [5 11 21 33]
+	x=Bitmap+3192
+	/*byte 38*/ a=x x=Bitmap+3184 Bitmap+3184=a Bitmap+3185=a
+	/*byte 37*/ a=x x=Bitmap+3176 Bitmap+3176=a Bitmap+3177=a
+	/*byte 36*/ a=x x=Bitmap+3168 Bitmap+3168=a Bitmap+3169=a
+	/*byte 35*/ a=x x=Bitmap+3160 Bitmap+3160=a Bitmap+3161=a
+	/*byte 34*/ a=x x=Bitmap+3152 Bitmap+3152=a Bitmap+3153=a
+	/*byte 33*/ a=x x=Bitmap+3144 Bitmap+3144=a Bitmap+3145=a
+	/*byte 32*/ a=x x=Bitmap+3136 Bitmap+3136=a Bitmap+3137=a
+	/*byte 31*/ a=x x=Bitmap+3128 Bitmap+3128=a Bitmap+3129=a
+	/*byte 30*/ a=x a&0x03 a|RorM3C,x x=Bitmap+3120 a|RorMC0,x Bitmap+3120=a Bitmap+3121=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+3112 a|RorMC0,x Bitmap+3112=a Bitmap+3113=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+3104 a|RorMC0,x Bitmap+3104=a Bitmap+3105=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+3096 a|RorMC0,x Bitmap+3096=a Bitmap+3097=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+3088 a|RorMC0,x Bitmap+3088=a Bitmap+3089=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+3080 a|SwapMF0,x Bitmap+3080=a Bitmap+3081=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+3072 a|SwapMF0,x Bitmap+3072=a Bitmap+3073=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+3064 a|SwapMF0,x Bitmap+3064=a Bitmap+3065=a
+	/*byte 22*/ a=SwapM03,x x=Bitmap+3056 a|RolMFC,x Bitmap+3056=a Bitmap+3057=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+3048 a|RolM0C,x Bitmap+3048=a Bitmap+3049=a
+	/*byte 39*/ y=36 a=(ptrB),y Bitmap+3192=a Bitmap+3193=a
+
+// line 37  -  [5 11 20 34]
+	x=Bitmap+3194
+	/*byte 38*/ a=x x=Bitmap+3186 Bitmap+3186=a Bitmap+3187=a
+	/*byte 37*/ a=x x=Bitmap+3178 Bitmap+3178=a Bitmap+3179=a
+	/*byte 36*/ a=x x=Bitmap+3170 Bitmap+3170=a Bitmap+3171=a
+	/*byte 35*/ a=x x=Bitmap+3162 Bitmap+3162=a Bitmap+3163=a
+	/*byte 34*/ a=x x=Bitmap+3154 Bitmap+3154=a Bitmap+3155=a
+	/*byte 33*/ a=x x=Bitmap+3146 Bitmap+3146=a Bitmap+3147=a
+	/*byte 32*/ a=x x=Bitmap+3138 Bitmap+3138=a Bitmap+3139=a
+	/*byte 31*/ a=x x=Bitmap+3130 Bitmap+3130=a Bitmap+3131=a
+	/*byte 30*/ a=x a&0x0F a|RorM30,x x=Bitmap+3122 a|RorMC0,x Bitmap+3122=a Bitmap+3123=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+3114 a|RorMC0,x Bitmap+3114=a Bitmap+3115=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+3106 a|RorMC0,x Bitmap+3106=a Bitmap+3107=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+3098 a|RorMC0,x Bitmap+3098=a Bitmap+3099=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+3090 a|RorMC0,x Bitmap+3090=a Bitmap+3091=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+3082 a|SwapMF0,x Bitmap+3082=a Bitmap+3083=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+3074 a|SwapMF0,x Bitmap+3074=a Bitmap+3075=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+3066 a|SwapMF0,x Bitmap+3066=a Bitmap+3067=a
+	/*byte 22*/ a=SwapM03,x x=Bitmap+3058 a|RolMFC,x Bitmap+3058=a Bitmap+3059=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+3050 a|RolM0C,x Bitmap+3050=a Bitmap+3051=a
+	/*byte 39*/ y=37 a=(ptrB),y Bitmap+3194=a Bitmap+3195=a
+
+// line 38  -  [5 11 20 34]
+	x=Bitmap+3196
+	/*byte 38*/ a=x x=Bitmap+3188 Bitmap+3188=a Bitmap+3189=a
+	/*byte 37*/ a=x x=Bitmap+3180 Bitmap+3180=a Bitmap+3181=a
+	/*byte 36*/ a=x x=Bitmap+3172 Bitmap+3172=a Bitmap+3173=a
+	/*byte 35*/ a=x x=Bitmap+3164 Bitmap+3164=a Bitmap+3165=a
+	/*byte 34*/ a=x x=Bitmap+3156 Bitmap+3156=a Bitmap+3157=a
+	/*byte 33*/ a=x x=Bitmap+3148 Bitmap+3148=a Bitmap+3149=a
+	/*byte 32*/ a=x x=Bitmap+3140 Bitmap+3140=a Bitmap+3141=a
+	/*byte 31*/ a=x x=Bitmap+3132 Bitmap+3132=a Bitmap+3133=a
+	/*byte 30*/ a=x a&0x0F a|RorM30,x x=Bitmap+3124 a|RorMC0,x Bitmap+3124=a Bitmap+3125=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+3116 a|RorMC0,x Bitmap+3116=a Bitmap+3117=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+3108 a|RorMC0,x Bitmap+3108=a Bitmap+3109=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+3100 a|RorMC0,x Bitmap+3100=a Bitmap+3101=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+3092 a|RorMC0,x Bitmap+3092=a Bitmap+3093=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+3084 a|SwapMF0,x Bitmap+3084=a Bitmap+3085=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+3076 a|SwapMF0,x Bitmap+3076=a Bitmap+3077=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+3068 a|SwapMF0,x Bitmap+3068=a Bitmap+3069=a
+	/*byte 22*/ a=SwapM03,x x=Bitmap+3060 a|RolMFC,x Bitmap+3060=a Bitmap+3061=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+3052 a|RolM0C,x Bitmap+3052=a Bitmap+3053=a
+	/*byte 39*/ y=38 a=(ptrB),y Bitmap+3196=a Bitmap+3197=a
+
+// line 39  -  [5 11 20 34]
+	x=Bitmap+3198
+	/*byte 38*/ a=x x=Bitmap+3190 Bitmap+3190=a Bitmap+3191=a
+	/*byte 37*/ a=x x=Bitmap+3182 Bitmap+3182=a Bitmap+3183=a
+	/*byte 36*/ a=x x=Bitmap+3174 Bitmap+3174=a Bitmap+3175=a
+	/*byte 35*/ a=x x=Bitmap+3166 Bitmap+3166=a Bitmap+3167=a
+	/*byte 34*/ a=x x=Bitmap+3158 Bitmap+3158=a Bitmap+3159=a
+	/*byte 33*/ a=x x=Bitmap+3150 Bitmap+3150=a Bitmap+3151=a
+	/*byte 32*/ a=x x=Bitmap+3142 Bitmap+3142=a Bitmap+3143=a
+	/*byte 31*/ a=x x=Bitmap+3134 Bitmap+3134=a Bitmap+3135=a
+	/*byte 30*/ a=x a&0x0F a|RorM30,x x=Bitmap+3126 a|RorMC0,x Bitmap+3126=a Bitmap+3127=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+3118 a|RorMC0,x Bitmap+3118=a Bitmap+3119=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+3110 a|RorMC0,x Bitmap+3110=a Bitmap+3111=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+3102 a|RorMC0,x Bitmap+3102=a Bitmap+3103=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+3094 a|RorMC0,x Bitmap+3094=a Bitmap+3095=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+3086 a|SwapMF0,x Bitmap+3086=a Bitmap+3087=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+3078 a|SwapMF0,x Bitmap+3078=a Bitmap+3079=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+3070 a|SwapMF0,x Bitmap+3070=a Bitmap+3071=a
+	/*byte 22*/ a=SwapM03,x x=Bitmap+3062 a|RolMFC,x Bitmap+3062=a Bitmap+3063=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+3054 a|RolM0C,x Bitmap+3054=a Bitmap+3055=a
+	/*byte 39*/ y=39 a=(ptrB),y Bitmap+3198=a Bitmap+3199=a
+
+// line 40  -  [5 11 20 34]
+	x=Bitmap+3512
+	/*byte 38*/ a=x x=Bitmap+3504 Bitmap+3504=a Bitmap+3505=a
+	/*byte 37*/ a=x x=Bitmap+3496 Bitmap+3496=a Bitmap+3497=a
+	/*byte 36*/ a=x x=Bitmap+3488 Bitmap+3488=a Bitmap+3489=a
+	/*byte 35*/ a=x x=Bitmap+3480 Bitmap+3480=a Bitmap+3481=a
+	/*byte 34*/ a=x x=Bitmap+3472 Bitmap+3472=a Bitmap+3473=a
+	/*byte 33*/ a=x x=Bitmap+3464 Bitmap+3464=a Bitmap+3465=a
+	/*byte 32*/ a=x x=Bitmap+3456 Bitmap+3456=a Bitmap+3457=a
+	/*byte 31*/ a=x x=Bitmap+3448 Bitmap+3448=a Bitmap+3449=a
+	/*byte 30*/ a=x a&0x0F a|RorM30,x x=Bitmap+3440 a|RorMC0,x Bitmap+3440=a Bitmap+3441=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+3432 a|RorMC0,x Bitmap+3432=a Bitmap+3433=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+3424 a|RorMC0,x Bitmap+3424=a Bitmap+3425=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+3416 a|RorMC0,x Bitmap+3416=a Bitmap+3417=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+3408 a|RorMC0,x Bitmap+3408=a Bitmap+3409=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+3400 a|SwapMF0,x Bitmap+3400=a Bitmap+3401=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+3392 a|SwapMF0,x Bitmap+3392=a Bitmap+3393=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+3384 a|SwapMF0,x Bitmap+3384=a Bitmap+3385=a
+	/*byte 22*/ a=SwapM03,x x=Bitmap+3376 a|RolMFC,x Bitmap+3376=a Bitmap+3377=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+3368 a|RolM0C,x Bitmap+3368=a Bitmap+3369=a
+	/*byte 39*/ y=40 a=(ptrB),y Bitmap+3512=a Bitmap+3513=a
+
+// line 41  -  [5 11 20 34]
+	x=Bitmap+3514
+	/*byte 38*/ a=x x=Bitmap+3506 Bitmap+3506=a Bitmap+3507=a
+	/*byte 37*/ a=x x=Bitmap+3498 Bitmap+3498=a Bitmap+3499=a
+	/*byte 36*/ a=x x=Bitmap+3490 Bitmap+3490=a Bitmap+3491=a
+	/*byte 35*/ a=x x=Bitmap+3482 Bitmap+3482=a Bitmap+3483=a
+	/*byte 34*/ a=x x=Bitmap+3474 Bitmap+3474=a Bitmap+3475=a
+	/*byte 33*/ a=x x=Bitmap+3466 Bitmap+3466=a Bitmap+3467=a
+	/*byte 32*/ a=x x=Bitmap+3458 Bitmap+3458=a Bitmap+3459=a
+	/*byte 31*/ a=x x=Bitmap+3450 Bitmap+3450=a Bitmap+3451=a
+	/*byte 30*/ a=x a&0x0F a|RorM30,x x=Bitmap+3442 a|RorMC0,x Bitmap+3442=a Bitmap+3443=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+3434 a|RorMC0,x Bitmap+3434=a Bitmap+3435=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+3426 a|RorMC0,x Bitmap+3426=a Bitmap+3427=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+3418 a|RorMC0,x Bitmap+3418=a Bitmap+3419=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+3410 a|RorMC0,x Bitmap+3410=a Bitmap+3411=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+3402 a|SwapMF0,x Bitmap+3402=a Bitmap+3403=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+3394 a|SwapMF0,x Bitmap+3394=a Bitmap+3395=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+3386 a|SwapMF0,x Bitmap+3386=a Bitmap+3387=a
+	/*byte 22*/ a=SwapM03,x x=Bitmap+3378 a|RolMFC,x Bitmap+3378=a Bitmap+3379=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+3370 a|RolM0C,x Bitmap+3370=a Bitmap+3371=a
+	/*byte 39*/ y=41 a=(ptrB),y Bitmap+3514=a Bitmap+3515=a
+
+// line 42  -  [5 11 20 34]
+	x=Bitmap+3516
+	/*byte 38*/ a=x x=Bitmap+3508 Bitmap+3508=a Bitmap+3509=a
+	/*byte 37*/ a=x x=Bitmap+3500 Bitmap+3500=a Bitmap+3501=a
+	/*byte 36*/ a=x x=Bitmap+3492 Bitmap+3492=a Bitmap+3493=a
+	/*byte 35*/ a=x x=Bitmap+3484 Bitmap+3484=a Bitmap+3485=a
+	/*byte 34*/ a=x x=Bitmap+3476 Bitmap+3476=a Bitmap+3477=a
+	/*byte 33*/ a=x x=Bitmap+3468 Bitmap+3468=a Bitmap+3469=a
+	/*byte 32*/ a=x x=Bitmap+3460 Bitmap+3460=a Bitmap+3461=a
+	/*byte 31*/ a=x x=Bitmap+3452 Bitmap+3452=a Bitmap+3453=a
+	/*byte 30*/ a=x a&0x0F a|RorM30,x x=Bitmap+3444 a|RorMC0,x Bitmap+3444=a Bitmap+3445=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+3436 a|RorMC0,x Bitmap+3436=a Bitmap+3437=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+3428 a|RorMC0,x Bitmap+3428=a Bitmap+3429=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+3420 a|RorMC0,x Bitmap+3420=a Bitmap+3421=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+3412 a|RorMC0,x Bitmap+3412=a Bitmap+3413=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+3404 a|SwapMF0,x Bitmap+3404=a Bitmap+3405=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+3396 a|SwapMF0,x Bitmap+3396=a Bitmap+3397=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+3388 a|SwapMF0,x Bitmap+3388=a Bitmap+3389=a
+	/*byte 22*/ a=SwapM03,x x=Bitmap+3380 a|RolMFC,x Bitmap+3380=a Bitmap+3381=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+3372 a|RolM0C,x Bitmap+3372=a Bitmap+3373=a
+	/*byte 39*/ y=42 a=(ptrB),y Bitmap+3516=a Bitmap+3517=a
+
+// line 43  -  [5 11 20 34]
+	x=Bitmap+3518
+	/*byte 38*/ a=x x=Bitmap+3510 Bitmap+3510=a Bitmap+3511=a
+	/*byte 37*/ a=x x=Bitmap+3502 Bitmap+3502=a Bitmap+3503=a
+	/*byte 36*/ a=x x=Bitmap+3494 Bitmap+3494=a Bitmap+3495=a
+	/*byte 35*/ a=x x=Bitmap+3486 Bitmap+3486=a Bitmap+3487=a
+	/*byte 34*/ a=x x=Bitmap+3478 Bitmap+3478=a Bitmap+3479=a
+	/*byte 33*/ a=x x=Bitmap+3470 Bitmap+3470=a Bitmap+3471=a
+	/*byte 32*/ a=x x=Bitmap+3462 Bitmap+3462=a Bitmap+3463=a
+	/*byte 31*/ a=x x=Bitmap+3454 Bitmap+3454=a Bitmap+3455=a
+	/*byte 30*/ a=x a&0x0F a|RorM30,x x=Bitmap+3446 a|RorMC0,x Bitmap+3446=a Bitmap+3447=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+3438 a|RorMC0,x Bitmap+3438=a Bitmap+3439=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+3430 a|RorMC0,x Bitmap+3430=a Bitmap+3431=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+3422 a|RorMC0,x Bitmap+3422=a Bitmap+3423=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+3414 a|RorMC0,x Bitmap+3414=a Bitmap+3415=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+3406 a|SwapMF0,x Bitmap+3406=a Bitmap+3407=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+3398 a|SwapMF0,x Bitmap+3398=a Bitmap+3399=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+3390 a|SwapMF0,x Bitmap+3390=a Bitmap+3391=a
+	/*byte 22*/ a=SwapM03,x x=Bitmap+3382 a|RolMFC,x Bitmap+3382=a Bitmap+3383=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+3374 a|RolM0C,x Bitmap+3374=a Bitmap+3375=a
+	/*byte 39*/ y=43 a=(ptrB),y Bitmap+3518=a Bitmap+3519=a
+
+// line 44  -  [4 12 20 34]
+	x=Bitmap+3832
+	/*byte 38*/ a=x x=Bitmap+3824 Bitmap+3824=a Bitmap+3825=a
+	/*byte 37*/ a=x x=Bitmap+3816 Bitmap+3816=a Bitmap+3817=a
+	/*byte 36*/ a=x x=Bitmap+3808 Bitmap+3808=a Bitmap+3809=a
+	/*byte 35*/ a=x x=Bitmap+3800 Bitmap+3800=a Bitmap+3801=a
+	/*byte 34*/ a=x x=Bitmap+3792 Bitmap+3792=a Bitmap+3793=a
+	/*byte 33*/ a=x x=Bitmap+3784 Bitmap+3784=a Bitmap+3785=a
+	/*byte 32*/ a=x x=Bitmap+3776 Bitmap+3776=a Bitmap+3777=a
+	/*byte 31*/ a=x x=Bitmap+3768 Bitmap+3768=a Bitmap+3769=a
+	/*byte 30*/ a=x a&0x0F a|RorM30,x x=Bitmap+3760 a|RorMC0,x Bitmap+3760=a Bitmap+3761=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+3752 a|RorMC0,x Bitmap+3752=a Bitmap+3753=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+3744 a|RorMC0,x Bitmap+3744=a Bitmap+3745=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+3736 a|RorMC0,x Bitmap+3736=a Bitmap+3737=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+3728 a|RorMC0,x Bitmap+3728=a Bitmap+3729=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+3720 a|SwapMF0,x Bitmap+3720=a Bitmap+3721=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+3712 a|SwapMF0,x Bitmap+3712=a Bitmap+3713=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+3704 a|SwapMF0,x Bitmap+3704=a Bitmap+3705=a
+	/*byte 22*/ a=SwapM0F,x x=Bitmap+3696 a|RolMF0,x Bitmap+3696=a Bitmap+3697=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+3688 a|RolM0C,x Bitmap+3688=a Bitmap+3689=a
+	/*byte 39*/ y=44 a=(ptrB),y Bitmap+3832=a Bitmap+3833=a
+
+// line 45  -  [4 12 20 34]
+	x=Bitmap+3834
+	/*byte 38*/ a=x x=Bitmap+3826 Bitmap+3826=a Bitmap+3827=a
+	/*byte 37*/ a=x x=Bitmap+3818 Bitmap+3818=a Bitmap+3819=a
+	/*byte 36*/ a=x x=Bitmap+3810 Bitmap+3810=a Bitmap+3811=a
+	/*byte 35*/ a=x x=Bitmap+3802 Bitmap+3802=a Bitmap+3803=a
+	/*byte 34*/ a=x x=Bitmap+3794 Bitmap+3794=a Bitmap+3795=a
+	/*byte 33*/ a=x x=Bitmap+3786 Bitmap+3786=a Bitmap+3787=a
+	/*byte 32*/ a=x x=Bitmap+3778 Bitmap+3778=a Bitmap+3779=a
+	/*byte 31*/ a=x x=Bitmap+3770 Bitmap+3770=a Bitmap+3771=a
+	/*byte 30*/ a=x a&0x0F a|RorM30,x x=Bitmap+3762 a|RorMC0,x Bitmap+3762=a Bitmap+3763=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+3754 a|RorMC0,x Bitmap+3754=a Bitmap+3755=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+3746 a|RorMC0,x Bitmap+3746=a Bitmap+3747=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+3738 a|RorMC0,x Bitmap+3738=a Bitmap+3739=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+3730 a|RorMC0,x Bitmap+3730=a Bitmap+3731=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+3722 a|SwapMF0,x Bitmap+3722=a Bitmap+3723=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+3714 a|SwapMF0,x Bitmap+3714=a Bitmap+3715=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+3706 a|SwapMF0,x Bitmap+3706=a Bitmap+3707=a
+	/*byte 22*/ a=SwapM0F,x x=Bitmap+3698 a|RolMF0,x Bitmap+3698=a Bitmap+3699=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+3690 a|RolM0C,x Bitmap+3690=a Bitmap+3691=a
+	/*byte 39*/ y=45 a=(ptrB),y Bitmap+3834=a Bitmap+3835=a
+
+// line 46  -  [5 12 20 34]
+	x=Bitmap+3836
+	/*byte 38*/ a=x x=Bitmap+3828 Bitmap+3828=a Bitmap+3829=a
+	/*byte 37*/ a=x x=Bitmap+3820 Bitmap+3820=a Bitmap+3821=a
+	/*byte 36*/ a=x x=Bitmap+3812 Bitmap+3812=a Bitmap+3813=a
+	/*byte 35*/ a=x x=Bitmap+3804 Bitmap+3804=a Bitmap+3805=a
+	/*byte 34*/ a=x x=Bitmap+3796 Bitmap+3796=a Bitmap+3797=a
+	/*byte 33*/ a=x x=Bitmap+3788 Bitmap+3788=a Bitmap+3789=a
+	/*byte 32*/ a=x x=Bitmap+3780 Bitmap+3780=a Bitmap+3781=a
+	/*byte 31*/ a=x x=Bitmap+3772 Bitmap+3772=a Bitmap+3773=a
+	/*byte 30*/ a=x a&0x0F a|RorM30,x x=Bitmap+3764 a|RorMC0,x Bitmap+3764=a Bitmap+3765=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+3756 a|RorMC0,x Bitmap+3756=a Bitmap+3757=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+3748 a|RorMC0,x Bitmap+3748=a Bitmap+3749=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+3740 a|RorMC0,x Bitmap+3740=a Bitmap+3741=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+3732 a|RorMC0,x Bitmap+3732=a Bitmap+3733=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+3724 a|SwapMF0,x Bitmap+3724=a Bitmap+3725=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+3716 a|SwapMF0,x Bitmap+3716=a Bitmap+3717=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+3708 a|SwapMF0,x Bitmap+3708=a Bitmap+3709=a
+	/*byte 22*/ a=SwapM0F,x x=Bitmap+3700 a|RolMF0,x Bitmap+3700=a Bitmap+3701=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+3692 a|RolM3C,x Bitmap+3692=a Bitmap+3693=a
+	/*byte 39*/ y=46 a=(ptrB),y Bitmap+3836=a Bitmap+3837=a
+
+// line 47  -  [5 12 20 34]
+	x=Bitmap+3838
+	/*byte 38*/ a=x x=Bitmap+3830 Bitmap+3830=a Bitmap+3831=a
+	/*byte 37*/ a=x x=Bitmap+3822 Bitmap+3822=a Bitmap+3823=a
+	/*byte 36*/ a=x x=Bitmap+3814 Bitmap+3814=a Bitmap+3815=a
+	/*byte 35*/ a=x x=Bitmap+3806 Bitmap+3806=a Bitmap+3807=a
+	/*byte 34*/ a=x x=Bitmap+3798 Bitmap+3798=a Bitmap+3799=a
+	/*byte 33*/ a=x x=Bitmap+3790 Bitmap+3790=a Bitmap+3791=a
+	/*byte 32*/ a=x x=Bitmap+3782 Bitmap+3782=a Bitmap+3783=a
+	/*byte 31*/ a=x x=Bitmap+3774 Bitmap+3774=a Bitmap+3775=a
+	/*byte 30*/ a=x a&0x0F a|RorM30,x x=Bitmap+3766 a|RorMC0,x Bitmap+3766=a Bitmap+3767=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+3758 a|RorMC0,x Bitmap+3758=a Bitmap+3759=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+3750 a|RorMC0,x Bitmap+3750=a Bitmap+3751=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+3742 a|RorMC0,x Bitmap+3742=a Bitmap+3743=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+3734 a|RorMC0,x Bitmap+3734=a Bitmap+3735=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+3726 a|SwapMF0,x Bitmap+3726=a Bitmap+3727=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+3718 a|SwapMF0,x Bitmap+3718=a Bitmap+3719=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+3710 a|SwapMF0,x Bitmap+3710=a Bitmap+3711=a
+	/*byte 22*/ a=SwapM0F,x x=Bitmap+3702 a|RolMF0,x Bitmap+3702=a Bitmap+3703=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+3694 a|RolM3C,x Bitmap+3694=a Bitmap+3695=a
+	/*byte 39*/ y=47 a=(ptrB),y Bitmap+3838=a Bitmap+3839=a
+
+// line 48  -  [5 12 20 34]
+	x=Bitmap+4152
+	/*byte 38*/ a=x x=Bitmap+4144 Bitmap+4144=a Bitmap+4145=a
+	/*byte 37*/ a=x x=Bitmap+4136 Bitmap+4136=a Bitmap+4137=a
+	/*byte 36*/ a=x x=Bitmap+4128 Bitmap+4128=a Bitmap+4129=a
+	/*byte 35*/ a=x x=Bitmap+4120 Bitmap+4120=a Bitmap+4121=a
+	/*byte 34*/ a=x x=Bitmap+4112 Bitmap+4112=a Bitmap+4113=a
+	/*byte 33*/ a=x x=Bitmap+4104 Bitmap+4104=a Bitmap+4105=a
+	/*byte 32*/ a=x x=Bitmap+4096 Bitmap+4096=a Bitmap+4097=a
+	/*byte 31*/ a=x x=Bitmap+4088 Bitmap+4088=a Bitmap+4089=a
+	/*byte 30*/ a=x a&0x0F a|RorM30,x x=Bitmap+4080 a|RorMC0,x Bitmap+4080=a Bitmap+4081=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+4072 a|RorMC0,x Bitmap+4072=a Bitmap+4073=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+4064 a|RorMC0,x Bitmap+4064=a Bitmap+4065=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+4056 a|RorMC0,x Bitmap+4056=a Bitmap+4057=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+4048 a|RorMC0,x Bitmap+4048=a Bitmap+4049=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+4040 a|SwapMF0,x Bitmap+4040=a Bitmap+4041=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+4032 a|SwapMF0,x Bitmap+4032=a Bitmap+4033=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+4024 a|SwapMF0,x Bitmap+4024=a Bitmap+4025=a
+	/*byte 22*/ a=SwapM0F,x x=Bitmap+4016 a|RolMF0,x Bitmap+4016=a Bitmap+4017=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+4008 a|RolM3C,x Bitmap+4008=a Bitmap+4009=a
+	/*byte 39*/ y=48 a=(ptrB),y Bitmap+4152=a Bitmap+4153=a
+
+// line 49  -  [5 12 20 34]
+	x=Bitmap+4154
+	/*byte 38*/ a=x x=Bitmap+4146 Bitmap+4146=a Bitmap+4147=a
+	/*byte 37*/ a=x x=Bitmap+4138 Bitmap+4138=a Bitmap+4139=a
+	/*byte 36*/ a=x x=Bitmap+4130 Bitmap+4130=a Bitmap+4131=a
+	/*byte 35*/ a=x x=Bitmap+4122 Bitmap+4122=a Bitmap+4123=a
+	/*byte 34*/ a=x x=Bitmap+4114 Bitmap+4114=a Bitmap+4115=a
+	/*byte 33*/ a=x x=Bitmap+4106 Bitmap+4106=a Bitmap+4107=a
+	/*byte 32*/ a=x x=Bitmap+4098 Bitmap+4098=a Bitmap+4099=a
+	/*byte 31*/ a=x x=Bitmap+4090 Bitmap+4090=a Bitmap+4091=a
+	/*byte 30*/ a=x a&0x0F a|RorM30,x x=Bitmap+4082 a|RorMC0,x Bitmap+4082=a Bitmap+4083=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+4074 a|RorMC0,x Bitmap+4074=a Bitmap+4075=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+4066 a|RorMC0,x Bitmap+4066=a Bitmap+4067=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+4058 a|RorMC0,x Bitmap+4058=a Bitmap+4059=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+4050 a|RorMC0,x Bitmap+4050=a Bitmap+4051=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+4042 a|SwapMF0,x Bitmap+4042=a Bitmap+4043=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+4034 a|SwapMF0,x Bitmap+4034=a Bitmap+4035=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+4026 a|SwapMF0,x Bitmap+4026=a Bitmap+4027=a
+	/*byte 22*/ a=SwapM0F,x x=Bitmap+4018 a|RolMF0,x Bitmap+4018=a Bitmap+4019=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+4010 a|RolM3C,x Bitmap+4010=a Bitmap+4011=a
+	/*byte 39*/ y=49 a=(ptrB),y Bitmap+4154=a Bitmap+4155=a
+
+// line 50  -  [5 12 20 34]
+	x=Bitmap+4156
+	/*byte 38*/ a=x x=Bitmap+4148 Bitmap+4148=a Bitmap+4149=a
+	/*byte 37*/ a=x x=Bitmap+4140 Bitmap+4140=a Bitmap+4141=a
+	/*byte 36*/ a=x x=Bitmap+4132 Bitmap+4132=a Bitmap+4133=a
+	/*byte 35*/ a=x x=Bitmap+4124 Bitmap+4124=a Bitmap+4125=a
+	/*byte 34*/ a=x x=Bitmap+4116 Bitmap+4116=a Bitmap+4117=a
+	/*byte 33*/ a=x x=Bitmap+4108 Bitmap+4108=a Bitmap+4109=a
+	/*byte 32*/ a=x x=Bitmap+4100 Bitmap+4100=a Bitmap+4101=a
+	/*byte 31*/ a=x x=Bitmap+4092 Bitmap+4092=a Bitmap+4093=a
+	/*byte 30*/ a=x a&0x0F a|RorM30,x x=Bitmap+4084 a|RorMC0,x Bitmap+4084=a Bitmap+4085=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+4076 a|RorMC0,x Bitmap+4076=a Bitmap+4077=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+4068 a|RorMC0,x Bitmap+4068=a Bitmap+4069=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+4060 a|RorMC0,x Bitmap+4060=a Bitmap+4061=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+4052 a|RorMC0,x Bitmap+4052=a Bitmap+4053=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+4044 a|SwapMF0,x Bitmap+4044=a Bitmap+4045=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+4036 a|SwapMF0,x Bitmap+4036=a Bitmap+4037=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+4028 a|SwapMF0,x Bitmap+4028=a Bitmap+4029=a
+	/*byte 22*/ a=SwapM0F,x x=Bitmap+4020 a|RolMF0,x Bitmap+4020=a Bitmap+4021=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+4012 a|RolM3C,x Bitmap+4012=a Bitmap+4013=a
+	/*byte 39*/ y=50 a=(ptrB),y Bitmap+4156=a Bitmap+4157=a
+
+// line 51  -  [5 12 20 34]
+	x=Bitmap+4158
+	/*byte 38*/ a=x x=Bitmap+4150 Bitmap+4150=a Bitmap+4151=a
+	/*byte 37*/ a=x x=Bitmap+4142 Bitmap+4142=a Bitmap+4143=a
+	/*byte 36*/ a=x x=Bitmap+4134 Bitmap+4134=a Bitmap+4135=a
+	/*byte 35*/ a=x x=Bitmap+4126 Bitmap+4126=a Bitmap+4127=a
+	/*byte 34*/ a=x x=Bitmap+4118 Bitmap+4118=a Bitmap+4119=a
+	/*byte 33*/ a=x x=Bitmap+4110 Bitmap+4110=a Bitmap+4111=a
+	/*byte 32*/ a=x x=Bitmap+4102 Bitmap+4102=a Bitmap+4103=a
+	/*byte 31*/ a=x x=Bitmap+4094 Bitmap+4094=a Bitmap+4095=a
+	/*byte 30*/ a=x a&0x0F a|RorM30,x x=Bitmap+4086 a|RorMC0,x Bitmap+4086=a Bitmap+4087=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+4078 a|RorMC0,x Bitmap+4078=a Bitmap+4079=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+4070 a|RorMC0,x Bitmap+4070=a Bitmap+4071=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+4062 a|RorMC0,x Bitmap+4062=a Bitmap+4063=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+4054 a|RorMC0,x Bitmap+4054=a Bitmap+4055=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+4046 a|SwapMF0,x Bitmap+4046=a Bitmap+4047=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+4038 a|SwapMF0,x Bitmap+4038=a Bitmap+4039=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+4030 a|SwapMF0,x Bitmap+4030=a Bitmap+4031=a
+	/*byte 22*/ a=SwapM0F,x x=Bitmap+4022 a|RolMF0,x Bitmap+4022=a Bitmap+4023=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+4014 a|RolM3C,x Bitmap+4014=a Bitmap+4015=a
+	/*byte 39*/ y=51 a=(ptrB),y Bitmap+4158=a Bitmap+4159=a
+
+// line 52  -  [5 12 20 34]
+	x=Bitmap+4472
+	/*byte 38*/ a=x x=Bitmap+4464 Bitmap+4464=a Bitmap+4465=a
+	/*byte 37*/ a=x x=Bitmap+4456 Bitmap+4456=a Bitmap+4457=a
+	/*byte 36*/ a=x x=Bitmap+4448 Bitmap+4448=a Bitmap+4449=a
+	/*byte 35*/ a=x x=Bitmap+4440 Bitmap+4440=a Bitmap+4441=a
+	/*byte 34*/ a=x x=Bitmap+4432 Bitmap+4432=a Bitmap+4433=a
+	/*byte 33*/ a=x x=Bitmap+4424 Bitmap+4424=a Bitmap+4425=a
+	/*byte 32*/ a=x x=Bitmap+4416 Bitmap+4416=a Bitmap+4417=a
+	/*byte 31*/ a=x x=Bitmap+4408 Bitmap+4408=a Bitmap+4409=a
+	/*byte 30*/ a=x a&0x0F a|RorM30,x x=Bitmap+4400 a|RorMC0,x Bitmap+4400=a Bitmap+4401=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+4392 a|RorMC0,x Bitmap+4392=a Bitmap+4393=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+4384 a|RorMC0,x Bitmap+4384=a Bitmap+4385=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+4376 a|RorMC0,x Bitmap+4376=a Bitmap+4377=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+4368 a|RorMC0,x Bitmap+4368=a Bitmap+4369=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+4360 a|SwapMF0,x Bitmap+4360=a Bitmap+4361=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+4352 a|SwapMF0,x Bitmap+4352=a Bitmap+4353=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+4344 a|SwapMF0,x Bitmap+4344=a Bitmap+4345=a
+	/*byte 22*/ a=SwapM0F,x x=Bitmap+4336 a|RolMF0,x Bitmap+4336=a Bitmap+4337=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+4328 a|RolM3C,x Bitmap+4328=a Bitmap+4329=a
+	/*byte 39*/ y=52 a=(ptrB),y Bitmap+4472=a Bitmap+4473=a
+
+// line 53  -  [5 12 20 34]
+	x=Bitmap+4474
+	/*byte 38*/ a=x x=Bitmap+4466 Bitmap+4466=a Bitmap+4467=a
+	/*byte 37*/ a=x x=Bitmap+4458 Bitmap+4458=a Bitmap+4459=a
+	/*byte 36*/ a=x x=Bitmap+4450 Bitmap+4450=a Bitmap+4451=a
+	/*byte 35*/ a=x x=Bitmap+4442 Bitmap+4442=a Bitmap+4443=a
+	/*byte 34*/ a=x x=Bitmap+4434 Bitmap+4434=a Bitmap+4435=a
+	/*byte 33*/ a=x x=Bitmap+4426 Bitmap+4426=a Bitmap+4427=a
+	/*byte 32*/ a=x x=Bitmap+4418 Bitmap+4418=a Bitmap+4419=a
+	/*byte 31*/ a=x x=Bitmap+4410 Bitmap+4410=a Bitmap+4411=a
+	/*byte 30*/ a=x a&0x0F a|RorM30,x x=Bitmap+4402 a|RorMC0,x Bitmap+4402=a Bitmap+4403=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+4394 a|RorMC0,x Bitmap+4394=a Bitmap+4395=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+4386 a|RorMC0,x Bitmap+4386=a Bitmap+4387=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+4378 a|RorMC0,x Bitmap+4378=a Bitmap+4379=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+4370 a|RorMC0,x Bitmap+4370=a Bitmap+4371=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+4362 a|SwapMF0,x Bitmap+4362=a Bitmap+4363=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+4354 a|SwapMF0,x Bitmap+4354=a Bitmap+4355=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+4346 a|SwapMF0,x Bitmap+4346=a Bitmap+4347=a
+	/*byte 22*/ a=SwapM0F,x x=Bitmap+4338 a|RolMF0,x Bitmap+4338=a Bitmap+4339=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+4330 a|RolM3C,x Bitmap+4330=a Bitmap+4331=a
+	/*byte 39*/ y=53 a=(ptrB),y Bitmap+4474=a Bitmap+4475=a
+
+// line 54  -  [4 12 20 34]
+	x=Bitmap+4476
+	/*byte 38*/ a=x x=Bitmap+4468 Bitmap+4468=a Bitmap+4469=a
+	/*byte 37*/ a=x x=Bitmap+4460 Bitmap+4460=a Bitmap+4461=a
+	/*byte 36*/ a=x x=Bitmap+4452 Bitmap+4452=a Bitmap+4453=a
+	/*byte 35*/ a=x x=Bitmap+4444 Bitmap+4444=a Bitmap+4445=a
+	/*byte 34*/ a=x x=Bitmap+4436 Bitmap+4436=a Bitmap+4437=a
+	/*byte 33*/ a=x x=Bitmap+4428 Bitmap+4428=a Bitmap+4429=a
+	/*byte 32*/ a=x x=Bitmap+4420 Bitmap+4420=a Bitmap+4421=a
+	/*byte 31*/ a=x x=Bitmap+4412 Bitmap+4412=a Bitmap+4413=a
+	/*byte 30*/ a=x a&0x0F a|RorM30,x x=Bitmap+4404 a|RorMC0,x Bitmap+4404=a Bitmap+4405=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+4396 a|RorMC0,x Bitmap+4396=a Bitmap+4397=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+4388 a|RorMC0,x Bitmap+4388=a Bitmap+4389=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+4380 a|RorMC0,x Bitmap+4380=a Bitmap+4381=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+4372 a|RorMC0,x Bitmap+4372=a Bitmap+4373=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+4364 a|SwapMF0,x Bitmap+4364=a Bitmap+4365=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+4356 a|SwapMF0,x Bitmap+4356=a Bitmap+4357=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+4348 a|SwapMF0,x Bitmap+4348=a Bitmap+4349=a
+	/*byte 22*/ a=SwapM0F,x x=Bitmap+4340 a|RolMF0,x Bitmap+4340=a Bitmap+4341=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+4332 a|RolM0C,x Bitmap+4332=a Bitmap+4333=a
+	/*byte 39*/ y=54 a=(ptrB),y Bitmap+4476=a Bitmap+4477=a
+
+// line 55  -  [4 12 20 34]
+	x=Bitmap+4478
+	/*byte 38*/ a=x x=Bitmap+4470 Bitmap+4470=a Bitmap+4471=a
+	/*byte 37*/ a=x x=Bitmap+4462 Bitmap+4462=a Bitmap+4463=a
+	/*byte 36*/ a=x x=Bitmap+4454 Bitmap+4454=a Bitmap+4455=a
+	/*byte 35*/ a=x x=Bitmap+4446 Bitmap+4446=a Bitmap+4447=a
+	/*byte 34*/ a=x x=Bitmap+4438 Bitmap+4438=a Bitmap+4439=a
+	/*byte 33*/ a=x x=Bitmap+4430 Bitmap+4430=a Bitmap+4431=a
+	/*byte 32*/ a=x x=Bitmap+4422 Bitmap+4422=a Bitmap+4423=a
+	/*byte 31*/ a=x x=Bitmap+4414 Bitmap+4414=a Bitmap+4415=a
+	/*byte 30*/ a=x a&0x0F a|RorM30,x x=Bitmap+4406 a|RorMC0,x Bitmap+4406=a Bitmap+4407=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+4398 a|RorMC0,x Bitmap+4398=a Bitmap+4399=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+4390 a|RorMC0,x Bitmap+4390=a Bitmap+4391=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+4382 a|RorMC0,x Bitmap+4382=a Bitmap+4383=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+4374 a|RorMC0,x Bitmap+4374=a Bitmap+4375=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+4366 a|SwapMF0,x Bitmap+4366=a Bitmap+4367=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+4358 a|SwapMF0,x Bitmap+4358=a Bitmap+4359=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+4350 a|SwapMF0,x Bitmap+4350=a Bitmap+4351=a
+	/*byte 22*/ a=SwapM0F,x x=Bitmap+4342 a|RolMF0,x Bitmap+4342=a Bitmap+4343=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+4334 a|RolM0C,x Bitmap+4334=a Bitmap+4335=a
+	/*byte 39*/ y=55 a=(ptrB),y Bitmap+4478=a Bitmap+4479=a
+
+// line 56  -  [5 11 20 34]
+	x=Bitmap+4792
+	/*byte 38*/ a=x x=Bitmap+4784 Bitmap+4784=a Bitmap+4785=a
+	/*byte 37*/ a=x x=Bitmap+4776 Bitmap+4776=a Bitmap+4777=a
+	/*byte 36*/ a=x x=Bitmap+4768 Bitmap+4768=a Bitmap+4769=a
+	/*byte 35*/ a=x x=Bitmap+4760 Bitmap+4760=a Bitmap+4761=a
+	/*byte 34*/ a=x x=Bitmap+4752 Bitmap+4752=a Bitmap+4753=a
+	/*byte 33*/ a=x x=Bitmap+4744 Bitmap+4744=a Bitmap+4745=a
+	/*byte 32*/ a=x x=Bitmap+4736 Bitmap+4736=a Bitmap+4737=a
+	/*byte 31*/ a=x x=Bitmap+4728 Bitmap+4728=a Bitmap+4729=a
+	/*byte 30*/ a=x a&0x0F a|RorM30,x x=Bitmap+4720 a|RorMC0,x Bitmap+4720=a Bitmap+4721=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+4712 a|RorMC0,x Bitmap+4712=a Bitmap+4713=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+4704 a|RorMC0,x Bitmap+4704=a Bitmap+4705=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+4696 a|RorMC0,x Bitmap+4696=a Bitmap+4697=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+4688 a|RorMC0,x Bitmap+4688=a Bitmap+4689=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+4680 a|SwapMF0,x Bitmap+4680=a Bitmap+4681=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+4672 a|SwapMF0,x Bitmap+4672=a Bitmap+4673=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+4664 a|SwapMF0,x Bitmap+4664=a Bitmap+4665=a
+	/*byte 22*/ a=SwapM03,x x=Bitmap+4656 a|RolMFC,x Bitmap+4656=a Bitmap+4657=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+4648 a|RolM0C,x Bitmap+4648=a Bitmap+4649=a
+	/*byte 39*/ y=56 a=(ptrB),y Bitmap+4792=a Bitmap+4793=a
+
+// line 57  -  [5 11 20 34]
+	x=Bitmap+4794
+	/*byte 38*/ a=x x=Bitmap+4786 Bitmap+4786=a Bitmap+4787=a
+	/*byte 37*/ a=x x=Bitmap+4778 Bitmap+4778=a Bitmap+4779=a
+	/*byte 36*/ a=x x=Bitmap+4770 Bitmap+4770=a Bitmap+4771=a
+	/*byte 35*/ a=x x=Bitmap+4762 Bitmap+4762=a Bitmap+4763=a
+	/*byte 34*/ a=x x=Bitmap+4754 Bitmap+4754=a Bitmap+4755=a
+	/*byte 33*/ a=x x=Bitmap+4746 Bitmap+4746=a Bitmap+4747=a
+	/*byte 32*/ a=x x=Bitmap+4738 Bitmap+4738=a Bitmap+4739=a
+	/*byte 31*/ a=x x=Bitmap+4730 Bitmap+4730=a Bitmap+4731=a
+	/*byte 30*/ a=x a&0x0F a|RorM30,x x=Bitmap+4722 a|RorMC0,x Bitmap+4722=a Bitmap+4723=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+4714 a|RorMC0,x Bitmap+4714=a Bitmap+4715=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+4706 a|RorMC0,x Bitmap+4706=a Bitmap+4707=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+4698 a|RorMC0,x Bitmap+4698=a Bitmap+4699=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+4690 a|RorMC0,x Bitmap+4690=a Bitmap+4691=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+4682 a|SwapMF0,x Bitmap+4682=a Bitmap+4683=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+4674 a|SwapMF0,x Bitmap+4674=a Bitmap+4675=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+4666 a|SwapMF0,x Bitmap+4666=a Bitmap+4667=a
+	/*byte 22*/ a=SwapM03,x x=Bitmap+4658 a|RolMFC,x Bitmap+4658=a Bitmap+4659=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+4650 a|RolM0C,x Bitmap+4650=a Bitmap+4651=a
+	/*byte 39*/ y=57 a=(ptrB),y Bitmap+4794=a Bitmap+4795=a
+
+// line 58  -  [5 11 20 34]
+	x=Bitmap+4796
+	/*byte 38*/ a=x x=Bitmap+4788 Bitmap+4788=a Bitmap+4789=a
+	/*byte 37*/ a=x x=Bitmap+4780 Bitmap+4780=a Bitmap+4781=a
+	/*byte 36*/ a=x x=Bitmap+4772 Bitmap+4772=a Bitmap+4773=a
+	/*byte 35*/ a=x x=Bitmap+4764 Bitmap+4764=a Bitmap+4765=a
+	/*byte 34*/ a=x x=Bitmap+4756 Bitmap+4756=a Bitmap+4757=a
+	/*byte 33*/ a=x x=Bitmap+4748 Bitmap+4748=a Bitmap+4749=a
+	/*byte 32*/ a=x x=Bitmap+4740 Bitmap+4740=a Bitmap+4741=a
+	/*byte 31*/ a=x x=Bitmap+4732 Bitmap+4732=a Bitmap+4733=a
+	/*byte 30*/ a=x a&0x0F a|RorM30,x x=Bitmap+4724 a|RorMC0,x Bitmap+4724=a Bitmap+4725=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+4716 a|RorMC0,x Bitmap+4716=a Bitmap+4717=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+4708 a|RorMC0,x Bitmap+4708=a Bitmap+4709=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+4700 a|RorMC0,x Bitmap+4700=a Bitmap+4701=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+4692 a|RorMC0,x Bitmap+4692=a Bitmap+4693=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+4684 a|SwapMF0,x Bitmap+4684=a Bitmap+4685=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+4676 a|SwapMF0,x Bitmap+4676=a Bitmap+4677=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+4668 a|SwapMF0,x Bitmap+4668=a Bitmap+4669=a
+	/*byte 22*/ a=SwapM03,x x=Bitmap+4660 a|RolMFC,x Bitmap+4660=a Bitmap+4661=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+4652 a|RolM0C,x Bitmap+4652=a Bitmap+4653=a
+	/*byte 39*/ y=58 a=(ptrB),y Bitmap+4796=a Bitmap+4797=a
+
+// line 59  -  [5 11 20 34]
+	x=Bitmap+4798
+	/*byte 38*/ a=x x=Bitmap+4790 Bitmap+4790=a Bitmap+4791=a
+	/*byte 37*/ a=x x=Bitmap+4782 Bitmap+4782=a Bitmap+4783=a
+	/*byte 36*/ a=x x=Bitmap+4774 Bitmap+4774=a Bitmap+4775=a
+	/*byte 35*/ a=x x=Bitmap+4766 Bitmap+4766=a Bitmap+4767=a
+	/*byte 34*/ a=x x=Bitmap+4758 Bitmap+4758=a Bitmap+4759=a
+	/*byte 33*/ a=x x=Bitmap+4750 Bitmap+4750=a Bitmap+4751=a
+	/*byte 32*/ a=x x=Bitmap+4742 Bitmap+4742=a Bitmap+4743=a
+	/*byte 31*/ a=x x=Bitmap+4734 Bitmap+4734=a Bitmap+4735=a
+	/*byte 30*/ a=x a&0x0F a|RorM30,x x=Bitmap+4726 a|RorMC0,x Bitmap+4726=a Bitmap+4727=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+4718 a|RorMC0,x Bitmap+4718=a Bitmap+4719=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+4710 a|RorMC0,x Bitmap+4710=a Bitmap+4711=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+4702 a|RorMC0,x Bitmap+4702=a Bitmap+4703=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+4694 a|RorMC0,x Bitmap+4694=a Bitmap+4695=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+4686 a|SwapMF0,x Bitmap+4686=a Bitmap+4687=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+4678 a|SwapMF0,x Bitmap+4678=a Bitmap+4679=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+4670 a|SwapMF0,x Bitmap+4670=a Bitmap+4671=a
+	/*byte 22*/ a=SwapM03,x x=Bitmap+4662 a|RolMFC,x Bitmap+4662=a Bitmap+4663=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+4654 a|RolM0C,x Bitmap+4654=a Bitmap+4655=a
+	/*byte 39*/ y=59 a=(ptrB),y Bitmap+4798=a Bitmap+4799=a
+
+// line 60  -  [5 11 20 34]
+	x=Bitmap+5112
+	/*byte 38*/ a=x x=Bitmap+5104 Bitmap+5104=a Bitmap+5105=a
+	/*byte 37*/ a=x x=Bitmap+5096 Bitmap+5096=a Bitmap+5097=a
+	/*byte 36*/ a=x x=Bitmap+5088 Bitmap+5088=a Bitmap+5089=a
+	/*byte 35*/ a=x x=Bitmap+5080 Bitmap+5080=a Bitmap+5081=a
+	/*byte 34*/ a=x x=Bitmap+5072 Bitmap+5072=a Bitmap+5073=a
+	/*byte 33*/ a=x x=Bitmap+5064 Bitmap+5064=a Bitmap+5065=a
+	/*byte 32*/ a=x x=Bitmap+5056 Bitmap+5056=a Bitmap+5057=a
+	/*byte 31*/ a=x x=Bitmap+5048 Bitmap+5048=a Bitmap+5049=a
+	/*byte 30*/ a=x a&0x0F a|RorM30,x x=Bitmap+5040 a|RorMC0,x Bitmap+5040=a Bitmap+5041=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+5032 a|RorMC0,x Bitmap+5032=a Bitmap+5033=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+5024 a|RorMC0,x Bitmap+5024=a Bitmap+5025=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+5016 a|RorMC0,x Bitmap+5016=a Bitmap+5017=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+5008 a|RorMC0,x Bitmap+5008=a Bitmap+5009=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+5000 a|SwapMF0,x Bitmap+5000=a Bitmap+5001=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+4992 a|SwapMF0,x Bitmap+4992=a Bitmap+4993=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+4984 a|SwapMF0,x Bitmap+4984=a Bitmap+4985=a
+	/*byte 22*/ a=SwapM03,x x=Bitmap+4976 a|RolMFC,x Bitmap+4976=a Bitmap+4977=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+4968 a|RolM0C,x Bitmap+4968=a Bitmap+4969=a
+	/*byte 39*/ y=60 a=(ptrB),y Bitmap+5112=a Bitmap+5113=a
+
+// line 61  -  [5 11 20 34]
+	x=Bitmap+5114
+	/*byte 38*/ a=x x=Bitmap+5106 Bitmap+5106=a Bitmap+5107=a
+	/*byte 37*/ a=x x=Bitmap+5098 Bitmap+5098=a Bitmap+5099=a
+	/*byte 36*/ a=x x=Bitmap+5090 Bitmap+5090=a Bitmap+5091=a
+	/*byte 35*/ a=x x=Bitmap+5082 Bitmap+5082=a Bitmap+5083=a
+	/*byte 34*/ a=x x=Bitmap+5074 Bitmap+5074=a Bitmap+5075=a
+	/*byte 33*/ a=x x=Bitmap+5066 Bitmap+5066=a Bitmap+5067=a
+	/*byte 32*/ a=x x=Bitmap+5058 Bitmap+5058=a Bitmap+5059=a
+	/*byte 31*/ a=x x=Bitmap+5050 Bitmap+5050=a Bitmap+5051=a
+	/*byte 30*/ a=x a&0x0F a|RorM30,x x=Bitmap+5042 a|RorMC0,x Bitmap+5042=a Bitmap+5043=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+5034 a|RorMC0,x Bitmap+5034=a Bitmap+5035=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+5026 a|RorMC0,x Bitmap+5026=a Bitmap+5027=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+5018 a|RorMC0,x Bitmap+5018=a Bitmap+5019=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+5010 a|RorMC0,x Bitmap+5010=a Bitmap+5011=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+5002 a|SwapMF0,x Bitmap+5002=a Bitmap+5003=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+4994 a|SwapMF0,x Bitmap+4994=a Bitmap+4995=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+4986 a|SwapMF0,x Bitmap+4986=a Bitmap+4987=a
+	/*byte 22*/ a=SwapM03,x x=Bitmap+4978 a|RolMFC,x Bitmap+4978=a Bitmap+4979=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+4970 a|RolM0C,x Bitmap+4970=a Bitmap+4971=a
+	/*byte 39*/ y=61 a=(ptrB),y Bitmap+5114=a Bitmap+5115=a
+
+// line 62  -  [5 11 20 34]
+	x=Bitmap+5116
+	/*byte 38*/ a=x x=Bitmap+5108 Bitmap+5108=a Bitmap+5109=a
+	/*byte 37*/ a=x x=Bitmap+5100 Bitmap+5100=a Bitmap+5101=a
+	/*byte 36*/ a=x x=Bitmap+5092 Bitmap+5092=a Bitmap+5093=a
+	/*byte 35*/ a=x x=Bitmap+5084 Bitmap+5084=a Bitmap+5085=a
+	/*byte 34*/ a=x x=Bitmap+5076 Bitmap+5076=a Bitmap+5077=a
+	/*byte 33*/ a=x x=Bitmap+5068 Bitmap+5068=a Bitmap+5069=a
+	/*byte 32*/ a=x x=Bitmap+5060 Bitmap+5060=a Bitmap+5061=a
+	/*byte 31*/ a=x x=Bitmap+5052 Bitmap+5052=a Bitmap+5053=a
+	/*byte 30*/ a=x a&0x0F a|RorM30,x x=Bitmap+5044 a|RorMC0,x Bitmap+5044=a Bitmap+5045=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+5036 a|RorMC0,x Bitmap+5036=a Bitmap+5037=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+5028 a|RorMC0,x Bitmap+5028=a Bitmap+5029=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+5020 a|RorMC0,x Bitmap+5020=a Bitmap+5021=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+5012 a|RorMC0,x Bitmap+5012=a Bitmap+5013=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+5004 a|SwapMF0,x Bitmap+5004=a Bitmap+5005=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+4996 a|SwapMF0,x Bitmap+4996=a Bitmap+4997=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+4988 a|SwapMF0,x Bitmap+4988=a Bitmap+4989=a
+	/*byte 22*/ a=SwapM03,x x=Bitmap+4980 a|RolMFC,x Bitmap+4980=a Bitmap+4981=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+4972 a|RolM0C,x Bitmap+4972=a Bitmap+4973=a
+	/*byte 39*/ y=62 a=(ptrB),y Bitmap+5116=a Bitmap+5117=a
+
+// line 63  -  [5 11 21 33]
+	x=Bitmap+5118
+	/*byte 38*/ a=x x=Bitmap+5110 Bitmap+5110=a Bitmap+5111=a
+	/*byte 37*/ a=x x=Bitmap+5102 Bitmap+5102=a Bitmap+5103=a
+	/*byte 36*/ a=x x=Bitmap+5094 Bitmap+5094=a Bitmap+5095=a
+	/*byte 35*/ a=x x=Bitmap+5086 Bitmap+5086=a Bitmap+5087=a
+	/*byte 34*/ a=x x=Bitmap+5078 Bitmap+5078=a Bitmap+5079=a
+	/*byte 33*/ a=x x=Bitmap+5070 Bitmap+5070=a Bitmap+5071=a
+	/*byte 32*/ a=x x=Bitmap+5062 Bitmap+5062=a Bitmap+5063=a
+	/*byte 31*/ a=x x=Bitmap+5054 Bitmap+5054=a Bitmap+5055=a
+	/*byte 30*/ a=x a&0x03 a|RorM3C,x x=Bitmap+5046 a|RorMC0,x Bitmap+5046=a Bitmap+5047=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+5038 a|RorMC0,x Bitmap+5038=a Bitmap+5039=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+5030 a|RorMC0,x Bitmap+5030=a Bitmap+5031=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+5022 a|RorMC0,x Bitmap+5022=a Bitmap+5023=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+5014 a|RorMC0,x Bitmap+5014=a Bitmap+5015=a
+	/*byte 25*/ a=RorM0F,x x=Bitmap+5006 a|SwapMF0,x Bitmap+5006=a Bitmap+5007=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+4998 a|SwapMF0,x Bitmap+4998=a Bitmap+4999=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+4990 a|SwapMF0,x Bitmap+4990=a Bitmap+4991=a
+	/*byte 22*/ a=SwapM03,x x=Bitmap+4982 a|RolMFC,x Bitmap+4982=a Bitmap+4983=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+4974 a|RolM0C,x Bitmap+4974=a Bitmap+4975=a
+	/*byte 39*/ y=63 a=(ptrB),y Bitmap+5118=a Bitmap+5119=a
+
+// line 64  -  [5 12 20 33]
+	x=Bitmap+5432
+	/*byte 38*/ a=x x=Bitmap+5424 Bitmap+5424=a Bitmap+5425=a
+	/*byte 37*/ a=x x=Bitmap+5416 Bitmap+5416=a Bitmap+5417=a
+	/*byte 36*/ a=x x=Bitmap+5408 Bitmap+5408=a Bitmap+5409=a
+	/*byte 35*/ a=x x=Bitmap+5400 Bitmap+5400=a Bitmap+5401=a
+	/*byte 34*/ a=x x=Bitmap+5392 Bitmap+5392=a Bitmap+5393=a
+	/*byte 33*/ a=x x=Bitmap+5384 Bitmap+5384=a Bitmap+5385=a
+	/*byte 32*/ a=x x=Bitmap+5376 Bitmap+5376=a Bitmap+5377=a
+	/*byte 31*/ a=x x=Bitmap+5368 Bitmap+5368=a Bitmap+5369=a
+	/*byte 30*/ a=x a&0x03 a|RorM3C,x x=Bitmap+5360 a|RorMC0,x Bitmap+5360=a Bitmap+5361=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+5352 a|RorMC0,x Bitmap+5352=a Bitmap+5353=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+5344 a|RorMC0,x Bitmap+5344=a Bitmap+5345=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+5336 a|RorMC0,x Bitmap+5336=a Bitmap+5337=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+5328 a|RorMC0,x Bitmap+5328=a Bitmap+5329=a
+	/*byte 25*/ a=SwapM0C,x a|RorM03,x x=Bitmap+5320 a|SwapMF0,x Bitmap+5320=a Bitmap+5321=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+5312 a|SwapMF0,x Bitmap+5312=a Bitmap+5313=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+5304 a|SwapMF0,x Bitmap+5304=a Bitmap+5305=a
+	/*byte 22*/ a=SwapM03,x x=Bitmap+5296 a|RolMFC,x Bitmap+5296=a Bitmap+5297=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+5288 a|RolM0C,x Bitmap+5288=a Bitmap+5289=a
+	/*byte 39*/ y=64 a=(ptrB),y Bitmap+5432=a Bitmap+5433=a
+
+// line 65  -  [5 12 20 33]
+	x=Bitmap+5434
+	/*byte 38*/ a=x x=Bitmap+5426 Bitmap+5426=a Bitmap+5427=a
+	/*byte 37*/ a=x x=Bitmap+5418 Bitmap+5418=a Bitmap+5419=a
+	/*byte 36*/ a=x x=Bitmap+5410 Bitmap+5410=a Bitmap+5411=a
+	/*byte 35*/ a=x x=Bitmap+5402 Bitmap+5402=a Bitmap+5403=a
+	/*byte 34*/ a=x x=Bitmap+5394 Bitmap+5394=a Bitmap+5395=a
+	/*byte 33*/ a=x x=Bitmap+5386 Bitmap+5386=a Bitmap+5387=a
+	/*byte 32*/ a=x x=Bitmap+5378 Bitmap+5378=a Bitmap+5379=a
+	/*byte 31*/ a=x x=Bitmap+5370 Bitmap+5370=a Bitmap+5371=a
+	/*byte 30*/ a=x a&0x03 a|RorM3C,x x=Bitmap+5362 a|RorMC0,x Bitmap+5362=a Bitmap+5363=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+5354 a|RorMC0,x Bitmap+5354=a Bitmap+5355=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+5346 a|RorMC0,x Bitmap+5346=a Bitmap+5347=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+5338 a|RorMC0,x Bitmap+5338=a Bitmap+5339=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+5330 a|RorMC0,x Bitmap+5330=a Bitmap+5331=a
+	/*byte 25*/ a=SwapM0C,x a|RorM03,x x=Bitmap+5322 a|SwapMF0,x Bitmap+5322=a Bitmap+5323=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+5314 a|SwapMF0,x Bitmap+5314=a Bitmap+5315=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+5306 a|SwapMF0,x Bitmap+5306=a Bitmap+5307=a
+	/*byte 22*/ a=SwapM03,x x=Bitmap+5298 a|RolMFC,x Bitmap+5298=a Bitmap+5299=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+5290 a|RolM0C,x Bitmap+5290=a Bitmap+5291=a
+	/*byte 39*/ y=65 a=(ptrB),y Bitmap+5434=a Bitmap+5435=a
+
+// line 66  -  [5 11 20 33]
+	x=Bitmap+5436
+	/*byte 38*/ a=x x=Bitmap+5428 Bitmap+5428=a Bitmap+5429=a
+	/*byte 37*/ a=x x=Bitmap+5420 Bitmap+5420=a Bitmap+5421=a
+	/*byte 36*/ a=x x=Bitmap+5412 Bitmap+5412=a Bitmap+5413=a
+	/*byte 35*/ a=x x=Bitmap+5404 Bitmap+5404=a Bitmap+5405=a
+	/*byte 34*/ a=x x=Bitmap+5396 Bitmap+5396=a Bitmap+5397=a
+	/*byte 33*/ a=x x=Bitmap+5388 Bitmap+5388=a Bitmap+5389=a
+	/*byte 32*/ a=x x=Bitmap+5380 Bitmap+5380=a Bitmap+5381=a
+	/*byte 31*/ a=x x=Bitmap+5372 Bitmap+5372=a Bitmap+5373=a
+	/*byte 30*/ a=x a&0x03 a|RorM3C,x x=Bitmap+5364 a|RorMC0,x Bitmap+5364=a Bitmap+5365=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+5356 a|RorMC0,x Bitmap+5356=a Bitmap+5357=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+5348 a|RorMC0,x Bitmap+5348=a Bitmap+5349=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+5340 a|RorMC0,x Bitmap+5340=a Bitmap+5341=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+5332 a|RorMC0,x Bitmap+5332=a Bitmap+5333=a
+	/*byte 25*/ a=SwapM0C,x a|RorM03,x x=Bitmap+5324 a|SwapMF0,x Bitmap+5324=a Bitmap+5325=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+5316 a|SwapMF0,x Bitmap+5316=a Bitmap+5317=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+5308 a|SwapMF0,x Bitmap+5308=a Bitmap+5309=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+5300 a|RolMFC,x Bitmap+5300=a Bitmap+5301=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+5292 Bitmap+5292=a Bitmap+5293=a
+	/*byte 39*/ y=66 a=(ptrB),y Bitmap+5436=a Bitmap+5437=a
+
+// line 67  -  [5 11 20 33]
+	x=Bitmap+5438
+	/*byte 38*/ a=x x=Bitmap+5430 Bitmap+5430=a Bitmap+5431=a
+	/*byte 37*/ a=x x=Bitmap+5422 Bitmap+5422=a Bitmap+5423=a
+	/*byte 36*/ a=x x=Bitmap+5414 Bitmap+5414=a Bitmap+5415=a
+	/*byte 35*/ a=x x=Bitmap+5406 Bitmap+5406=a Bitmap+5407=a
+	/*byte 34*/ a=x x=Bitmap+5398 Bitmap+5398=a Bitmap+5399=a
+	/*byte 33*/ a=x x=Bitmap+5390 Bitmap+5390=a Bitmap+5391=a
+	/*byte 32*/ a=x x=Bitmap+5382 Bitmap+5382=a Bitmap+5383=a
+	/*byte 31*/ a=x x=Bitmap+5374 Bitmap+5374=a Bitmap+5375=a
+	/*byte 30*/ a=x a&0x03 a|RorM3C,x x=Bitmap+5366 a|RorMC0,x Bitmap+5366=a Bitmap+5367=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+5358 a|RorMC0,x Bitmap+5358=a Bitmap+5359=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+5350 a|RorMC0,x Bitmap+5350=a Bitmap+5351=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+5342 a|RorMC0,x Bitmap+5342=a Bitmap+5343=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+5334 a|RorMC0,x Bitmap+5334=a Bitmap+5335=a
+	/*byte 25*/ a=SwapM0C,x a|RorM03,x x=Bitmap+5326 a|SwapMF0,x Bitmap+5326=a Bitmap+5327=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+5318 a|SwapMF0,x Bitmap+5318=a Bitmap+5319=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+5310 a|SwapMF0,x Bitmap+5310=a Bitmap+5311=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+5302 a|RolMFC,x Bitmap+5302=a Bitmap+5303=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+5294 Bitmap+5294=a Bitmap+5295=a
+	/*byte 39*/ y=67 a=(ptrB),y Bitmap+5438=a Bitmap+5439=a
+
+// line 68  -  [5 11 21 32]
+	x=Bitmap+5752
+	/*byte 38*/ a=x x=Bitmap+5744 Bitmap+5744=a Bitmap+5745=a
+	/*byte 37*/ a=x x=Bitmap+5736 Bitmap+5736=a Bitmap+5737=a
+	/*byte 36*/ a=x x=Bitmap+5728 Bitmap+5728=a Bitmap+5729=a
+	/*byte 35*/ a=x x=Bitmap+5720 Bitmap+5720=a Bitmap+5721=a
+	/*byte 34*/ a=x x=Bitmap+5712 Bitmap+5712=a Bitmap+5713=a
+	/*byte 33*/ a=x x=Bitmap+5704 Bitmap+5704=a Bitmap+5705=a
+	/*byte 32*/ a=x x=Bitmap+5696 Bitmap+5696=a Bitmap+5697=a
+	/*byte 31*/ a=x x=Bitmap+5688 Bitmap+5688=a Bitmap+5689=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+5680 a|RorMC0,x Bitmap+5680=a Bitmap+5681=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+5672 a|RorMC0,x Bitmap+5672=a Bitmap+5673=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+5664 a|RorMC0,x Bitmap+5664=a Bitmap+5665=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+5656 a|RorMC0,x Bitmap+5656=a Bitmap+5657=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+5648 a|RorMC0,x Bitmap+5648=a Bitmap+5649=a
+	/*byte 25*/ a=SwapM0C,x a|RorM03,x x=Bitmap+5640 a|SwapMF0,x Bitmap+5640=a Bitmap+5641=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+5632 a|SwapMF0,x Bitmap+5632=a Bitmap+5633=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+5624 a|SwapMF0,x Bitmap+5624=a Bitmap+5625=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+5616 a|RolMFC,x Bitmap+5616=a Bitmap+5617=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+5608 Bitmap+5608=a Bitmap+5609=a
+	/*byte 39*/ y=68 a=(ptrB),y Bitmap+5752=a Bitmap+5753=a
+
+// line 69  -  [5 11 21 32]
+	x=Bitmap+5754
+	/*byte 38*/ a=x x=Bitmap+5746 Bitmap+5746=a Bitmap+5747=a
+	/*byte 37*/ a=x x=Bitmap+5738 Bitmap+5738=a Bitmap+5739=a
+	/*byte 36*/ a=x x=Bitmap+5730 Bitmap+5730=a Bitmap+5731=a
+	/*byte 35*/ a=x x=Bitmap+5722 Bitmap+5722=a Bitmap+5723=a
+	/*byte 34*/ a=x x=Bitmap+5714 Bitmap+5714=a Bitmap+5715=a
+	/*byte 33*/ a=x x=Bitmap+5706 Bitmap+5706=a Bitmap+5707=a
+	/*byte 32*/ a=x x=Bitmap+5698 Bitmap+5698=a Bitmap+5699=a
+	/*byte 31*/ a=x x=Bitmap+5690 Bitmap+5690=a Bitmap+5691=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+5682 a|RorMC0,x Bitmap+5682=a Bitmap+5683=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+5674 a|RorMC0,x Bitmap+5674=a Bitmap+5675=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+5666 a|RorMC0,x Bitmap+5666=a Bitmap+5667=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+5658 a|RorMC0,x Bitmap+5658=a Bitmap+5659=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+5650 a|RorMC0,x Bitmap+5650=a Bitmap+5651=a
+	/*byte 25*/ a=SwapM0C,x a|RorM03,x x=Bitmap+5642 a|SwapMF0,x Bitmap+5642=a Bitmap+5643=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+5634 a|SwapMF0,x Bitmap+5634=a Bitmap+5635=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+5626 a|SwapMF0,x Bitmap+5626=a Bitmap+5627=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+5618 a|RolMFC,x Bitmap+5618=a Bitmap+5619=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+5610 Bitmap+5610=a Bitmap+5611=a
+	/*byte 39*/ y=69 a=(ptrB),y Bitmap+5754=a Bitmap+5755=a
+
+// line 70  -  [5 12 20 32]
+	x=Bitmap+5756
+	/*byte 38*/ a=x x=Bitmap+5748 Bitmap+5748=a Bitmap+5749=a
+	/*byte 37*/ a=x x=Bitmap+5740 Bitmap+5740=a Bitmap+5741=a
+	/*byte 36*/ a=x x=Bitmap+5732 Bitmap+5732=a Bitmap+5733=a
+	/*byte 35*/ a=x x=Bitmap+5724 Bitmap+5724=a Bitmap+5725=a
+	/*byte 34*/ a=x x=Bitmap+5716 Bitmap+5716=a Bitmap+5717=a
+	/*byte 33*/ a=x x=Bitmap+5708 Bitmap+5708=a Bitmap+5709=a
+	/*byte 32*/ a=x x=Bitmap+5700 Bitmap+5700=a Bitmap+5701=a
+	/*byte 31*/ a=x x=Bitmap+5692 Bitmap+5692=a Bitmap+5693=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+5684 a|RorMC0,x Bitmap+5684=a Bitmap+5685=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+5676 a|RorMC0,x Bitmap+5676=a Bitmap+5677=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+5668 a|RorMC0,x Bitmap+5668=a Bitmap+5669=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+5660 a|RorMC0,x Bitmap+5660=a Bitmap+5661=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+5652 a|RorMC0,x Bitmap+5652=a Bitmap+5653=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+5644 a|SwapMF0,x Bitmap+5644=a Bitmap+5645=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+5636 a|SwapMF0,x Bitmap+5636=a Bitmap+5637=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+5628 a|SwapMF0,x Bitmap+5628=a Bitmap+5629=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+5620 a|RolMFC,x Bitmap+5620=a Bitmap+5621=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+5612 Bitmap+5612=a Bitmap+5613=a
+	/*byte 39*/ y=70 a=(ptrB),y Bitmap+5756=a Bitmap+5757=a
+
+// line 71  -  [5 12 20 32]
+	x=Bitmap+5758
+	/*byte 38*/ a=x x=Bitmap+5750 Bitmap+5750=a Bitmap+5751=a
+	/*byte 37*/ a=x x=Bitmap+5742 Bitmap+5742=a Bitmap+5743=a
+	/*byte 36*/ a=x x=Bitmap+5734 Bitmap+5734=a Bitmap+5735=a
+	/*byte 35*/ a=x x=Bitmap+5726 Bitmap+5726=a Bitmap+5727=a
+	/*byte 34*/ a=x x=Bitmap+5718 Bitmap+5718=a Bitmap+5719=a
+	/*byte 33*/ a=x x=Bitmap+5710 Bitmap+5710=a Bitmap+5711=a
+	/*byte 32*/ a=x x=Bitmap+5702 Bitmap+5702=a Bitmap+5703=a
+	/*byte 31*/ a=x x=Bitmap+5694 Bitmap+5694=a Bitmap+5695=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+5686 a|RorMC0,x Bitmap+5686=a Bitmap+5687=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+5678 a|RorMC0,x Bitmap+5678=a Bitmap+5679=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+5670 a|RorMC0,x Bitmap+5670=a Bitmap+5671=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+5662 a|RorMC0,x Bitmap+5662=a Bitmap+5663=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+5654 a|RorMC0,x Bitmap+5654=a Bitmap+5655=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+5646 a|SwapMF0,x Bitmap+5646=a Bitmap+5647=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+5638 a|SwapMF0,x Bitmap+5638=a Bitmap+5639=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+5630 a|SwapMF0,x Bitmap+5630=a Bitmap+5631=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+5622 a|RolMFC,x Bitmap+5622=a Bitmap+5623=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+5614 Bitmap+5614=a Bitmap+5615=a
+	/*byte 39*/ y=71 a=(ptrB),y Bitmap+5758=a Bitmap+5759=a
+
+// line 72  -  [6 11 20 32]
+	x=Bitmap+6072
+	/*byte 38*/ a=x x=Bitmap+6064 Bitmap+6064=a Bitmap+6065=a
+	/*byte 37*/ a=x x=Bitmap+6056 Bitmap+6056=a Bitmap+6057=a
+	/*byte 36*/ a=x x=Bitmap+6048 Bitmap+6048=a Bitmap+6049=a
+	/*byte 35*/ a=x x=Bitmap+6040 Bitmap+6040=a Bitmap+6041=a
+	/*byte 34*/ a=x x=Bitmap+6032 Bitmap+6032=a Bitmap+6033=a
+	/*byte 33*/ a=x x=Bitmap+6024 Bitmap+6024=a Bitmap+6025=a
+	/*byte 32*/ a=x x=Bitmap+6016 Bitmap+6016=a Bitmap+6017=a
+	/*byte 31*/ a=x x=Bitmap+6008 Bitmap+6008=a Bitmap+6009=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+6000 a|RorMC0,x Bitmap+6000=a Bitmap+6001=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+5992 a|RorMC0,x Bitmap+5992=a Bitmap+5993=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+5984 a|RorMC0,x Bitmap+5984=a Bitmap+5985=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+5976 a|RorMC0,x Bitmap+5976=a Bitmap+5977=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+5968 a|RorMC0,x Bitmap+5968=a Bitmap+5969=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+5960 a|SwapMF0,x Bitmap+5960=a Bitmap+5961=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+5952 a|SwapMF0,x Bitmap+5952=a Bitmap+5953=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+5944 a|RolMC0,x a|SwapM30,x Bitmap+5944=a Bitmap+5945=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+5936 a|RolMFC,x Bitmap+5936=a Bitmap+5937=a
+	/*byte 21*/ a=RolM03,x x=Bitmap+5928 Bitmap+5928=a Bitmap+5929=a
+	/*byte 39*/ y=72 a=(ptrB),y Bitmap+6072=a Bitmap+6073=a
+
+// line 73  -  [5 11 21 31]
+	x=Bitmap+6074
+	/*byte 38*/ a=x x=Bitmap+6066 Bitmap+6066=a Bitmap+6067=a
+	/*byte 37*/ a=x x=Bitmap+6058 Bitmap+6058=a Bitmap+6059=a
+	/*byte 36*/ a=x x=Bitmap+6050 Bitmap+6050=a Bitmap+6051=a
+	/*byte 35*/ a=x x=Bitmap+6042 Bitmap+6042=a Bitmap+6043=a
+	/*byte 34*/ a=x x=Bitmap+6034 Bitmap+6034=a Bitmap+6035=a
+	/*byte 33*/ a=x x=Bitmap+6026 Bitmap+6026=a Bitmap+6027=a
+	/*byte 32*/ a=x x=Bitmap+6018 Bitmap+6018=a Bitmap+6019=a
+	/*byte 31*/ a=x a&0x3F x=Bitmap+6010 a|RorMC0,x Bitmap+6010=a Bitmap+6011=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+6002 a|RorMC0,x Bitmap+6002=a Bitmap+6003=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+5994 a|RorMC0,x Bitmap+5994=a Bitmap+5995=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+5986 a|RorMC0,x Bitmap+5986=a Bitmap+5987=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+5978 a|RorMC0,x Bitmap+5978=a Bitmap+5979=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+5970 a|RorMC0,x Bitmap+5970=a Bitmap+5971=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+5962 a|SwapMF0,x Bitmap+5962=a Bitmap+5963=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+5954 a|SwapMF0,x Bitmap+5954=a Bitmap+5955=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+5946 a|RolMC0,x a|SwapM30,x Bitmap+5946=a Bitmap+5947=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+5938 a|RolMFC,x Bitmap+5938=a Bitmap+5939=a
+	/*byte 39*/ y=73 a=(ptrB),y Bitmap+6074=a Bitmap+6075=a
+
+// line 74  -  [5 11 21 31]
+	x=Bitmap+6076
+	/*byte 38*/ a=x x=Bitmap+6068 Bitmap+6068=a Bitmap+6069=a
+	/*byte 37*/ a=x x=Bitmap+6060 Bitmap+6060=a Bitmap+6061=a
+	/*byte 36*/ a=x x=Bitmap+6052 Bitmap+6052=a Bitmap+6053=a
+	/*byte 35*/ a=x x=Bitmap+6044 Bitmap+6044=a Bitmap+6045=a
+	/*byte 34*/ a=x x=Bitmap+6036 Bitmap+6036=a Bitmap+6037=a
+	/*byte 33*/ a=x x=Bitmap+6028 Bitmap+6028=a Bitmap+6029=a
+	/*byte 32*/ a=x x=Bitmap+6020 Bitmap+6020=a Bitmap+6021=a
+	/*byte 31*/ a=x a&0x3F x=Bitmap+6012 a|RorMC0,x Bitmap+6012=a Bitmap+6013=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+6004 a|RorMC0,x Bitmap+6004=a Bitmap+6005=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+5996 a|RorMC0,x Bitmap+5996=a Bitmap+5997=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+5988 a|RorMC0,x Bitmap+5988=a Bitmap+5989=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+5980 a|RorMC0,x Bitmap+5980=a Bitmap+5981=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+5972 a|RorMC0,x Bitmap+5972=a Bitmap+5973=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+5964 a|SwapMF0,x Bitmap+5964=a Bitmap+5965=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+5956 a|SwapMF0,x Bitmap+5956=a Bitmap+5957=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+5948 a|RolMC0,x a|SwapM30,x Bitmap+5948=a Bitmap+5949=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+5940 a|RolMFC,x Bitmap+5940=a Bitmap+5941=a
+	/*byte 39*/ y=74 a=(ptrB),y Bitmap+6076=a Bitmap+6077=a
+
+// line 75  -  [5 12 20 31]
+	x=Bitmap+6078
+	/*byte 38*/ a=x x=Bitmap+6070 Bitmap+6070=a Bitmap+6071=a
+	/*byte 37*/ a=x x=Bitmap+6062 Bitmap+6062=a Bitmap+6063=a
+	/*byte 36*/ a=x x=Bitmap+6054 Bitmap+6054=a Bitmap+6055=a
+	/*byte 35*/ a=x x=Bitmap+6046 Bitmap+6046=a Bitmap+6047=a
+	/*byte 34*/ a=x x=Bitmap+6038 Bitmap+6038=a Bitmap+6039=a
+	/*byte 33*/ a=x x=Bitmap+6030 Bitmap+6030=a Bitmap+6031=a
+	/*byte 32*/ a=x x=Bitmap+6022 Bitmap+6022=a Bitmap+6023=a
+	/*byte 31*/ a=x a&0x3F x=Bitmap+6014 a|RorMC0,x Bitmap+6014=a Bitmap+6015=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+6006 a|RorMC0,x Bitmap+6006=a Bitmap+6007=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+5998 a|RorMC0,x Bitmap+5998=a Bitmap+5999=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+5990 a|RorMC0,x Bitmap+5990=a Bitmap+5991=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+5982 a|RorMC0,x Bitmap+5982=a Bitmap+5983=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+5974 a|SwapMC0,x Bitmap+5974=a Bitmap+5975=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+5966 a|SwapMF0,x Bitmap+5966=a Bitmap+5967=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+5958 a|SwapMF0,x Bitmap+5958=a Bitmap+5959=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+5950 a|RolMC0,x a|SwapM30,x Bitmap+5950=a Bitmap+5951=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+5942 a|RolMFC,x Bitmap+5942=a Bitmap+5943=a
+	/*byte 39*/ y=75 a=(ptrB),y Bitmap+6078=a Bitmap+6079=a
+
+// line 76  -  [5 12 21 30]
+	x=Bitmap+6392
+	/*byte 38*/ a=x x=Bitmap+6384 Bitmap+6384=a Bitmap+6385=a
+	/*byte 37*/ a=x x=Bitmap+6376 Bitmap+6376=a Bitmap+6377=a
+	/*byte 36*/ a=x x=Bitmap+6368 Bitmap+6368=a Bitmap+6369=a
+	/*byte 35*/ a=x x=Bitmap+6360 Bitmap+6360=a Bitmap+6361=a
+	/*byte 34*/ a=x x=Bitmap+6352 Bitmap+6352=a Bitmap+6353=a
+	/*byte 33*/ a=x x=Bitmap+6344 Bitmap+6344=a Bitmap+6345=a
+	/*byte 32*/ a=x x=Bitmap+6336 Bitmap+6336=a Bitmap+6337=a
+	/*byte 31*/ a=x a&0x0F a|RorM30,x x=Bitmap+6328 a|RorMC0,x Bitmap+6328=a Bitmap+6329=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+6320 a|RorMC0,x Bitmap+6320=a Bitmap+6321=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+6312 a|RorMC0,x Bitmap+6312=a Bitmap+6313=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+6304 a|RorMC0,x Bitmap+6304=a Bitmap+6305=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+6296 a|RorMC0,x Bitmap+6296=a Bitmap+6297=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+6288 a|SwapMC0,x Bitmap+6288=a Bitmap+6289=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+6280 a|SwapMF0,x Bitmap+6280=a Bitmap+6281=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+6272 a|SwapMF0,x Bitmap+6272=a Bitmap+6273=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+6264 a|RolMC0,x a|SwapM30,x Bitmap+6264=a Bitmap+6265=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+6256 a|RolMFC,x Bitmap+6256=a Bitmap+6257=a
+	/*byte 39*/ y=76 a=(ptrB),y Bitmap+6392=a Bitmap+6393=a
+
+// line 77  -  [5 11 21 30]
+	x=Bitmap+6394
+	/*byte 38*/ a=x x=Bitmap+6386 Bitmap+6386=a Bitmap+6387=a
+	/*byte 37*/ a=x x=Bitmap+6378 Bitmap+6378=a Bitmap+6379=a
+	/*byte 36*/ a=x x=Bitmap+6370 Bitmap+6370=a Bitmap+6371=a
+	/*byte 35*/ a=x x=Bitmap+6362 Bitmap+6362=a Bitmap+6363=a
+	/*byte 34*/ a=x x=Bitmap+6354 Bitmap+6354=a Bitmap+6355=a
+	/*byte 33*/ a=x x=Bitmap+6346 Bitmap+6346=a Bitmap+6347=a
+	/*byte 32*/ a=x x=Bitmap+6338 Bitmap+6338=a Bitmap+6339=a
+	/*byte 31*/ a=x a&0x0F a|RorM30,x x=Bitmap+6330 a|RorMC0,x Bitmap+6330=a Bitmap+6331=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+6322 a|RorMC0,x Bitmap+6322=a Bitmap+6323=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+6314 a|RorMC0,x Bitmap+6314=a Bitmap+6315=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+6306 a|RorMC0,x Bitmap+6306=a Bitmap+6307=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+6298 a|RorMC0,x Bitmap+6298=a Bitmap+6299=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+6290 a|SwapMC0,x Bitmap+6290=a Bitmap+6291=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+6282 a|SwapMF0,x Bitmap+6282=a Bitmap+6283=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+6274 a|SwapMF0,x Bitmap+6274=a Bitmap+6275=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+6266 a|RolMF0,x Bitmap+6266=a Bitmap+6267=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+6258 a|RolM3C,x Bitmap+6258=a Bitmap+6259=a
+	/*byte 39*/ y=77 a=(ptrB),y Bitmap+6394=a Bitmap+6395=a
+
+// line 78  -  [5 11 21 30]
+	x=Bitmap+6396
+	/*byte 38*/ a=x x=Bitmap+6388 Bitmap+6388=a Bitmap+6389=a
+	/*byte 37*/ a=x x=Bitmap+6380 Bitmap+6380=a Bitmap+6381=a
+	/*byte 36*/ a=x x=Bitmap+6372 Bitmap+6372=a Bitmap+6373=a
+	/*byte 35*/ a=x x=Bitmap+6364 Bitmap+6364=a Bitmap+6365=a
+	/*byte 34*/ a=x x=Bitmap+6356 Bitmap+6356=a Bitmap+6357=a
+	/*byte 33*/ a=x x=Bitmap+6348 Bitmap+6348=a Bitmap+6349=a
+	/*byte 32*/ a=x x=Bitmap+6340 Bitmap+6340=a Bitmap+6341=a
+	/*byte 31*/ a=x a&0x0F a|RorM30,x x=Bitmap+6332 a|RorMC0,x Bitmap+6332=a Bitmap+6333=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+6324 a|RorMC0,x Bitmap+6324=a Bitmap+6325=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+6316 a|RorMC0,x Bitmap+6316=a Bitmap+6317=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+6308 a|RorMC0,x Bitmap+6308=a Bitmap+6309=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+6300 a|RorMC0,x Bitmap+6300=a Bitmap+6301=a
+	/*byte 26*/ a=RorM3F,x x=Bitmap+6292 a|SwapMC0,x Bitmap+6292=a Bitmap+6293=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+6284 a|SwapMF0,x Bitmap+6284=a Bitmap+6285=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+6276 a|SwapMF0,x Bitmap+6276=a Bitmap+6277=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+6268 a|RolMF0,x Bitmap+6268=a Bitmap+6269=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+6260 a|RolM3C,x Bitmap+6260=a Bitmap+6261=a
+	/*byte 39*/ y=78 a=(ptrB),y Bitmap+6396=a Bitmap+6397=a
+
+// line 79  -  [5 12 21 29]
+	x=Bitmap+6398
+	/*byte 38*/ a=x x=Bitmap+6390 Bitmap+6390=a Bitmap+6391=a
+	/*byte 37*/ a=x x=Bitmap+6382 Bitmap+6382=a Bitmap+6383=a
+	/*byte 36*/ a=x x=Bitmap+6374 Bitmap+6374=a Bitmap+6375=a
+	/*byte 35*/ a=x x=Bitmap+6366 Bitmap+6366=a Bitmap+6367=a
+	/*byte 34*/ a=x x=Bitmap+6358 Bitmap+6358=a Bitmap+6359=a
+	/*byte 33*/ a=x x=Bitmap+6350 Bitmap+6350=a Bitmap+6351=a
+	/*byte 32*/ a=x x=Bitmap+6342 Bitmap+6342=a Bitmap+6343=a
+	/*byte 31*/ a=x a&0x03 a|RorM3C,x x=Bitmap+6334 a|RorMC0,x Bitmap+6334=a Bitmap+6335=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+6326 a|RorMC0,x Bitmap+6326=a Bitmap+6327=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+6318 a|RorMC0,x Bitmap+6318=a Bitmap+6319=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+6310 a|RorMC0,x Bitmap+6310=a Bitmap+6311=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+6302 a|RorMC0,x Bitmap+6302=a Bitmap+6303=a
+	/*byte 26*/ a=RorM0F,x x=Bitmap+6294 a|SwapMF0,x Bitmap+6294=a Bitmap+6295=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+6286 a|SwapMF0,x Bitmap+6286=a Bitmap+6287=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+6278 a|SwapMF0,x Bitmap+6278=a Bitmap+6279=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+6270 a|RolMF0,x Bitmap+6270=a Bitmap+6271=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+6262 a|RolM3C,x Bitmap+6262=a Bitmap+6263=a
+	/*byte 39*/ y=79 a=(ptrB),y Bitmap+6398=a Bitmap+6399=a
+
+// line 80  -  [5 12 21 29]
+	x=Bitmap+6712
+	/*byte 38*/ a=x x=Bitmap+6704 Bitmap+6704=a Bitmap+6705=a
+	/*byte 37*/ a=x x=Bitmap+6696 Bitmap+6696=a Bitmap+6697=a
+	/*byte 36*/ a=x x=Bitmap+6688 Bitmap+6688=a Bitmap+6689=a
+	/*byte 35*/ a=x x=Bitmap+6680 Bitmap+6680=a Bitmap+6681=a
+	/*byte 34*/ a=x x=Bitmap+6672 Bitmap+6672=a Bitmap+6673=a
+	/*byte 33*/ a=x x=Bitmap+6664 Bitmap+6664=a Bitmap+6665=a
+	/*byte 32*/ a=x x=Bitmap+6656 Bitmap+6656=a Bitmap+6657=a
+	/*byte 31*/ a=x a&0x03 a|RorM3C,x x=Bitmap+6648 a|RorMC0,x Bitmap+6648=a Bitmap+6649=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+6640 a|RorMC0,x Bitmap+6640=a Bitmap+6641=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+6632 a|RorMC0,x Bitmap+6632=a Bitmap+6633=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+6624 a|RorMC0,x Bitmap+6624=a Bitmap+6625=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+6616 a|RorMC0,x Bitmap+6616=a Bitmap+6617=a
+	/*byte 26*/ a=RorM0F,x x=Bitmap+6608 a|SwapMF0,x Bitmap+6608=a Bitmap+6609=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+6600 a|SwapMF0,x Bitmap+6600=a Bitmap+6601=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+6592 a|SwapMF0,x Bitmap+6592=a Bitmap+6593=a
+	/*byte 23*/ a=SwapM0F,x x=Bitmap+6584 a|RolMF0,x Bitmap+6584=a Bitmap+6585=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+6576 a|RolM3C,x Bitmap+6576=a Bitmap+6577=a
+	/*byte 39*/ y=80 a=(ptrB),y Bitmap+6712=a Bitmap+6713=a
+
+// line 81  -  [6 11 21 29]
+	x=Bitmap+6714
+	/*byte 38*/ a=x x=Bitmap+6706 Bitmap+6706=a Bitmap+6707=a
+	/*byte 37*/ a=x x=Bitmap+6698 Bitmap+6698=a Bitmap+6699=a
+	/*byte 36*/ a=x x=Bitmap+6690 Bitmap+6690=a Bitmap+6691=a
+	/*byte 35*/ a=x x=Bitmap+6682 Bitmap+6682=a Bitmap+6683=a
+	/*byte 34*/ a=x x=Bitmap+6674 Bitmap+6674=a Bitmap+6675=a
+	/*byte 33*/ a=x x=Bitmap+6666 Bitmap+6666=a Bitmap+6667=a
+	/*byte 32*/ a=x x=Bitmap+6658 Bitmap+6658=a Bitmap+6659=a
+	/*byte 31*/ a=x a&0x03 a|RorM3C,x x=Bitmap+6650 a|RorMC0,x Bitmap+6650=a Bitmap+6651=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+6642 a|RorMC0,x Bitmap+6642=a Bitmap+6643=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+6634 a|RorMC0,x Bitmap+6634=a Bitmap+6635=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+6626 a|RorMC0,x Bitmap+6626=a Bitmap+6627=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+6618 a|RorMC0,x Bitmap+6618=a Bitmap+6619=a
+	/*byte 26*/ a=RorM0F,x x=Bitmap+6610 a|SwapMF0,x Bitmap+6610=a Bitmap+6611=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+6602 a|SwapMF0,x Bitmap+6602=a Bitmap+6603=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+6594 a|SwapMF0,x Bitmap+6594=a Bitmap+6595=a
+	/*byte 23*/ a=SwapM03,x x=Bitmap+6586 a|RolMFC,x Bitmap+6586=a Bitmap+6587=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+6578 a|RolM3C,x Bitmap+6578=a Bitmap+6579=a
+	/*byte 39*/ y=81 a=(ptrB),y Bitmap+6714=a Bitmap+6715=a
+
+// line 82  -  [5 12 21 28]
+	x=Bitmap+6716
+	/*byte 38*/ a=x x=Bitmap+6708 Bitmap+6708=a Bitmap+6709=a
+	/*byte 37*/ a=x x=Bitmap+6700 Bitmap+6700=a Bitmap+6701=a
+	/*byte 36*/ a=x x=Bitmap+6692 Bitmap+6692=a Bitmap+6693=a
+	/*byte 35*/ a=x x=Bitmap+6684 Bitmap+6684=a Bitmap+6685=a
+	/*byte 34*/ a=x x=Bitmap+6676 Bitmap+6676=a Bitmap+6677=a
+	/*byte 33*/ a=x x=Bitmap+6668 Bitmap+6668=a Bitmap+6669=a
+	/*byte 32*/ a=x x=Bitmap+6660 Bitmap+6660=a Bitmap+6661=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+6652 a|RorMC0,x Bitmap+6652=a Bitmap+6653=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+6644 a|RorMC0,x Bitmap+6644=a Bitmap+6645=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+6636 a|RorMC0,x Bitmap+6636=a Bitmap+6637=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+6628 a|RorMC0,x Bitmap+6628=a Bitmap+6629=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+6620 a|RorMC0,x Bitmap+6620=a Bitmap+6621=a
+	/*byte 26*/ a=SwapM0C,x a|RorM03,x x=Bitmap+6612 a|SwapMF0,x Bitmap+6612=a Bitmap+6613=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+6604 a|SwapMF0,x Bitmap+6604=a Bitmap+6605=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+6596 a|SwapMF0,x Bitmap+6596=a Bitmap+6597=a
+	/*byte 23*/ a=SwapM03,x x=Bitmap+6588 a|RolMFC,x Bitmap+6588=a Bitmap+6589=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+6580 a|RolM0C,x Bitmap+6580=a Bitmap+6581=a
+	/*byte 39*/ y=82 a=(ptrB),y Bitmap+6716=a Bitmap+6717=a
+
+// line 83  -  [5 12 21 28]
+	x=Bitmap+6718
+	/*byte 38*/ a=x x=Bitmap+6710 Bitmap+6710=a Bitmap+6711=a
+	/*byte 37*/ a=x x=Bitmap+6702 Bitmap+6702=a Bitmap+6703=a
+	/*byte 36*/ a=x x=Bitmap+6694 Bitmap+6694=a Bitmap+6695=a
+	/*byte 35*/ a=x x=Bitmap+6686 Bitmap+6686=a Bitmap+6687=a
+	/*byte 34*/ a=x x=Bitmap+6678 Bitmap+6678=a Bitmap+6679=a
+	/*byte 33*/ a=x x=Bitmap+6670 Bitmap+6670=a Bitmap+6671=a
+	/*byte 32*/ a=x x=Bitmap+6662 Bitmap+6662=a Bitmap+6663=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+6654 a|RorMC0,x Bitmap+6654=a Bitmap+6655=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+6646 a|RorMC0,x Bitmap+6646=a Bitmap+6647=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+6638 a|RorMC0,x Bitmap+6638=a Bitmap+6639=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+6630 a|RorMC0,x Bitmap+6630=a Bitmap+6631=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+6622 a|RorMC0,x Bitmap+6622=a Bitmap+6623=a
+	/*byte 26*/ a=SwapM0C,x a|RorM03,x x=Bitmap+6614 a|SwapMF0,x Bitmap+6614=a Bitmap+6615=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+6606 a|SwapMF0,x Bitmap+6606=a Bitmap+6607=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+6598 a|SwapMF0,x Bitmap+6598=a Bitmap+6599=a
+	/*byte 23*/ a=SwapM03,x x=Bitmap+6590 a|RolMFC,x Bitmap+6590=a Bitmap+6591=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+6582 a|RolM0C,x Bitmap+6582=a Bitmap+6583=a
+	/*byte 39*/ y=83 a=(ptrB),y Bitmap+6718=a Bitmap+6719=a
+
+// line 84  -  [5 12 22 27]
+	x=Bitmap+7032
+	/*byte 38*/ a=x x=Bitmap+7024 Bitmap+7024=a Bitmap+7025=a
+	/*byte 37*/ a=x x=Bitmap+7016 Bitmap+7016=a Bitmap+7017=a
+	/*byte 36*/ a=x x=Bitmap+7008 Bitmap+7008=a Bitmap+7009=a
+	/*byte 35*/ a=x x=Bitmap+7000 Bitmap+7000=a Bitmap+7001=a
+	/*byte 34*/ a=x x=Bitmap+6992 Bitmap+6992=a Bitmap+6993=a
+	/*byte 33*/ a=x x=Bitmap+6984 Bitmap+6984=a Bitmap+6985=a
+	/*byte 32*/ a=x a&0x3F x=Bitmap+6976 a|RorMC0,x Bitmap+6976=a Bitmap+6977=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+6968 a|RorMC0,x Bitmap+6968=a Bitmap+6969=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+6960 a|RorMC0,x Bitmap+6960=a Bitmap+6961=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+6952 a|RorMC0,x Bitmap+6952=a Bitmap+6953=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+6944 a|RorMC0,x Bitmap+6944=a Bitmap+6945=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+6936 a|RorMC0,x Bitmap+6936=a Bitmap+6937=a
+	/*byte 26*/ a=SwapM0C,x a|RorM03,x x=Bitmap+6928 a|SwapMF0,x Bitmap+6928=a Bitmap+6929=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+6920 a|SwapMF0,x Bitmap+6920=a Bitmap+6921=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+6912 a|SwapMF0,x Bitmap+6912=a Bitmap+6913=a
+	/*byte 23*/ a=SwapM03,x x=Bitmap+6904 a|RolMFC,x Bitmap+6904=a Bitmap+6905=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+6896 a|RolM0C,x Bitmap+6896=a Bitmap+6897=a
+	/*byte 39*/ y=84 a=(ptrB),y Bitmap+7032=a Bitmap+7033=a
+
+// line 85  -  [5 12 21 27]
+	x=Bitmap+7034
+	/*byte 38*/ a=x x=Bitmap+7026 Bitmap+7026=a Bitmap+7027=a
+	/*byte 37*/ a=x x=Bitmap+7018 Bitmap+7018=a Bitmap+7019=a
+	/*byte 36*/ a=x x=Bitmap+7010 Bitmap+7010=a Bitmap+7011=a
+	/*byte 35*/ a=x x=Bitmap+7002 Bitmap+7002=a Bitmap+7003=a
+	/*byte 34*/ a=x x=Bitmap+6994 Bitmap+6994=a Bitmap+6995=a
+	/*byte 33*/ a=x x=Bitmap+6986 Bitmap+6986=a Bitmap+6987=a
+	/*byte 32*/ a=x a&0x3F x=Bitmap+6978 a|RorMC0,x Bitmap+6978=a Bitmap+6979=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+6970 a|RorMC0,x Bitmap+6970=a Bitmap+6971=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+6962 a|RorMC0,x Bitmap+6962=a Bitmap+6963=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+6954 a|RorMC0,x Bitmap+6954=a Bitmap+6955=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+6946 a|RorMC0,x Bitmap+6946=a Bitmap+6947=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+6938 a|RorMC0,x Bitmap+6938=a Bitmap+6939=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+6930 a|SwapMF0,x Bitmap+6930=a Bitmap+6931=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+6922 a|SwapMF0,x Bitmap+6922=a Bitmap+6923=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+6914 a|SwapMF0,x Bitmap+6914=a Bitmap+6915=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+6906 a|RolMFC,x Bitmap+6906=a Bitmap+6907=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+6898 Bitmap+6898=a Bitmap+6899=a
+	/*byte 39*/ y=85 a=(ptrB),y Bitmap+7034=a Bitmap+7035=a
+
+// line 86  -  [5 12 22 26]
+	x=Bitmap+7036
+	/*byte 38*/ a=x x=Bitmap+7028 Bitmap+7028=a Bitmap+7029=a
+	/*byte 37*/ a=x x=Bitmap+7020 Bitmap+7020=a Bitmap+7021=a
+	/*byte 36*/ a=x x=Bitmap+7012 Bitmap+7012=a Bitmap+7013=a
+	/*byte 35*/ a=x x=Bitmap+7004 Bitmap+7004=a Bitmap+7005=a
+	/*byte 34*/ a=x x=Bitmap+6996 Bitmap+6996=a Bitmap+6997=a
+	/*byte 33*/ a=x x=Bitmap+6988 Bitmap+6988=a Bitmap+6989=a
+	/*byte 32*/ a=x a&0x0F a|RorM30,x x=Bitmap+6980 a|RorMC0,x Bitmap+6980=a Bitmap+6981=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+6972 a|RorMC0,x Bitmap+6972=a Bitmap+6973=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+6964 a|RorMC0,x Bitmap+6964=a Bitmap+6965=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+6956 a|RorMC0,x Bitmap+6956=a Bitmap+6957=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+6948 a|RorMC0,x Bitmap+6948=a Bitmap+6949=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+6940 a|RorMC0,x Bitmap+6940=a Bitmap+6941=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+6932 a|SwapMF0,x Bitmap+6932=a Bitmap+6933=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+6924 a|SwapMF0,x Bitmap+6924=a Bitmap+6925=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+6916 a|SwapMF0,x Bitmap+6916=a Bitmap+6917=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+6908 a|RolMFC,x Bitmap+6908=a Bitmap+6909=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+6900 Bitmap+6900=a Bitmap+6901=a
+	/*byte 39*/ y=86 a=(ptrB),y Bitmap+7036=a Bitmap+7037=a
+
+// line 87  -  [5 12 22 26]
+	x=Bitmap+7038
+	/*byte 38*/ a=x x=Bitmap+7030 Bitmap+7030=a Bitmap+7031=a
+	/*byte 37*/ a=x x=Bitmap+7022 Bitmap+7022=a Bitmap+7023=a
+	/*byte 36*/ a=x x=Bitmap+7014 Bitmap+7014=a Bitmap+7015=a
+	/*byte 35*/ a=x x=Bitmap+7006 Bitmap+7006=a Bitmap+7007=a
+	/*byte 34*/ a=x x=Bitmap+6998 Bitmap+6998=a Bitmap+6999=a
+	/*byte 33*/ a=x x=Bitmap+6990 Bitmap+6990=a Bitmap+6991=a
+	/*byte 32*/ a=x a&0x0F a|RorM30,x x=Bitmap+6982 a|RorMC0,x Bitmap+6982=a Bitmap+6983=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+6974 a|RorMC0,x Bitmap+6974=a Bitmap+6975=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+6966 a|RorMC0,x Bitmap+6966=a Bitmap+6967=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+6958 a|RorMC0,x Bitmap+6958=a Bitmap+6959=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+6950 a|RorMC0,x Bitmap+6950=a Bitmap+6951=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+6942 a|RorMC0,x Bitmap+6942=a Bitmap+6943=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+6934 a|SwapMF0,x Bitmap+6934=a Bitmap+6935=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+6926 a|SwapMF0,x Bitmap+6926=a Bitmap+6927=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+6918 a|SwapMF0,x Bitmap+6918=a Bitmap+6919=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+6910 a|RolMFC,x Bitmap+6910=a Bitmap+6911=a
+	/*byte 22*/ a=RolM03,x x=Bitmap+6902 Bitmap+6902=a Bitmap+6903=a
+	/*byte 39*/ y=87 a=(ptrB),y Bitmap+7038=a Bitmap+7039=a
+
+// line 88  -  [5 12 22 25]
+	x=Bitmap+7352
+	/*byte 38*/ a=x x=Bitmap+7344 Bitmap+7344=a Bitmap+7345=a
+	/*byte 37*/ a=x x=Bitmap+7336 Bitmap+7336=a Bitmap+7337=a
+	/*byte 36*/ a=x x=Bitmap+7328 Bitmap+7328=a Bitmap+7329=a
+	/*byte 35*/ a=x x=Bitmap+7320 Bitmap+7320=a Bitmap+7321=a
+	/*byte 34*/ a=x x=Bitmap+7312 Bitmap+7312=a Bitmap+7313=a
+	/*byte 33*/ a=x x=Bitmap+7304 Bitmap+7304=a Bitmap+7305=a
+	/*byte 32*/ a=x a&0x03 a|RorM3C,x x=Bitmap+7296 a|RorMC0,x Bitmap+7296=a Bitmap+7297=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+7288 a|RorMC0,x Bitmap+7288=a Bitmap+7289=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+7280 a|RorMC0,x Bitmap+7280=a Bitmap+7281=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+7272 a|RorMC0,x Bitmap+7272=a Bitmap+7273=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+7264 a|RorMC0,x Bitmap+7264=a Bitmap+7265=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+7256 a|SwapMC0,x Bitmap+7256=a Bitmap+7257=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+7248 a|SwapMF0,x Bitmap+7248=a Bitmap+7249=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+7240 a|SwapMF0,x Bitmap+7240=a Bitmap+7241=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+7232 a|RolMC0,x a|SwapM30,x Bitmap+7232=a Bitmap+7233=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+7224 a|RolMFC,x Bitmap+7224=a Bitmap+7225=a
+	/*byte 39*/ y=88 a=(ptrB),y Bitmap+7352=a Bitmap+7353=a
+
+// line 89  -  [5 12 22 25]
+	x=Bitmap+7354
+	/*byte 38*/ a=x x=Bitmap+7346 Bitmap+7346=a Bitmap+7347=a
+	/*byte 37*/ a=x x=Bitmap+7338 Bitmap+7338=a Bitmap+7339=a
+	/*byte 36*/ a=x x=Bitmap+7330 Bitmap+7330=a Bitmap+7331=a
+	/*byte 35*/ a=x x=Bitmap+7322 Bitmap+7322=a Bitmap+7323=a
+	/*byte 34*/ a=x x=Bitmap+7314 Bitmap+7314=a Bitmap+7315=a
+	/*byte 33*/ a=x x=Bitmap+7306 Bitmap+7306=a Bitmap+7307=a
+	/*byte 32*/ a=x a&0x03 a|RorM3C,x x=Bitmap+7298 a|RorMC0,x Bitmap+7298=a Bitmap+7299=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+7290 a|RorMC0,x Bitmap+7290=a Bitmap+7291=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+7282 a|RorMC0,x Bitmap+7282=a Bitmap+7283=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+7274 a|RorMC0,x Bitmap+7274=a Bitmap+7275=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+7266 a|RorMC0,x Bitmap+7266=a Bitmap+7267=a
+	/*byte 27*/ a=RorM3F,x x=Bitmap+7258 a|SwapMC0,x Bitmap+7258=a Bitmap+7259=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+7250 a|SwapMF0,x Bitmap+7250=a Bitmap+7251=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+7242 a|SwapMF0,x Bitmap+7242=a Bitmap+7243=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+7234 a|RolMC0,x a|SwapM30,x Bitmap+7234=a Bitmap+7235=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+7226 a|RolMFC,x Bitmap+7226=a Bitmap+7227=a
+	/*byte 39*/ y=89 a=(ptrB),y Bitmap+7354=a Bitmap+7355=a
+
+// line 90  -  [5 13 22 24]
+	x=Bitmap+7356
+	/*byte 38*/ a=x x=Bitmap+7348 Bitmap+7348=a Bitmap+7349=a
+	/*byte 37*/ a=x x=Bitmap+7340 Bitmap+7340=a Bitmap+7341=a
+	/*byte 36*/ a=x x=Bitmap+7332 Bitmap+7332=a Bitmap+7333=a
+	/*byte 35*/ a=x x=Bitmap+7324 Bitmap+7324=a Bitmap+7325=a
+	/*byte 34*/ a=x x=Bitmap+7316 Bitmap+7316=a Bitmap+7317=a
+	/*byte 33*/ a=x x=Bitmap+7308 Bitmap+7308=a Bitmap+7309=a
+	/*byte 32*/ a=RorM3F,x x=Bitmap+7300 a|RorMC0,x Bitmap+7300=a Bitmap+7301=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+7292 a|RorMC0,x Bitmap+7292=a Bitmap+7293=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+7284 a|RorMC0,x Bitmap+7284=a Bitmap+7285=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+7276 a|RorMC0,x Bitmap+7276=a Bitmap+7277=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+7268 a|RorMC0,x Bitmap+7268=a Bitmap+7269=a
+	/*byte 27*/ a=RorM0F,x x=Bitmap+7260 a|SwapMF0,x Bitmap+7260=a Bitmap+7261=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+7252 a|SwapMF0,x Bitmap+7252=a Bitmap+7253=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+7244 a|SwapMF0,x Bitmap+7244=a Bitmap+7245=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+7236 a|RolMC0,x a|SwapM30,x Bitmap+7236=a Bitmap+7237=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+7228 a|RolMFC,x Bitmap+7228=a Bitmap+7229=a
+	/*byte 39*/ y=90 a=(ptrB),y Bitmap+7356=a Bitmap+7357=a
+
+// line 91  -  [5 12 22 24]
+	x=Bitmap+7358
+	/*byte 38*/ a=x x=Bitmap+7350 Bitmap+7350=a Bitmap+7351=a
+	/*byte 37*/ a=x x=Bitmap+7342 Bitmap+7342=a Bitmap+7343=a
+	/*byte 36*/ a=x x=Bitmap+7334 Bitmap+7334=a Bitmap+7335=a
+	/*byte 35*/ a=x x=Bitmap+7326 Bitmap+7326=a Bitmap+7327=a
+	/*byte 34*/ a=x x=Bitmap+7318 Bitmap+7318=a Bitmap+7319=a
+	/*byte 33*/ a=x x=Bitmap+7310 Bitmap+7310=a Bitmap+7311=a
+	/*byte 32*/ a=RorM3F,x x=Bitmap+7302 a|RorMC0,x Bitmap+7302=a Bitmap+7303=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+7294 a|RorMC0,x Bitmap+7294=a Bitmap+7295=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+7286 a|RorMC0,x Bitmap+7286=a Bitmap+7287=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+7278 a|RorMC0,x Bitmap+7278=a Bitmap+7279=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+7270 a|RorMC0,x Bitmap+7270=a Bitmap+7271=a
+	/*byte 27*/ a=RorM0F,x x=Bitmap+7262 a|SwapMF0,x Bitmap+7262=a Bitmap+7263=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+7254 a|SwapMF0,x Bitmap+7254=a Bitmap+7255=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+7246 a|SwapMF0,x Bitmap+7246=a Bitmap+7247=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+7238 a|RolMF0,x Bitmap+7238=a Bitmap+7239=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+7230 a|RolM3C,x Bitmap+7230=a Bitmap+7231=a
+	/*byte 39*/ y=91 a=(ptrB),y Bitmap+7358=a Bitmap+7359=a
+
+// line 92  -  [5 12 23 23]
+	x=Bitmap+7672
+	/*byte 38*/ a=x x=Bitmap+7664 Bitmap+7664=a Bitmap+7665=a
+	/*byte 37*/ a=x x=Bitmap+7656 Bitmap+7656=a Bitmap+7657=a
+	/*byte 36*/ a=x x=Bitmap+7648 Bitmap+7648=a Bitmap+7649=a
+	/*byte 35*/ a=x x=Bitmap+7640 Bitmap+7640=a Bitmap+7641=a
+	/*byte 34*/ a=x x=Bitmap+7632 Bitmap+7632=a Bitmap+7633=a
+	/*byte 33*/ a=x a&0x3F x=Bitmap+7624 a|RorMC0,x Bitmap+7624=a Bitmap+7625=a
+	/*byte 32*/ a=RorM3F,x x=Bitmap+7616 a|RorMC0,x Bitmap+7616=a Bitmap+7617=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+7608 a|RorMC0,x Bitmap+7608=a Bitmap+7609=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+7600 a|RorMC0,x Bitmap+7600=a Bitmap+7601=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+7592 a|RorMC0,x Bitmap+7592=a Bitmap+7593=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+7584 a|RorMC0,x Bitmap+7584=a Bitmap+7585=a
+	/*byte 27*/ a=RorM0F,x x=Bitmap+7576 a|SwapMF0,x Bitmap+7576=a Bitmap+7577=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+7568 a|SwapMF0,x Bitmap+7568=a Bitmap+7569=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+7560 a|SwapMF0,x Bitmap+7560=a Bitmap+7561=a
+	/*byte 24*/ a=SwapM0F,x x=Bitmap+7552 a|RolMF0,x Bitmap+7552=a Bitmap+7553=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+7544 a|RolM3C,x Bitmap+7544=a Bitmap+7545=a
+	/*byte 39*/ y=92 a=(ptrB),y Bitmap+7672=a Bitmap+7673=a
+
+// line 93  -  [6 12 22 23]
+	x=Bitmap+7674
+	/*byte 38*/ a=x x=Bitmap+7666 Bitmap+7666=a Bitmap+7667=a
+	/*byte 37*/ a=x x=Bitmap+7658 Bitmap+7658=a Bitmap+7659=a
+	/*byte 36*/ a=x x=Bitmap+7650 Bitmap+7650=a Bitmap+7651=a
+	/*byte 35*/ a=x x=Bitmap+7642 Bitmap+7642=a Bitmap+7643=a
+	/*byte 34*/ a=x x=Bitmap+7634 Bitmap+7634=a Bitmap+7635=a
+	/*byte 33*/ a=x a&0x3F x=Bitmap+7626 a|RorMC0,x Bitmap+7626=a Bitmap+7627=a
+	/*byte 32*/ a=RorM3F,x x=Bitmap+7618 a|RorMC0,x Bitmap+7618=a Bitmap+7619=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+7610 a|RorMC0,x Bitmap+7610=a Bitmap+7611=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+7602 a|RorMC0,x Bitmap+7602=a Bitmap+7603=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+7594 a|RorMC0,x Bitmap+7594=a Bitmap+7595=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+7586 a|RorMC0,x Bitmap+7586=a Bitmap+7587=a
+	/*byte 27*/ a=SwapM0C,x a|RorM03,x x=Bitmap+7578 a|SwapMF0,x Bitmap+7578=a Bitmap+7579=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+7570 a|SwapMF0,x Bitmap+7570=a Bitmap+7571=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+7562 a|SwapMF0,x Bitmap+7562=a Bitmap+7563=a
+	/*byte 24*/ a=SwapM03,x x=Bitmap+7554 a|RolMFC,x Bitmap+7554=a Bitmap+7555=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+7546 a|RolM3C,x Bitmap+7546=a Bitmap+7547=a
+	/*byte 39*/ y=93 a=(ptrB),y Bitmap+7674=a Bitmap+7675=a
+
+// line 94  -  [5 12 23 22]
+	x=Bitmap+7676
+	/*byte 38*/ a=x x=Bitmap+7668 Bitmap+7668=a Bitmap+7669=a
+	/*byte 37*/ a=x x=Bitmap+7660 Bitmap+7660=a Bitmap+7661=a
+	/*byte 36*/ a=x x=Bitmap+7652 Bitmap+7652=a Bitmap+7653=a
+	/*byte 35*/ a=x x=Bitmap+7644 Bitmap+7644=a Bitmap+7645=a
+	/*byte 34*/ a=x x=Bitmap+7636 Bitmap+7636=a Bitmap+7637=a
+	/*byte 33*/ a=x a&0x0F a|RorM30,x x=Bitmap+7628 a|RorMC0,x Bitmap+7628=a Bitmap+7629=a
+	/*byte 32*/ a=RorM3F,x x=Bitmap+7620 a|RorMC0,x Bitmap+7620=a Bitmap+7621=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+7612 a|RorMC0,x Bitmap+7612=a Bitmap+7613=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+7604 a|RorMC0,x Bitmap+7604=a Bitmap+7605=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+7596 a|RorMC0,x Bitmap+7596=a Bitmap+7597=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+7588 a|RorMC0,x Bitmap+7588=a Bitmap+7589=a
+	/*byte 27*/ a=SwapM0C,x a|RorM03,x x=Bitmap+7580 a|SwapMF0,x Bitmap+7580=a Bitmap+7581=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+7572 a|SwapMF0,x Bitmap+7572=a Bitmap+7573=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+7564 a|SwapMF0,x Bitmap+7564=a Bitmap+7565=a
+	/*byte 24*/ a=SwapM03,x x=Bitmap+7556 a|RolMFC,x Bitmap+7556=a Bitmap+7557=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+7548 a|RolM0C,x Bitmap+7548=a Bitmap+7549=a
+	/*byte 39*/ y=94 a=(ptrB),y Bitmap+7676=a Bitmap+7677=a
+
+// line 95  -  [5 13 22 22]
+	x=Bitmap+7678
+	/*byte 38*/ a=x x=Bitmap+7670 Bitmap+7670=a Bitmap+7671=a
+	/*byte 37*/ a=x x=Bitmap+7662 Bitmap+7662=a Bitmap+7663=a
+	/*byte 36*/ a=x x=Bitmap+7654 Bitmap+7654=a Bitmap+7655=a
+	/*byte 35*/ a=x x=Bitmap+7646 Bitmap+7646=a Bitmap+7647=a
+	/*byte 34*/ a=x x=Bitmap+7638 Bitmap+7638=a Bitmap+7639=a
+	/*byte 33*/ a=x a&0x0F a|RorM30,x x=Bitmap+7630 a|RorMC0,x Bitmap+7630=a Bitmap+7631=a
+	/*byte 32*/ a=RorM3F,x x=Bitmap+7622 a|RorMC0,x Bitmap+7622=a Bitmap+7623=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+7614 a|RorMC0,x Bitmap+7614=a Bitmap+7615=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+7606 a|RorMC0,x Bitmap+7606=a Bitmap+7607=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+7598 a|RorMC0,x Bitmap+7598=a Bitmap+7599=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+7590 a|RorMC0,x Bitmap+7590=a Bitmap+7591=a
+	/*byte 27*/ a=SwapM0F,x x=Bitmap+7582 a|SwapMF0,x Bitmap+7582=a Bitmap+7583=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+7574 a|SwapMF0,x Bitmap+7574=a Bitmap+7575=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+7566 a|SwapMF0,x Bitmap+7566=a Bitmap+7567=a
+	/*byte 24*/ a=SwapM03,x x=Bitmap+7558 a|RolMFC,x Bitmap+7558=a Bitmap+7559=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+7550 a|RolM0C,x Bitmap+7550=a Bitmap+7551=a
+	/*byte 39*/ y=95 a=(ptrB),y Bitmap+7678=a Bitmap+7679=a
+
+// line 96  -  [6 12 23 21]
+	x=Bitmap+7992
+	/*byte 38*/ a=x x=Bitmap+7984 Bitmap+7984=a Bitmap+7985=a
+	/*byte 37*/ a=x x=Bitmap+7976 Bitmap+7976=a Bitmap+7977=a
+	/*byte 36*/ a=x x=Bitmap+7968 Bitmap+7968=a Bitmap+7969=a
+	/*byte 35*/ a=x x=Bitmap+7960 Bitmap+7960=a Bitmap+7961=a
+	/*byte 34*/ a=x x=Bitmap+7952 Bitmap+7952=a Bitmap+7953=a
+	/*byte 33*/ a=x a&0x03 a|RorM3C,x x=Bitmap+7944 a|RorMC0,x Bitmap+7944=a Bitmap+7945=a
+	/*byte 32*/ a=RorM3F,x x=Bitmap+7936 a|RorMC0,x Bitmap+7936=a Bitmap+7937=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+7928 a|RorMC0,x Bitmap+7928=a Bitmap+7929=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+7920 a|RorMC0,x Bitmap+7920=a Bitmap+7921=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+7912 a|RorMC0,x Bitmap+7912=a Bitmap+7913=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+7904 a|RorMC0,x Bitmap+7904=a Bitmap+7905=a
+	/*byte 27*/ a=SwapM0F,x x=Bitmap+7896 a|SwapMF0,x Bitmap+7896=a Bitmap+7897=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+7888 a|SwapMF0,x Bitmap+7888=a Bitmap+7889=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+7880 a|SwapMF0,x Bitmap+7880=a Bitmap+7881=a
+	/*byte 24*/ a=RolM03,x x=Bitmap+7872 a|RolMFC,x Bitmap+7872=a Bitmap+7873=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+7864 a|RolM0C,x Bitmap+7864=a Bitmap+7865=a
+	/*byte 39*/ y=96 a=(ptrB),y Bitmap+7992=a Bitmap+7993=a
+
+// line 97  -  [5 13 23 20]
+	x=Bitmap+7994
+	/*byte 38*/ a=x x=Bitmap+7986 Bitmap+7986=a Bitmap+7987=a
+	/*byte 37*/ a=x x=Bitmap+7978 Bitmap+7978=a Bitmap+7979=a
+	/*byte 36*/ a=x x=Bitmap+7970 Bitmap+7970=a Bitmap+7971=a
+	/*byte 35*/ a=x x=Bitmap+7962 Bitmap+7962=a Bitmap+7963=a
+	/*byte 34*/ a=x x=Bitmap+7954 Bitmap+7954=a Bitmap+7955=a
+	/*byte 33*/ a=RorM3F,x x=Bitmap+7946 a|RorMC0,x Bitmap+7946=a Bitmap+7947=a
+	/*byte 32*/ a=RorM3F,x x=Bitmap+7938 a|RorMC0,x Bitmap+7938=a Bitmap+7939=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+7930 a|RorMC0,x Bitmap+7930=a Bitmap+7931=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+7922 a|RorMC0,x Bitmap+7922=a Bitmap+7923=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+7914 a|RorMC0,x Bitmap+7914=a Bitmap+7915=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+7906 a|SwapMC0,x Bitmap+7906=a Bitmap+7907=a
+	/*byte 27*/ a=SwapM0F,x x=Bitmap+7898 a|SwapMF0,x Bitmap+7898=a Bitmap+7899=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+7890 a|SwapMF0,x Bitmap+7890=a Bitmap+7891=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+7882 a|SwapMF0,x Bitmap+7882=a Bitmap+7883=a
+	/*byte 24*/ a=RolM03,x x=Bitmap+7874 a|RolMFC,x Bitmap+7874=a Bitmap+7875=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+7866 Bitmap+7866=a Bitmap+7867=a
+	/*byte 39*/ y=97 a=(ptrB),y Bitmap+7994=a Bitmap+7995=a
+
+// line 98  -  [6 12 23 20]
+	x=Bitmap+7996
+	/*byte 38*/ a=x x=Bitmap+7988 Bitmap+7988=a Bitmap+7989=a
+	/*byte 37*/ a=x x=Bitmap+7980 Bitmap+7980=a Bitmap+7981=a
+	/*byte 36*/ a=x x=Bitmap+7972 Bitmap+7972=a Bitmap+7973=a
+	/*byte 35*/ a=x x=Bitmap+7964 Bitmap+7964=a Bitmap+7965=a
+	/*byte 34*/ a=x x=Bitmap+7956 Bitmap+7956=a Bitmap+7957=a
+	/*byte 33*/ a=RorM3F,x x=Bitmap+7948 a|RorMC0,x Bitmap+7948=a Bitmap+7949=a
+	/*byte 32*/ a=RorM3F,x x=Bitmap+7940 a|RorMC0,x Bitmap+7940=a Bitmap+7941=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+7932 a|RorMC0,x Bitmap+7932=a Bitmap+7933=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+7924 a|RorMC0,x Bitmap+7924=a Bitmap+7925=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+7916 a|RorMC0,x Bitmap+7916=a Bitmap+7917=a
+	/*byte 28*/ a=RorM3F,x x=Bitmap+7908 a|SwapMC0,x Bitmap+7908=a Bitmap+7909=a
+	/*byte 27*/ a=SwapM0F,x x=Bitmap+7900 a|SwapMF0,x Bitmap+7900=a Bitmap+7901=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+7892 a|SwapMF0,x Bitmap+7892=a Bitmap+7893=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+7884 a|RolMC0,x a|SwapM30,x Bitmap+7884=a Bitmap+7885=a
+	/*byte 24*/ a=RolM03,x x=Bitmap+7876 a|RolMFC,x Bitmap+7876=a Bitmap+7877=a
+	/*byte 23*/ a=RolM03,x x=Bitmap+7868 Bitmap+7868=a Bitmap+7869=a
+	/*byte 39*/ y=98 a=(ptrB),y Bitmap+7996=a Bitmap+7997=a
+
+// line 99  -  [5 13 23 19]
+	x=Bitmap+7998
+	/*byte 38*/ a=x x=Bitmap+7990 Bitmap+7990=a Bitmap+7991=a
+	/*byte 37*/ a=x x=Bitmap+7982 Bitmap+7982=a Bitmap+7983=a
+	/*byte 36*/ a=x x=Bitmap+7974 Bitmap+7974=a Bitmap+7975=a
+	/*byte 35*/ a=x x=Bitmap+7966 Bitmap+7966=a Bitmap+7967=a
+	/*byte 34*/ a=x a&0x3F x=Bitmap+7958 a|RorMC0,x Bitmap+7958=a Bitmap+7959=a
+	/*byte 33*/ a=RorM3F,x x=Bitmap+7950 a|RorMC0,x Bitmap+7950=a Bitmap+7951=a
+	/*byte 32*/ a=RorM3F,x x=Bitmap+7942 a|RorMC0,x Bitmap+7942=a Bitmap+7943=a
+	/*byte 31*/ a=RorM3F,x x=Bitmap+7934 a|RorMC0,x Bitmap+7934=a Bitmap+7935=a
+	/*byte 30*/ a=RorM3F,x x=Bitmap+7926 a|RorMC0,x Bitmap+7926=a Bitmap+7927=a
+	/*byte 29*/ a=RorM3F,x x=Bitmap+7918 a|RorMC0,x Bitmap+7918=a Bitmap+7919=a
+	/*byte 28*/ a=RorM0F,x x=Bitmap+7910 a|SwapMF0,x Bitmap+7910=a Bitmap+7911=a
+	/*byte 27*/ a=SwapM0F,x x=Bitmap+7902 a|SwapMF0,x Bitmap+7902=a Bitmap+7903=a
+	/*byte 26*/ a=SwapM0F,x x=Bitmap+7894 a|SwapMF0,x Bitmap+7894=a Bitmap+7895=a
+	/*byte 25*/ a=SwapM0F,x x=Bitmap+7886 a|RolMC0,x a|SwapM30,x Bitmap+7886=a Bitmap+7887=a
+	/*byte 24*/ a=RolM03,x x=Bitmap+7878 a|RolMFC,x Bitmap+7878=a Bitmap+7879=a
+	/*byte 39*/ y=99 a=(ptrB),y Bitmap+7998=a Bitmap+7999=a
+
+}

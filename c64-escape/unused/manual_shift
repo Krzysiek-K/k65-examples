@@ -1,0 +1,68 @@
+		[B=320*1]
+		a=anim_frame a&1 =={
+			a=Bitmap+[B-128],x a<<< a<<< a<<< a&0x03
+				Bitmap+[B-136],x=a
+
+			a=Bitmap+[B-128],x a<< a<< a&0xFC v0=a
+				a=Bitmap+[B-120],x a<<< a<<< a<<< a&0x03 a|v0
+				Bitmap+[B-128],x=a
+		}
+		else
+		{
+			a=Bitmap+[B-128],x a&0xF0 v0=a
+				a=Bitmap+[B-128],x a<< a<< a&0x0C a|v0 v0=a
+				a=Bitmap+[B-120],x a<<< a<<< a<<< a&0x03 a|v0
+				Bitmap+[B-128],x=a
+		}
+
+
+		a=Bitmap+[B-120],x a<< a<< a&0xC0 v0=a
+		a=Bitmap+[B-120],x a<< a<< a<< a<< a&0x30 a|v0 v0=a
+			a=Bitmap+[B-112],x a>> a>> a>> a>> a|v0
+			Bitmap+[B-120],x=a
+
+		a=Bitmap+[B-112],x a<< a<< a<< a<< a&0xF0 v0=a
+			a=Bitmap+[B-104],x a>> a>> a>> a>> a|v0
+			Bitmap+[B-112],x=a
+
+		a=Bitmap+[B-104],x a<< a<< a<< a<< a&0xF0 v0=a
+			a=Bitmap+[B-96],x a>> a>> a>> a>> a|v0
+			Bitmap+[B-104],x=a
+
+		a=Bitmap+[B-96],x a<< a<< a<< a<< a&0xF0 v0=a
+			a=Bitmap+[B-88],x a>> a>> a&0x0F a|v0
+			Bitmap+[B-96],x=a
+
+		a=Bitmap+[B-88],x a>>> a>>> a>>> a&0xC0 v0=a
+			a=Bitmap+[B-80],x a>> a>> a|v0
+			Bitmap+[B-88],x=a
+
+		a=Bitmap+[B-80],x a>>> a>>> a>>> a&0xC0 v0=a
+			a=Bitmap+[B-72],x a>> a>> a|v0
+			Bitmap+[B-80],x=a
+
+		a=Bitmap+[B-72],x a>>> a>>> a>>> a&0xC0 v0=a
+			a=Bitmap+[B-64],x a>> a>> a|v0
+			Bitmap+[B-72],x=a
+
+		a=Bitmap+[B-64],x a>>> a>>> a>>> a&0xC0 v0=a
+			a=Bitmap+[B-56],x a>> a>> a|v0
+			Bitmap+[B-64],x=a
+
+		a=Bitmap+[B-56],x a>>> a>>> a>>> a&0xC0 v0=a
+			a=Bitmap+[B-48],x a>> a>> a|v0
+			Bitmap+[B-56],x=a
+
+		a=Bitmap+[B-48],x a>>> a>>> a>>> a&0xC0 v0=a
+			a=Bitmap+[B-40],x a&0x3F a|v0
+			Bitmap+[B-48],x=a
+
+		Bitmap+[B-40],x=a=Bitmap+[B-32],x
+		Bitmap+[B-32],x=a=Bitmap+[B-24],x
+		Bitmap+[B-24],x=a=Bitmap+[B-16],x
+		Bitmap+[B-16],x=a=Bitmap+[B-8],x
+		
+		//[B=320*2]
+		//	Bitmap+[B-56],x=a=0x00
+		//	a=0x03 a>>> a>>> a>>> a&0xC0 Bitmap+[B-48],x=a
+		//	Bitmap+[B-40],x=a=0x00

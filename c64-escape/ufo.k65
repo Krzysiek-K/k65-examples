@@ -1,0 +1,100 @@
+
+
+// -------------------------------- UFO sprites --------------------------------
+
+// source image
+image UfoImage = "ufo6.bmp";
+[IW=72,IH=42]
+
+data UfoImageIndex {
+	for x=0..[IW*IH-1] eval [ c=UfoImage[x%IW,floor(x/IW)], floor((c&0xFF)/255*3+.5) ]
+}
+
+
+// data
+data UfoSprites {
+	for x=0..63 eval [ a= 0+(x%3)*8 + ( 0+floor(x/3))*IW, UfoImageIndex[a+0]*64+UfoImageIndex[a+2]*16+UfoImageIndex[a+4]*4+UfoImageIndex[a+6] ]
+	for x=0..63 eval [ a=24+(x%3)*8 + ( 0+floor(x/3))*IW, UfoImageIndex[a+0]*64+UfoImageIndex[a+2]*16+UfoImageIndex[a+4]*4+UfoImageIndex[a+6] ]
+	for x=0..63 eval [ a=48+(x%3)*8 + ( 0+floor(x/3))*IW, UfoImageIndex[a+0]*64+UfoImageIndex[a+2]*16+UfoImageIndex[a+4]*4+UfoImageIndex[a+6] ]
+	for x=0..63 eval [ a= 0+(x%3)*8 + (21+floor(x/3))*IW, UfoImageIndex[a+0]*64+UfoImageIndex[a+2]*16+UfoImageIndex[a+4]*4+UfoImageIndex[a+6] ]
+	for x=0..63 eval [ a=24+(x%3)*8 + (21+floor(x/3))*IW, UfoImageIndex[a+0]*64+UfoImageIndex[a+2]*16+UfoImageIndex[a+4]*4+UfoImageIndex[a+6] ]
+	for x=0..63 eval [ a=48+(x%3)*8 + (21+floor(x/3))*IW, UfoImageIndex[a+0]*64+UfoImageIndex[a+2]*16+UfoImageIndex[a+4]*4+UfoImageIndex[a+6] ]
+}
+
+
+// movement
+data SprAnimX {	for x=0..63 eval [  70+cos(x/64*2*pi*3)*2.5 ]	}
+data SprAnimY { for x=0..63 eval [ 182+sin(x/64*2*pi*2)*2.5 ]	}
+
+
+// ALTAIR'2016 Sprite
+image AltairImage = "altair2016.bmp";
+[IW=48,IH=5]
+
+data AltairImageBits {
+	for x=0..[IW*IH-1] eval [ (AltairImage[x%IW,floor(x/IW)]&0x80) ? 1 : 0 ]
+}
+
+data AltairSpriteData {
+	for x=0..14 eval [ a= 0+(x%3)*8 + ( 0+floor(x/3))*IW, AltairImageBits[a+0]*128+AltairImageBits[a+1]*64+AltairImageBits[a+2]*32+AltairImageBits[a+3]*16+
+														  AltairImageBits[a+4]*8+AltairImageBits[a+5]*4+AltairImageBits[a+6]*2+AltairImageBits[a+7] ]
+	for x=0..14 eval [ a=24+(x%3)*8 + ( 0+floor(x/3))*IW, AltairImageBits[a+0]*128+AltairImageBits[a+1]*64+AltairImageBits[a+2]*32+AltairImageBits[a+3]*16+
+														  AltairImageBits[a+4]*8+AltairImageBits[a+5]*4+AltairImageBits[a+6]*2+AltairImageBits[a+7] ]
+}
+
+
+
+
+inline ufo_animate_position {
+	spranim++;
+	a=spranim a>> a&0x3F x=a
+	a=SprAnimX,x	SP0X=a SP3X=a
+	c- a+24			SP1X=a SP4X=a
+	c- a+24			SP2X=a SP5X=a
+	a=SprAnimY,x	SP0Y=a SP1Y=a SP2Y=a
+	c- a+21			SP3Y=a SP4Y=a SP5Y=a
+}
+
+inline ufo_setup {
+
+	// copy sprites
+	y=0 { SpriteBuffer,y=a=UfoSprites,y y++ }!=
+	y=0 { SpriteBuffer+256,y=a=UfoSprites+256,y y++ }>=0
+
+	// copy Altair sprites
+	y=14 { SpriteBuffer+[256+128],y=a=AltairSpriteData,y y-- }>=0
+	y=14 { SpriteBuffer+[256+128+64],y=a=AltairSpriteData+15,y y-- }>=0
+
+	// setup sprites
+	SPMC=a=0x3F
+	XXPAND=a=0
+	YXPAND=a=0	
+	MSIGX=a=0
+	SPMC0=a=0x0B
+	SPMC1=a=0x01
+
+	ufo_animate_position
+
+	x=7 {
+		SP0COL,x=a=0x0F
+		a=x a|0x10 VideoMatrix+1016,x=a
+		x--
+	}>=0
+
+	SP6X=a=[24+8] SP7X=a=[24+8+24]
+	SP6Y=SP7Y=a=[250-5]
+	SP6COL=SP7COL=a=0x0B
+
+	SPENA=a=0xFF
+}
+
+inline altair_wings {
+	Bitmap+[24*320+3]=a=0b01010101
+	Bitmap+[24*320+4]=a=0b00010101
+	Bitmap+[24*320+5]=a=0b00000001
+	VideoMatrix+[24*40]=a=0xBC
+	Bitmap+[24*320+7*8+3]=a=0b01010101
+	Bitmap+[24*320+7*8+4]=a=0b01010100
+	Bitmap+[24*320+7*8+5]=a=0b01000000
+	VideoMatrix+[24*40+7]=a=0xBC
+}

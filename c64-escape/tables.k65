@@ -1,0 +1,103 @@
+
+// lookup tables for fast pixel shift/merge
+//data RorMC0  { align 256	for x=0..255 eval [ e=((x<<6)&0xC0) | ((x>>2)&0x3F), e&0xC0 ] }
+//data RorM03  { align 256	for x=0..255 eval [ e=((x<<6)&0xC0) | ((x>>2)&0x3F), e&0x03 ] }
+//data RorM3C  { align 256	for x=0..255 eval [ e=((x<<6)&0xC0) | ((x>>2)&0x3F), e&0x3C ] }
+//data RorM30  { align 256	for x=0..255 eval [ e=((x<<6)&0xC0) | ((x>>2)&0x3F), e&0x30 ] }
+//data RorM3F  { align 256	for x=0..255 eval [ e=((x<<6)&0xC0) | ((x>>2)&0x3F), e&0x3F ] }
+//data RorM0F  { align 256	for x=0..255 eval [ e=((x<<6)&0xC0) | ((x>>2)&0x3F), e&0x0F ] }
+//data SwapMF0 { align 256	for x=0..255 eval [ e=((x<<4)&0xF0) | ((x>>4)&0x0F), e&0xF0 ] }
+//data SwapM0F { align 256	for x=0..255 eval [ e=((x<<4)&0xF0) | ((x>>4)&0x0F), e&0x0F ] }
+//data SwapM03 { align 256	for x=0..255 eval [ e=((x<<4)&0xF0) | ((x>>4)&0x0F), e&0x03 ] }
+//data SwapM0C { align 256	for x=0..255 eval [ e=((x<<4)&0xF0) | ((x>>4)&0x0F), e&0x0C ] }
+//data SwapM30 { align 256	for x=0..255 eval [ e=((x<<4)&0xF0) | ((x>>4)&0x0F), e&0x30 ] }
+//data SwapMC0 { align 256	for x=0..255 eval [ e=((x<<4)&0xF0) | ((x>>4)&0x0F), e&0xC0 ] }
+//data RolMC0  { align 256	for x=0..255 eval [ e=((x<<2)&0xFC) | ((x>>6)&0x03), e&0xC0 ] }
+//data RolMF0  { align 256	for x=0..255 eval [ e=((x<<2)&0xFC) | ((x>>6)&0x03), e&0xF0 ] }
+//data RolM03  { align 256	for x=0..255 eval [ e=((x<<2)&0xFC) | ((x>>6)&0x03), e&0x03 ] }
+//data RolM0C  { align 256	for x=0..255 eval [ e=((x<<2)&0xFC) | ((x>>6)&0x03), e&0x0C ] }
+//data RolM3C  { align 256	for x=0..255 eval [ e=((x<<2)&0xFC) | ((x>>6)&0x03), e&0x3C ] }
+//data RolMFC  { align 256	for x=0..255 eval [ e=((x<<2)&0xFC) | ((x>>6)&0x03), e&0xFC ] }
+
+data MaskTabAddr {
+//00		03			0C			0F			30			33			3C			3F			C0			C3			CC			CF			F0			F3			FC			FF
+?			&>RolM03	&>RolM0C	?			?			?			&>RolM3C	?			&>RolMC0	?			?			?			&>RolMF0	?			&>RolMFC	?
+?			&>SwapM03	&>SwapM0C	&>SwapM0F	&>SwapM30	?			?			?			&>SwapMC0	?			?			?			&>SwapMF0	?			?			?
+?			&>RorM03	?			&>RorM0F	&>RorM30	?			&>RorM3C	&>RorM3F	&>RorMC0	?			?			?			?			?			?			?
+}
+
+
+func gen_table_ror {
+	// Input:
+	//	A	- mask
+	//	X	- table address (high byte only)
+	
+	ptrA+1=x
+	ptrA  =x=0
+	v0=a
+
+	x=0
+	y=0
+	{
+		v1=x	// zero
+		a=y a>> v1>>> a>> v1>>> a|v1 a&v0 (ptrA),y=a
+		y++
+	}!=
+}
+
+func gen_table_swap {
+	// Input:
+	//	A	- mask
+	//	X	- table address (high byte only)
+	
+	ptrA+1=x
+	ptrA  =x=0
+	v0=a
+
+	x=0
+	y=0
+	{
+		v1=x	// zero
+		a=y a<< v1<<< a<< v1<<< a<< v1<<< a<< v1<<< a|v1 a&v0 (ptrA),y=a
+		y++
+	}!=
+}
+
+func gen_table_rol {
+	// Input:
+	//	A	- mask
+	//	X	- table address (high byte only)
+	
+	ptrA+1=x
+	ptrA  =x=0
+	v0=a
+
+	x=0
+	y=0
+	{
+		v1=x	// zero
+		a=y a<< v1<<< a<< v1<<< a|v1 a&v0 (ptrA),y=a
+		y++
+	}!=
+}
+
+func tables_init {
+	x=&>RorMC0	a=0xC0	gen_table_ror
+	x=&>RorM03 	a=0x03	gen_table_ror
+	x=&>RorM3C 	a=0x3C	gen_table_ror
+	x=&>RorM30 	a=0x30	gen_table_ror
+	x=&>RorM3F 	a=0x3F	gen_table_ror
+	x=&>RorM0F 	a=0x0F	gen_table_ror
+	x=&>SwapMF0	a=0xF0	gen_table_swap
+	x=&>SwapM0F	a=0x0F	gen_table_swap
+	x=&>SwapM03	a=0x03	gen_table_swap
+	x=&>SwapM0C	a=0x0C	gen_table_swap
+	x=&>SwapM30	a=0x30	gen_table_swap
+	x=&>SwapMC0	a=0xC0	gen_table_swap
+	x=&>RolMC0 	a=0xC0	gen_table_rol
+	x=&>RolMF0 	a=0xF0	gen_table_rol
+	x=&>RolM03 	a=0x03	gen_table_rol
+	x=&>RolM0C 	a=0x0C	gen_table_rol
+	x=&>RolM3C 	a=0x3C	gen_table_rol
+	x=&>RolMFC 	a=0xFC	gen_table_rol
+}

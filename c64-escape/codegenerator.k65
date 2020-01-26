@@ -1,0 +1,279 @@
+
+
+
+
+inline cg_load_line_info {
+	
+	y=cg_ycoord y?50 >={
+		a=cg_infoPtr c+ a-4	cg_infoPtr=a		<{ cg_infoPtr+1-- }
+	}
+
+	y=0		cg_n1=a=(cg_infoPtr),y
+	y=1		cg_n2=a=(cg_infoPtr),y
+	y=2		cg_n3=a=(cg_infoPtr),y
+	y=3		cg_n4=a=(cg_infoPtr),y
+	
+	y=cg_ycoord y?50 <{
+		a=cg_infoPtr c- a+4	cg_infoPtr=a		>={ cg_infoPtr+1++ }
+	}
+}
+
+inline cg_setup_bitmap_pointer {
+	// Input:
+	//	X		- x coord	(0..159)
+	//	Y		- y coord	(0..200)
+	//
+	// Output:
+	//	cg_bitmapPtr	- pointer
+	//
+	// offset = (x/4)*8 + y%8 + (y/8)*320
+	//
+	cg_bitmapPtr+1=a=&>Bitmap								// base address (high only)
+	a=x a<< >={ cg_bitmapPtr+1++ } a&0xF8 cg_bitmapPtr=a	// add (x/4)*8
+	a=y a&7 a|cg_bitmapPtr cg_bitmapPtr=a					// add y%8
+
+	a=y a>> a>> a>> y=a
+	    a>> a>> v0=a
+	a=y a<< a<< a<< a<< a<< a<<	c- a+cg_bitmapPtr		cg_bitmapPtr  =a
+	a=y		a+v0				c- a+cg_bitmapPtr+1		cg_bitmapPtr+1=a
+}
+
+inline cg_compute_masks {
+	a=0
+					cg_mask+1=a		cg_mask+2=a		cg_mask+3=a
+	cg_mask+4=a		cg_mask+5=a		cg_mask+6=a		cg_mask+7=a
+
+	//for( int i=3; i>=0; i-- )
+	//{
+	//	int m = 0xC0 >> (i*2);
+	//				if( counts.n4>0 ) masks[4] |= m, counts.n4--, any = true;
+	//	else if( counts.n3>0 ) masks[i<=0 ? 3 : 7] |= m, counts.n3--, any = true;
+	//	else if( counts.n2>0 ) masks[i<=1 ? 2 : 6] |= m, counts.n2--, any = true;
+	//	else if( counts.n1>0 ) masks[i<=2 ? 1 : 5] |= m, counts.n1--, any = true;
+	//	else { }
+	//	xpos--;
+	//}
+
+	// pixel 3	mask 0x03	1
+.maskC0:
+	a=cg_n4 !={ cg_n4--					a=0x01 cg_mask+4=a		goto .mask30 }
+	a=cg_n3 !={ cg_n3--					a=0x21 cg_mask+7=a		goto .mask30 }
+	a=cg_n2 !={ cg_n2--					a=0x11 cg_mask+6=a		goto .mask30 }
+	a=cg_n1 !={ cg_n1--					a=0x01 cg_mask+5=a		goto .mask30 }
+
+	// pixel 2	mask 0x0C	2
+.mask30:
+	a=cg_n4 !={ cg_n4--		a=cg_mask+4 a|0x02 cg_mask+4=a		goto .mask0C }
+	a=cg_n3 !={ cg_n3--		a=cg_mask+7 a|0x22 cg_mask+7=a		goto .mask0C }
+	a=cg_n2 !={ cg_n2--		a=cg_mask+6 a|0x12 cg_mask+6=a		goto .mask0C }
+	a=cg_n1 !={ cg_n1--					a=0x02 cg_mask+1=a		goto .mask0C }
+
+	// pixel 1	mask 0x30	4
+.mask0C:
+	a=cg_n4 !={ cg_n4--		a=cg_mask+4 a|0x04 cg_mask+4=a		goto .mask03 }
+	a=cg_n3 !={ cg_n3--		a=cg_mask+7 a|0x24 cg_mask+7=a		goto .mask03 }
+	a=cg_n2 !={ cg_n2--					a=0x14 cg_mask+2=a		goto .mask03 }
+	a=cg_n1 !={ cg_n1--		a=cg_mask+1 a|0x04 cg_mask+1=a		goto .mask03 }
+
+	// pixel 0	mask 0xC0	8
+.mask03:
+	a=cg_n4 !={ cg_n4--		a=cg_mask+4 a|0x08 cg_mask+4=a		goto .maskDone }
+	a=cg_n3 !={ cg_n3--					a=0x28 cg_mask+3=a		goto .maskDone }
+	a=cg_n2 !={ cg_n2--		a=cg_mask+2 a|0x18 cg_mask+2=a		goto .maskDone }
+	a=cg_n1 !={ cg_n1--		a=cg_mask+1 a|0x08 cg_mask+1=a		goto .maskDone }
+
+.maskDone:
+
+}
+
+inline cg_write_code_byte {
+	// Input:
+	//	A		- byte value
+	//	Y		- zero
+	//	ptrB	- target code area write pointer
+	//
+	
+	y=0 (cg_codePtr),y=a
+	cg_codePtr++ =={ cg_codePtr+1++ }
+}
+
+inline cg_pointer_move_left {
+	a=cg_bitmapPtr c+ a-8 cg_bitmapPtr=a
+	<{ cg_bitmapPtr+1-- }
+}
+
+inline cg_gen_emit_pixel {
+	a=0x8D				cg_write_code_byte	// STA $xxxx
+	a=cg_bitmapPtr		cg_write_code_byte	//
+	a=cg_bitmapPtr+1	cg_write_code_byte	//
+	a=0x8D				cg_write_code_byte	// STA $xxxx
+	a=cg_bitmapPtr	a|1	cg_write_code_byte	//
+	a=cg_bitmapPtr+1	cg_write_code_byte	//
+}
+
+inline cg_gen_line_start {
+	// Input:
+	//	cg_ycoord		- line Y coord
+	//
+
+	x=159 a=cg_ycoord a<< y=a	cg_setup_bitmap_pointer
+
+	// load first byte to X
+	a=0xAE				cg_write_code_byte	// LDX $xxxx
+	a=cg_bitmapPtr		cg_write_code_byte	//
+	a=cg_bitmapPtr+1	cg_write_code_byte	//
+
+	// save bitmap pointer
+	ptrC  =a=cg_bitmapPtr
+	ptrC+1=a=cg_bitmapPtr+1
+
+	cg_pointer_move_left
+}
+
+inline cg_gen_line_end {
+	cg_bitmapPtr  =a=ptrC  
+	cg_bitmapPtr+1=a=ptrC+1
+
+	a=0xA0			cg_write_code_byte	// LDY #xx
+	a=cg_ycoord		cg_write_code_byte	//
+
+	a=0xB1			cg_write_code_byte	// LDA	(ptrB),Y
+	a=&<ptrB		cg_write_code_byte	//
+
+	cg_gen_emit_pixel
+}
+
+data CodeGenMaskUnpack {
+	0x00 0x03 0x0C 0x0F
+	0x30 0x33 0x3C 0x3F
+	0xC0 0xC3 0xCC 0xCF
+	0xF0 0xF3 0xFC 0xFF
+}
+
+inline cg_gen_pixel {
+	// Input:
+	//	masks
+	//	pointers
+	//
+	
+	y=0
+	cg_op=a=0xBD	// op = LDA Addr,X
+
+	// mask 4
+	a=cg_mask+4 !={
+		a=0x8A cg_write_code_byte		// TXA	(X->A)
+
+		a=cg_mask+4 a&0x0F a?0x0F !={
+			a=0x29		cg_write_code_byte		// AND	#xx
+			a=cg_mask+4 a&0x0F x=a
+			a=CodeGenMaskUnpack,x	cg_write_code_byte
+		}
+
+		cg_op=a=0x1D	// next op = ORA Addr,X
+	}
+
+	// masks 5..7
+	v0=a=3
+	{
+		y=v0
+		x=cg_mask+4,y !={
+			y=0
+			a=cg_op				cg_write_code_byte
+			a=0					cg_write_code_byte
+			a=MaskTabAddr,x		cg_write_code_byte
+
+			cg_op=a=0x1D	// next op = ORA Addr,X
+		}
+		v0--
+	}!=
+
+	// load current byte to X
+	a=0xAE				cg_write_code_byte	// LDX $xxxx
+	a=cg_bitmapPtr		cg_write_code_byte	//
+	a=cg_bitmapPtr+1	cg_write_code_byte	//
+
+	// masks 1..3
+	v0=a=3
+	{
+		y=v0
+		x=cg_mask,y !={
+			y=0
+			a=cg_op				cg_write_code_byte
+			a=0					cg_write_code_byte
+			a=MaskTabAddr,x		cg_write_code_byte
+
+			cg_op=a=0x1D	// next op = ORA Addr,X
+		}
+		v0--
+	}!=
+
+	// write bitmap data
+	cg_gen_emit_pixel
+	
+	// move to previous cell
+	cg_pointer_move_left
+}
+
+
+func cg_gen_line {
+	// Input:
+	//	cg_infoPtr	- source generator data read pointer
+	//	cg_codePtr	- target code area write pointer
+	//	cg_ycoord	- line Y coord
+	//
+
+	cg_load_line_info
+//	cg_n1=a=5
+//	cg_n2=a=13
+//	cg_n3=a=23
+//	cg_n4=a=19
+
+	cg_gen_line_start
+
+	{
+		a=cg_n1 a|cg_n2 a|cg_n3 a|cg_n4
+		=={ goto .shifterDone }
+
+		cg_compute_masks
+		cg_gen_pixel
+
+	} always
+
+.shifterDone:
+
+	cg_gen_line_end
+
+
+}
+
+func code_generator {
+	cg_codePtr  =a=&<GenShifter
+	cg_codePtr+1=a=&>GenShifter
+	
+
+//	x=159 y=199 cg_setup_bitmap_pointer
+//
+//	a=0xA9				cg_write_code_byte	// LDA #1B
+//	a=0x1B				cg_write_code_byte
+//	a=0x8D				cg_write_code_byte	// STA $xxxx
+//	a=cg_bitmapPtr		cg_write_code_byte	//
+//	a=cg_bitmapPtr+1	cg_write_code_byte	//
+
+	cg_infoPtr  =a=&<ShiftLineInfo
+	cg_infoPtr+1=a=&>ShiftLineInfo
+
+	cg_ycoord=a=0
+	{
+	.loop:
+		EXTCOL=a=cg_ycoord
+
+		cg_gen_line
+
+		cg_ycoord++
+		a=cg_ycoord a?100
+		!={ goto .loop }
+	}
+
+
+	a=0x60				cg_write_code_byte	// RTS
+}

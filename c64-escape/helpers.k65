@@ -1,0 +1,12 @@
+
+inline memmode_RAM_IO {
+	R6510=a=0b00110101				// all RAM, except for I/O at D000..DFFF
+}
+
+inline memmode_RAM_64k {
+	R6510=a=0b00110100				// all RAM
+}
+
+inline memmode_RAM_CHAR {
+	R6510=a=0b00110001				// all RAM, except for character ROM at D000..DFFF
+}

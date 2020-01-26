@@ -1,0 +1,16 @@
+-system C64
+-hiaddr 0x3FFF
+-o c64-escape.prg
+
+_c64_defs.k65			main
+helpers.k65				main
+gen_shiftdata.k65		main
+gen_shifter.k65			main
+gen_tex.k65				main
+sidplay.k65				main
+codegenerator.k65		main
+tables.k65				main
+ufo.k65					main
+myfont/font.k65			main
+infodisplay2.k65		main
+main_c64.k65			main
