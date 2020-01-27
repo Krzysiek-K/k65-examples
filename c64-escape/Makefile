@@ -1,6 +1,6 @@
 
 all:
-	k65 @c64-escape.k65proj
+	k65/k65mac @c64-escape.k65proj
 
 run: all
-	cmd.exe /C start c64-escape.prg
+	/usr/local/Cellar/vice/3.4/bin/x64sc c64-escape.prg
